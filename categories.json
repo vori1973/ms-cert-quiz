@@ -1,0 +1,41 @@
+{
+  "totalQuizQuestions": 50,
+  "categories": [
+    {
+      "id": "plan-manage",
+      "name": "Plan & manage an Azure AI solution",
+      "weight": 22.5,
+      "questionsInQuiz": 11
+    },
+    {
+      "id": "genai",
+      "name": "Implement generative AI solutions",
+      "weight": 17.5,
+      "questionsInQuiz": 9
+    },
+    {
+      "id": "agentic",
+      "name": "Implement an agentic solution",
+      "weight": 7.5,
+      "questionsInQuiz": 4
+    },
+    {
+      "id": "vision",
+      "name": "Implement computer vision solutions",
+      "weight": 12.5,
+      "questionsInQuiz": 6
+    },
+    {
+      "id": "nlp",
+      "name": "Implement natural language processing solutions",
+      "weight": 17.5,
+      "questionsInQuiz": 9
+    },
+    {
+      "id": "knowledge-mining",
+      "name": "Implement knowledge mining & information extraction solutions",
+      "weight": 22.5,
+      "questionsInQuiz": 11
+    }
+  ]
+}
