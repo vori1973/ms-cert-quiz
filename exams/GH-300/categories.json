@@ -1,0 +1,41 @@
+{
+  "totalQuizQuestions": 50,
+  "categories": [
+    {
+      "id": "responsible-ai",
+      "name": "Use GitHub Copilot Responsibly",
+      "weight": 17.5,
+      "questionsInQuiz": 9
+    },
+    {
+      "id": "copilot-features",
+      "name": "Use GitHub Copilot Features",
+      "weight": 27.5,
+      "questionsInQuiz": 14
+    },
+    {
+      "id": "data-architecture",
+      "name": "Understand GitHub Copilot Data & Architecture",
+      "weight": 12.5,
+      "questionsInQuiz": 7
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Apply Prompt Engineering & Context Crafting",
+      "weight": 12.5,
+      "questionsInQuiz": 6
+    },
+    {
+      "id": "developer-productivity",
+      "name": "Improve Developer Productivity",
+      "weight": 12.5,
+      "questionsInQuiz": 7
+    },
+    {
+      "id": "privacy-safeguards",
+      "name": "Configure Privacy, Content Exclusions & Safeguards",
+      "weight": 12.5,
+      "questionsInQuiz": 7
+    }
+  ]
+}
