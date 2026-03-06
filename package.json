@@ -1,0 +1,14 @@
+{
+  "name": "ms-cert-quiz",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node quiz.js",
+    "test": "jest"
+  },
+  "jest": {
+    "testMatch": ["**/tests/quiz.test.js"]
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
