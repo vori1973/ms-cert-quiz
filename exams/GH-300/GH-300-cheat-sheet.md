@@ -146,6 +146,7 @@ Agent Mode = autonomous tasks + Sub-Agents + MCP integration
 
 > ⚠️ **Deprecation:** The `gh copilot` extension was deprecated on **October 25, 2025**.
 > It is replaced by the new **GitHub Copilot CLI** — a standalone agentic assistant (`copilot` command) available to Copilot Pro/Enterprise users.
+> Any earlier references in this cheat sheet to the Copilot “CLI” or to "`gh copilot` commands" refer specifically to this legacy extension, which remains exam-relevant.
 
 **Legacy `gh copilot` commands (still exam-relevant):**
 
