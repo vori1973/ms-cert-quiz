@@ -423,7 +423,7 @@ Iterate on prompts when output is weak or off-target
 ```
 
 ✅ **Exam Tip:**
-`/tests` uses `@workspace` context — it can see your full project, not just the open file.
+Use `@workspace` with `/tests` when you need cross-file/project context — this lets Copilot see beyond the current file.
 
 ### Security & Performance
 
