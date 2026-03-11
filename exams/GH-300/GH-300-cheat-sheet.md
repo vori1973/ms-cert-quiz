@@ -504,7 +504,8 @@ my-repo:
 # Apply to a repo by full URL
 https://github.com/myorg/myrepo.git:
   - "/config/credentials/**"
-  - "{server,session}*"
+  - "server*"
+  - "session*"
 ```
 
 **Common exclusion targets:**
