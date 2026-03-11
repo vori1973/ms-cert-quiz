@@ -41,7 +41,7 @@ Multi-answer example: `"answer": "A, C"`
 - **No external packages at runtime.** Do not suggest installing libraries for CLI I/O, file reading, or data manipulation — use Node.js built-ins.
 - Functions are small and pure where possible; side effects (I/O) are primarily handled in `runQuiz()`, `selectExam()`, and their print helpers.
 - `normalizeAnswer` sorts multi-answer responses alphabetically before comparing.
-- `selectQuestions` samples proportionally by category weight; the largest category absorbs rounding gaps.
+- `selectQuestions` uses each category's `questionsInQuiz` as a fixed per-quiz allocation; `weight` is only used to choose which category absorbs any shortfall/rounding gap (the "largest" category).
 
 ## Testing
 - Test file: `tests/quiz.test.js`
