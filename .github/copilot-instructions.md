@@ -39,7 +39,7 @@ Multi-answer example: `"answer": "A, C"`
 ## Coding Conventions
 - **Plain CommonJS** (`require`/`module.exports`), no ES modules, no TypeScript.
 - **No external packages at runtime.** Do not suggest installing libraries for CLI I/O, file reading, or data manipulation — use Node.js built-ins.
-- Functions are small and pure where possible; side effects (I/O) are isolated in `runQuiz()` and `selectExam()`.
+- Functions are small and pure where possible; side effects (I/O) are primarily handled in `runQuiz()`, `selectExam()`, and their print helpers.
 - `normalizeAnswer` sorts multi-answer responses alphabetically before comparing.
 - `selectQuestions` samples proportionally by category weight; the largest category absorbs rounding gaps.
 
