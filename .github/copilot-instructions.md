@@ -16,7 +16,7 @@ Dev dependency: Jest (tests only).
 ## Question Object Schema
 ```json
 {
-  "id": "unique-string",
+  "id": 1,
   "category": "category-id",
   "question": "Question text?",
   "choices": { "A": "...", "B": "...", "C": "...", "D": "..." },
