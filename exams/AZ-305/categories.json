@@ -1,0 +1,29 @@
+{
+  "totalQuizQuestions": 50,
+  "categories": [
+    {
+      "id": "identity-governance",
+      "name": "Design Identity, Governance, and Monitoring Solutions",
+      "weight": 27.5,
+      "questionsInQuiz": 14
+    },
+    {
+      "id": "data-storage",
+      "name": "Design Data Storage Solutions",
+      "weight": 22.5,
+      "questionsInQuiz": 11
+    },
+    {
+      "id": "business-continuity",
+      "name": "Design Business Continuity Solutions",
+      "weight": 17.5,
+      "questionsInQuiz": 9
+    },
+    {
+      "id": "infrastructure",
+      "name": "Design Infrastructure Solutions",
+      "weight": 32.5,
+      "questionsInQuiz": 16
+    }
+  ]
+}

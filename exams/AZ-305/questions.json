@@ -1,0 +1,3602 @@
+[
+  {
+    "id": 1,
+    "category": "identity-governance",
+    "question": "Your organization has an on-premises Active Directory. You need to enable single sign-on to Azure services while keeping password hashes on-premises. Which Entra ID Connect authentication method should you choose?",
+    "choices": {
+      "A": "Password Hash Synchronization",
+      "B": "Pass-Through Authentication",
+      "C": "Active Directory Federation Services (ADFS)",
+      "D": "Certificate-based authentication"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "category": "identity-governance",
+    "question": "You are designing identity for an Azure workload. Multiple Azure Functions and App Service instances need to share the same identity to access Azure Key Vault. Which managed identity type should you use?",
+    "choices": {
+      "A": "System-assigned managed identity on each resource",
+      "B": "User-assigned managed identity shared across all resources",
+      "C": "Service principal with a client secret",
+      "D": "Entra ID group with assigned permissions"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "category": "identity-governance",
+    "question": "A developer's account was recently compromised. You need to ensure that all privileged role assignments require approval and time-limited activation going forward. Which feature should you configure?",
+    "choices": {
+      "A": "Conditional Access policies",
+      "B": "Azure RBAC custom roles",
+      "C": "Privileged Identity Management (PIM) with eligible assignments",
+      "D": "Azure AD Identity Protection risk policies"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "category": "identity-governance",
+    "question": "Your company wants to prevent any Azure resource from being created outside of the US East and US West 2 regions. Which approach enforces this most effectively?",
+    "choices": {
+      "A": "Azure RBAC with a custom role that restricts regions",
+      "B": "Azure Policy with an Allowed Locations initiative assigned to the subscription",
+      "C": "Azure Management Group with a Deny assignment",
+      "D": "Azure Blueprints deployed to each resource group"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "category": "identity-governance",
+    "question": "You need to grant a third-party auditor read-only access to all Azure subscriptions in your organization without managing per-subscription assignments. What should you do?",
+    "choices": {
+      "A": "Add the auditor as a Guest user and assign Reader role to each subscription",
+      "B": "Assign the Reader role at the Root Management Group scope",
+      "C": "Create a custom role and assign it to every subscription",
+      "D": "Use Azure Policy to grant read access"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "category": "identity-governance",
+    "question": "An application deployed outside Azure (running in GitHub Actions) needs to authenticate to Azure Key Vault without storing any secrets. Which solution should you implement?",
+    "choices": {
+      "A": "System-assigned managed identity",
+      "B": "Service principal with client secret stored in GitHub secrets",
+      "C": "Workload Identity Federation using OpenID Connect",
+      "D": "User-assigned managed identity"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "category": "identity-governance",
+    "question": "Your security team requires that all sign-ins to the Azure portal from unmanaged devices require MFA, while corporate-managed compliant devices can sign in without MFA. Which feature enables this?",
+    "choices": {
+      "A": "Entra ID Identity Protection",
+      "B": "Privileged Identity Management",
+      "C": "Conditional Access policy with device compliance condition",
+      "D": "Azure RBAC with deny assignments"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "category": "identity-governance",
+    "question": "You are building a multi-tenant SaaS application in Azure. Business customers need to access the application using their own organizational identities. Which identity solution supports this requirement?",
+    "choices": {
+      "A": "Entra External ID B2C (customer tenants)",
+      "B": "Entra External ID B2B collaboration",
+      "C": "Entra ID Pass-Through Authentication",
+      "D": "Azure AD Domain Services"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "category": "identity-governance",
+    "question": "Your organization needs to regularly review whether users still need their Azure AD role assignments and automatically revoke access that hasn't been re-confirmed. Which feature should you use?",
+    "choices": {
+      "A": "PIM eligible assignments with expiry dates",
+      "B": "Azure AD Access Reviews",
+      "C": "Conditional Access with sign-in frequency",
+      "D": "Azure Policy compliance reports"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "category": "identity-governance",
+    "question": "You must enforce that every Azure subscription in your organization has a specific cost center tag applied to all resource groups. Resources missing the tag should be flagged but not blocked. Which policy effect should you use?",
+    "choices": {
+      "A": "Deny",
+      "B": "Append",
+      "C": "Audit",
+      "D": "Modify"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "category": "identity-governance",
+    "question": "A team needs to deploy a new landing zone that includes a VNet, NSG, Log Analytics workspace, and Azure Policy assignments as a single governed package with version control. Which service best meets this requirement?",
+    "choices": {
+      "A": "ARM templates deployed via Azure DevOps",
+      "B": "Azure Blueprints or Deployment Stacks",
+      "C": "Azure Policy initiatives",
+      "D": "Terraform Cloud"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "category": "identity-governance",
+    "question": "Your organization wants to discover all sensitive data across Azure SQL, Azure Blob Storage, and on-premises SQL Server, and apply unified sensitivity labels. Which service provides this capability?",
+    "choices": {
+      "A": "Microsoft Defender for Cloud",
+      "B": "Azure Monitor",
+      "C": "Microsoft Purview",
+      "D": "Azure Information Protection (standalone)"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "category": "identity-governance",
+    "question": "You need to centralize security alerts from Azure, Microsoft 365, and third-party firewalls, and create automated response playbooks. Which service should you deploy?",
+    "choices": {
+      "A": "Microsoft Defender for Cloud",
+      "B": "Microsoft Sentinel",
+      "C": "Azure Monitor with action groups",
+      "D": "Azure Security Center Classic"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "category": "identity-governance",
+    "question": "An application uses a system-assigned managed identity to access Azure Storage. You are decommissioning the application's App Service. What happens to the managed identity?",
+    "choices": {
+      "A": "It persists and can be reassigned to another resource",
+      "B": "It is automatically deleted along with the App Service",
+      "C": "It becomes an orphaned service principal in Entra ID",
+      "D": "It requires manual deletion via the Azure portal"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "category": "identity-governance",
+    "question": "Your organization must track all changes made to Azure resources (who created, modified, or deleted what) for a compliance audit covering the last 90 days. Which Azure Monitor log type should you query?",
+    "choices": {
+      "A": "Diagnostic logs (resource logs)",
+      "B": "Activity Log",
+      "C": "Guest OS performance metrics",
+      "D": "Application Insights traces"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "category": "identity-governance",
+    "question": "You need to automatically remediate Azure resources that are missing a required tag by adding the tag at deployment time. Which Azure Policy effect should you use?",
+    "choices": {
+      "A": "Append",
+      "B": "Audit",
+      "C": "DeployIfNotExists",
+      "D": "Modify"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 17,
+    "category": "identity-governance",
+    "question": "Your security architect wants Microsoft Defender for Cloud to protect all Azure SQL Databases, Azure Storage accounts, and Azure VMs across 10 subscriptions. What is the most efficient way to enable Defender plans?",
+    "choices": {
+      "A": "Enable each Defender plan individually on each subscription",
+      "B": "Assign a Defender for Cloud policy initiative at the Root Management Group",
+      "C": "Enable Defender plans at the Root Management Group level via Defender for Cloud settings",
+      "D": "Deploy an ARM template to each subscription"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "category": "identity-governance",
+    "question": "You are designing a monitoring solution. You need to alert the on-call team via SMS and trigger an Azure Automation runbook when CPU utilization on a VM exceeds 90% for 5 minutes. What should you configure?",
+    "choices": {
+      "A": "Azure Monitor metric alert rule with an Action Group containing SMS and Runbook actions",
+      "B": "Log Analytics query with an email notification",
+      "C": "Application Insights availability test",
+      "D": "Azure Advisor recommendation"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 19,
+    "category": "identity-governance",
+    "question": "An application team needs read access to a specific Azure SQL Database but should not have access to any other resources in the resource group. What should you do?",
+    "choices": {
+      "A": "Assign the Reader role at the resource group scope",
+      "B": "Assign the Reader role at the specific SQL Database resource scope",
+      "C": "Create a custom role and assign it at subscription scope",
+      "D": "Use Conditional Access to restrict access"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "category": "identity-governance",
+    "question": "You want to ensure Azure Policy evaluates all existing resources in a subscription for compliance immediately after assigning a new policy. What should you trigger?",
+    "choices": {
+      "A": "A new deployment of all resources",
+      "B": "An on-demand policy compliance evaluation scan",
+      "C": "A subscription move to a new management group",
+      "D": "A manual review in Microsoft Defender for Cloud"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 21,
+    "category": "identity-governance",
+    "question": "Your organization's compliance requirement states that all Entra ID privileged role activations must be logged and reviewable. PIM is already configured. Where should you send PIM audit logs for long-term retention and querying?",
+    "choices": {
+      "A": "Azure Blob Storage with lifecycle management",
+      "B": "Log Analytics workspace via Entra ID diagnostic settings",
+      "C": "Event Hubs for real-time streaming only",
+      "D": "Azure Table Storage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "category": "identity-governance",
+    "question": "You need to design a governance structure for 50 subscriptions across 4 business units, each with different policy requirements. What should be at the foundation of your governance hierarchy?",
+    "choices": {
+      "A": "A separate Entra ID tenant per business unit",
+      "B": "Management groups organized by business unit with policies applied at each group",
+      "C": "Resource groups shared across subscriptions",
+      "D": "Azure Blueprints applied to every subscription individually"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 23,
+    "category": "identity-governance",
+    "question": "A new policy DeployIfNotExists is assigned but existing non-compliant resources are not being remediated. What must you create to fix existing resources?",
+    "choices": {
+      "A": "A new policy assignment",
+      "B": "A remediation task in Azure Policy",
+      "C": "An Azure Automation runbook",
+      "D": "A new ARM template deployment"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "category": "identity-governance",
+    "question": "Your CISO requires that all Azure VM sign-in events and resource manager operations for a specific subscription be stored for 2 years. Which two actions should you take? (Choose two.)",
+    "choices": {
+      "A": "Configure Entra ID diagnostic settings to send sign-in logs to a Log Analytics workspace",
+      "B": "Configure Azure Monitor Activity Log diagnostic settings to send logs to a storage account with 2-year retention",
+      "C": "Enable Azure Security Center alerts only",
+      "D": "Store logs in Azure Table Storage"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 25,
+    "category": "identity-governance",
+    "question": "You have a guest user from a partner organization. You want to ensure they can only access a specific app and cannot enumerate other directory objects. Which feature restricts directory-level access for guests?",
+    "choices": {
+      "A": "Conditional Access \u2014 application filter",
+      "B": "Entra ID External Identities cross-tenant access settings (B2B outbound)",
+      "C": "Guest user permissions setting: 'Guest user access is restricted'",
+      "D": "Azure RBAC Reader on the Entra ID tenant"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 26,
+    "category": "identity-governance",
+    "question": "You are designing a solution to detect when an Entra ID user account logs in from an IP address that has never been seen before and automatically block the sign-in. Which combination should you implement?",
+    "choices": {
+      "A": "Azure Monitor alert rule + Logic App",
+      "B": "Entra ID Identity Protection (Unfamiliar sign-in locations risk policy) + Conditional Access",
+      "C": "Microsoft Sentinel analytics rule + manual investigation",
+      "D": "Defender for Cloud alert + email notification"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "category": "identity-governance",
+    "question": "Your organization uses a centralized Log Analytics workspace. Multiple application teams want their own dashboards showing their app's metrics and logs. Which Azure Monitor feature supports this without creating separate workspaces?",
+    "choices": {
+      "A": "Azure Monitor Workbooks with resource-level RBAC filtering",
+      "B": "Application Insights with separate accounts per team",
+      "C": "Separate diagnostic settings per resource",
+      "D": "Azure Cost Management budgets"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 28,
+    "category": "identity-governance",
+    "question": "A developer needs to deploy ARM templates to a subscription but must not be able to assign roles or modify policy. Which built-in RBAC role grants the minimum required access?",
+    "choices": {
+      "A": "Owner",
+      "B": "Contributor",
+      "C": "User Access Administrator",
+      "D": "Reader"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 29,
+    "category": "identity-governance",
+    "question": "You need to ensure that all newly created Azure Storage accounts in a subscription have public blob access disabled. Which policy effect enforces this at creation time?",
+    "choices": {
+      "A": "Audit",
+      "B": "Append",
+      "C": "Deny",
+      "D": "DeployIfNotExists"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 30,
+    "category": "identity-governance",
+    "question": "Your organization acquires a company with its own Entra ID tenant. Employees from the acquired company need seamless SSO access to your internal applications without creating duplicate accounts. Which feature enables this?",
+    "choices": {
+      "A": "Entra ID Connect to synchronize both directories",
+      "B": "Entra External ID B2B with cross-tenant synchronization",
+      "C": "Entra ID B2C custom policies",
+      "D": "Active Directory domain trust"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 31,
+    "category": "identity-governance",
+    "question": "An Azure Function needs to read secrets from Key Vault. You enable a system-assigned managed identity on the Function App and grant it Key Vault Secrets User role. In the Function code, what is the correct authentication approach?",
+    "choices": {
+      "A": "Read the Key Vault URI and access key from app settings",
+      "B": "Use DefaultAzureCredential() \u2014 it automatically uses the managed identity",
+      "C": "Generate a client secret in Entra ID and store it in the Function config",
+      "D": "Use a SAS token to authenticate to Key Vault"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 32,
+    "category": "identity-governance",
+    "question": "You are using Azure Policy to enforce tagging. The policy uses the Modify effect to add an Environment tag. For the policy to modify existing resources, the policy assignment needs which type of identity?",
+    "choices": {
+      "A": "Service principal with Owner role",
+      "B": "Managed identity with the appropriate RBAC role on the scope",
+      "C": "Global Administrator account",
+      "D": "No identity is required for Modify effect"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "category": "identity-governance",
+    "question": "Your security baseline requires all Entra ID accounts with Owner or Contributor roles on production subscriptions to be protected by phishing-resistant MFA. Which solution enforces this without impacting all users?",
+    "choices": {
+      "A": "Security Defaults",
+      "B": "Per-user MFA enforcement",
+      "C": "Conditional Access policy scoped to Owner/Contributor roles on production subscriptions requiring FIDO2 or certificate-based auth",
+      "D": "PIM with MFA on activation only"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 34,
+    "category": "identity-governance",
+    "question": "Your team wants to view a unified security score and see which Azure resources are misconfigured across all subscriptions. Which service provides this posture management dashboard?",
+    "choices": {
+      "A": "Microsoft Sentinel",
+      "B": "Azure Monitor Workbooks",
+      "C": "Microsoft Defender for Cloud (Cloud Security Posture Management)",
+      "D": "Azure Advisor"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 35,
+    "category": "identity-governance",
+    "question": "A compliance requirement mandates that Azure resource changes in a certain subscription are immutably logged and cannot be altered by administrators. Which approach meets this requirement?",
+    "choices": {
+      "A": "Send Activity Logs to a Log Analytics workspace",
+      "B": "Send Activity Logs to an Azure Storage account with immutable storage (WORM) policy enabled",
+      "C": "Enable Azure Policy audit logs",
+      "D": "Configure Azure Monitor alerts for all changes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "category": "identity-governance",
+    "question": "You need to allow an on-premises application to authenticate to Azure services using certificates instead of passwords, without storing credentials in the app config. Which approach should you use?",
+    "choices": {
+      "A": "Service principal with certificate-based authentication stored in Key Vault",
+      "B": "Managed identity (system-assigned)",
+      "C": "Shared access signature with IP restriction",
+      "D": "API key stored in Azure App Configuration"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 37,
+    "category": "identity-governance",
+    "question": "Your organization needs to enforce that all virtual machines in a management group have the Azure Monitor Agent (AMA) installed. New VMs without AMA should have it deployed automatically. Which policy effect achieves this?",
+    "choices": {
+      "A": "Audit",
+      "B": "Deny",
+      "C": "DeployIfNotExists",
+      "D": "Append"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 38,
+    "category": "identity-governance",
+    "question": "You want to give a security team member the ability to manage PIM role assignments but not perform the privileged operations themselves. Which Entra ID role should you assign?",
+    "choices": {
+      "A": "Global Administrator",
+      "B": "Privileged Role Administrator",
+      "C": "Security Reader",
+      "D": "User Administrator"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 39,
+    "category": "identity-governance",
+    "question": "Your company has 3 subscriptions. You need to ensure that budgets, policies, and RBAC assignments configured once apply to all current and future subscriptions. What is the most scalable solution?",
+    "choices": {
+      "A": "Manually replicate assignments across subscriptions",
+      "B": "Create a management group and move all subscriptions under it; apply governance at the management group level",
+      "C": "Use Azure Blueprints on each subscription individually",
+      "D": "Configure Azure Policy at each subscription scope"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 40,
+    "category": "identity-governance",
+    "question": "You need to enable Application Insights for an Azure App Service and configure it to sample 10% of requests to reduce ingestion costs while still capturing exceptions. Which Application Insights feature controls this?",
+    "choices": {
+      "A": "Continuous export",
+      "B": "Adaptive or fixed-rate sampling",
+      "C": "Live Metrics filtering",
+      "D": "Smart detection rules"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "category": "identity-governance",
+    "question": "A critical database administrator account must never be permanently assigned a privileged role. They should activate the role only when needed, with approval required and a maximum 2-hour window. Which PIM configuration achieves this?",
+    "choices": {
+      "A": "Active assignment with time limit set to 2 hours",
+      "B": "Eligible assignment with approval workflow and maximum activation duration of 2 hours",
+      "C": "Conditional Access requiring MFA for the role",
+      "D": "Custom RBAC role with a time-based deny assignment"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 42,
+    "category": "identity-governance",
+    "question": "You are designing a monitoring strategy. Developers need to see application errors, dependency failures, and custom events from their apps. Operations need to see VM health and network metrics. Which service hierarchy should you use?",
+    "choices": {
+      "A": "One Log Analytics workspace with all data; use RBAC and saved queries to separate concerns",
+      "B": "Application Insights for app telemetry; Azure Monitor Metrics for infra; both feeding a central Log Analytics workspace",
+      "C": "Separate Azure Monitor instances per team",
+      "D": "Azure Service Health for all monitoring needs"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 43,
+    "category": "identity-governance",
+    "question": "Your organization uses Azure Cost Management. You want department managers to receive an email alert when their subscription spending reaches 80% of their monthly budget. What should you configure?",
+    "choices": {
+      "A": "Azure Monitor metric alert on billing metrics",
+      "B": "A budget in Azure Cost Management with an alert threshold at 80% of the budget amount",
+      "C": "Azure Advisor cost recommendations",
+      "D": "Azure Policy with a cost-based Deny effect"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 44,
+    "category": "identity-governance",
+    "question": "You must ensure that when a virtual machine is deleted, all associated diagnostic logs (stored in a storage account) are retained for at least 90 days before being deleted. How should you configure this?",
+    "choices": {
+      "A": "Set a lifecycle management policy on the storage account to delete logs after 90 days",
+      "B": "Enable soft delete on the storage account with a 90-day retention period",
+      "C": "Configure the VM diagnostic settings with a 90-day retention period",
+      "D": "Use Azure Backup to retain the logs"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 45,
+    "category": "identity-governance",
+    "question": "An organization requires that no user can be permanently assigned the Global Administrator role in Entra ID; all access must be eligible only and expire after 8 hours. What PIM feature enforces this?",
+    "choices": {
+      "A": "Conditional Access requiring MFA for Global Admin sign-in",
+      "B": "PIM role settings: require activation, set max activation duration to 8 hours, disallow permanent active assignments",
+      "C": "Azure AD Identity Protection with high-risk user policy",
+      "D": "Custom RBAC role with deny assignment after 8 hours"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 46,
+    "category": "identity-governance",
+    "question": "You need to detect when an Azure resource (e.g., a Key Vault) is deleted and send an automated alert to a Teams channel. What combination of Azure services should you use?",
+    "choices": {
+      "A": "Activity Log alert rule + Action Group with a Logic App connector to Teams",
+      "B": "Diagnostic logs + Log Analytics + email alert",
+      "C": "Microsoft Defender for Cloud recommendation",
+      "D": "Azure Advisor alert with webhook"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 47,
+    "category": "identity-governance",
+    "question": "Your compliance team wants to see a report showing all Azure resources that are non-compliant with your tagging policies, filtered by subscription and resource type. Where do you find this?",
+    "choices": {
+      "A": "Azure Advisor \u2014 cost recommendations",
+      "B": "Azure Policy \u2014 Compliance dashboard",
+      "C": "Microsoft Defender for Cloud \u2014 Recommendations",
+      "D": "Azure Monitor \u2014 Workbooks"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "category": "identity-governance",
+    "question": "A partner company needs to access a specific Azure App Service endpoint. Their developers should authenticate using their own company's Entra ID identities, not guest accounts in your directory. Which identity pattern should you implement?",
+    "choices": {
+      "A": "B2B guest invitations for each developer",
+      "B": "Entra ID federation with the partner's tenant using cross-tenant access policies (B2B Direct Connect)",
+      "C": "Create local accounts for each partner developer in your tenant",
+      "D": "Allow anonymous access with IP restrictions"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 49,
+    "category": "identity-governance",
+    "question": "You need to assign a user the ability to manage Azure role assignments (RBAC) on a specific resource group without giving them any other permissions. Which built-in role should you assign at resource group scope?",
+    "choices": {
+      "A": "Owner",
+      "B": "Contributor",
+      "C": "User Access Administrator",
+      "D": "Role Based Access Control Administrator"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 50,
+    "category": "identity-governance",
+    "question": "Your security team wants to ensure that any Entra ID user whose sign-in risk is classified as 'High' by Identity Protection is immediately blocked from accessing applications until their password is reset. Which feature enforces this automatically?",
+    "choices": {
+      "A": "PIM with risk-based activation",
+      "B": "Identity Protection User Risk Policy with block access for high-risk users",
+      "C": "Conditional Access with sign-in frequency set to every hour",
+      "D": "Entra ID audit log alert"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 51,
+    "category": "identity-governance",
+    "question": "You are designing governance for a new Azure environment. A policy must ensure all storage accounts use HTTPS-only traffic. The policy should apply to all subscriptions, including future subscriptions added to the organization. At which scope should you assign the policy?",
+    "choices": {
+      "A": "Each subscription individually",
+      "B": "The root management group",
+      "C": "Each resource group",
+      "D": "Each storage account"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "category": "identity-governance",
+    "question": "Your organization has Log Analytics workspaces in East US and West Europe. You need a single pane of glass view of alerts and incidents across both workspaces. Which Azure service provides this?",
+    "choices": {
+      "A": "Azure Monitor cross-workspace queries",
+      "B": "Microsoft Sentinel connected to both workspaces",
+      "C": "Azure Service Health",
+      "D": "Application Insights multi-resource view"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 53,
+    "category": "identity-governance",
+    "question": "You need to ensure that the Entra ID Connect sync service account is granted only the minimum permissions required in the on-premises Active Directory. Which two AD permissions are required at minimum for password hash sync? (Choose two.)",
+    "choices": {
+      "A": "Replicating Directory Changes",
+      "B": "Replicating Directory Changes All",
+      "C": "Full Control on the domain",
+      "D": "Write permissions on all user objects"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 54,
+    "category": "identity-governance",
+    "question": "A resource group contains resources from three different teams. Each team should only manage their own resources. You cannot create separate resource groups. What is the correct approach?",
+    "choices": {
+      "A": "Assign Owner role to each team at resource group scope",
+      "B": "Assign each team's RBAC roles scoped to their individual resources within the resource group",
+      "C": "Use Azure Policy to restrict teams to specific resource types",
+      "D": "Create separate Entra ID tenants per team"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 55,
+    "category": "identity-governance",
+    "question": "You are designing a monitoring solution where security alerts from Azure and on-premises systems must trigger automated runbooks that isolate compromised VMs. Which Azure service combination should you use?",
+    "choices": {
+      "A": "Azure Monitor + Action Group + Automation Runbook",
+      "B": "Microsoft Sentinel + Playbooks (Logic Apps) + Automation Rules",
+      "C": "Defender for Cloud + Email notification",
+      "D": "Activity Log + Azure Functions"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 56,
+    "category": "identity-governance",
+    "question": "Your organization uses Entra ID B2C for consumer identity. You need to add a custom claims to the JWT token when users sign in, based on data in your own database. Which B2C feature enables this?",
+    "choices": {
+      "A": "Conditional Access in B2C",
+      "B": "Custom policies (Identity Experience Framework) with API connectors",
+      "C": "B2C user flows with built-in attributes only",
+      "D": "Entra ID Connect integration"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 57,
+    "category": "identity-governance",
+    "question": "A subscription owner wants to prevent any user from creating new public IP addresses in the subscription, while still allowing existing public IPs to remain. Which policy effect and configuration achieves this?",
+    "choices": {
+      "A": "Audit effect on Microsoft.Network/publicIPAddresses",
+      "B": "Deny effect on Microsoft.Network/publicIPAddresses write operations",
+      "C": "Append effect adding a private IP to all resources",
+      "D": "DeployIfNotExists with a private IP configuration"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 58,
+    "category": "identity-governance",
+    "question": "Your organization needs to verify that all resource groups have an 'Owner' tag with a valid email address. Resources without this tag should be flagged. Resources being created without this tag should be blocked. What two policy effects do you need? (Choose two.)",
+    "choices": {
+      "A": "Deny \u2014 block resource group creation without Owner tag",
+      "B": "Audit \u2014 flag existing resource groups missing the tag",
+      "C": "Append \u2014 add the tag automatically",
+      "D": "Modify \u2014 change the tag value"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 59,
+    "category": "identity-governance",
+    "question": "You need to restrict access to an Azure Key Vault so that only Azure services within a specific VNet can access it, and all public internet access is denied. What should you configure?",
+    "choices": {
+      "A": "Key Vault firewall: allow selected virtual network and deny public access; add a private endpoint",
+      "B": "NSG on the Key Vault subnet",
+      "C": "Conditional Access policy requiring managed device for Key Vault access",
+      "D": "Azure Policy Deny effect on Key Vault public network access"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 60,
+    "category": "identity-governance",
+    "question": "Your organization needs to track Azure spending by department. Each department has its own subscriptions. Which Azure Cost Management feature provides per-department cost analysis without creating separate billing accounts?",
+    "choices": {
+      "A": "Azure Budgets per resource group",
+      "B": "Cost allocation with management group hierarchy and cost analysis filters",
+      "C": "Azure Advisor cost recommendations",
+      "D": "Separate invoices per subscription"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "category": "identity-governance",
+    "question": "You are designing PIM for Azure resource roles. A user needs access to a production subscription for 4 hours to perform emergency maintenance. What is the most secure way to grant this access?",
+    "choices": {
+      "A": "Permanently assign Owner role on the subscription",
+      "B": "Create an eligible assignment for Owner; user activates for 4 hours via PIM with justification and approval",
+      "C": "Add user to the Owner group and remove them after 4 hours manually",
+      "D": "Use Conditional Access to allow access for 4 hours only"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 62,
+    "category": "identity-governance",
+    "question": "Which Entra ID feature generates a risk score for each user sign-in based on IP reputation, unfamiliar locations, malware-linked IPs, and other signals?",
+    "choices": {
+      "A": "PIM risk-based activation",
+      "B": "Entra ID Identity Protection",
+      "C": "Microsoft Sentinel user behavior analytics",
+      "D": "Conditional Access named locations"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 63,
+    "category": "identity-governance",
+    "question": "Your organization has a policy requiring Azure resources to be tagged with a CostCenter value from an approved list. Resources with invalid CostCenter values should not be created. Which approach enforces this?",
+    "choices": {
+      "A": "Azure Policy with Deny effect and allowedValues parameter for CostCenter tag",
+      "B": "Azure Blueprints with a tagging artifact",
+      "C": "ARM template with parameter validation only",
+      "D": "Azure Advisor policy recommendation"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 64,
+    "category": "identity-governance",
+    "question": "You need to monitor a critical Azure App Service for availability from multiple global locations and get alerted if it is unavailable for more than 2 minutes. Which Azure Monitor feature should you use?",
+    "choices": {
+      "A": "Metric alert on HTTP server errors",
+      "B": "Application Insights availability tests (URL ping or Standard test)",
+      "C": "Azure Service Health alert for App Service outages",
+      "D": "Log Analytics query for 5xx errors"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 65,
+    "category": "identity-governance",
+    "question": "An operator needs to access Azure VMs via RDP for troubleshooting but your security policy prohibits public IP addresses and open RDP ports. What solution enables this?",
+    "choices": {
+      "A": "Configure NSG to allow RDP from the operator's home IP only",
+      "B": "Deploy Azure Bastion and access VMs via RDP over HTTPS through the browser",
+      "C": "Assign a public IP temporarily during maintenance",
+      "D": "Use Azure VPN Gateway Point-to-Site VPN"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "category": "identity-governance",
+    "question": "Your Entra ID tenant has a Conditional Access policy requiring MFA for all users. A service account (non-interactive) is failing because it cannot complete MFA. How should you handle this?",
+    "choices": {
+      "A": "Exclude the service account from the Conditional Access policy and use a managed identity or service principal with certificate",
+      "B": "Configure the service account to use an authenticator app",
+      "C": "Disable the Conditional Access policy for service accounts globally",
+      "D": "Add the service account to the Global Administrators group"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 67,
+    "category": "identity-governance",
+    "question": "Your organization wants to enable Microsoft Defender for Servers on all existing and future VMs across 20 subscriptions. What is the most efficient method?",
+    "choices": {
+      "A": "Enable Defender for Servers on each subscription individually",
+      "B": "Enable Defender for Servers at the management group level in Defender for Cloud",
+      "C": "Deploy an ARM template to each subscription",
+      "D": "Use Azure Policy with DeployIfNotExists for the Defender extension"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 68,
+    "category": "identity-governance",
+    "question": "A developer pushes code to GitHub Actions and the workflow needs to deploy ARM templates to Azure. You want to avoid storing any Azure credentials in GitHub. What should you configure?",
+    "choices": {
+      "A": "Store the service principal client secret in GitHub Actions Secrets",
+      "B": "Use Workload Identity Federation: create a federated credential on an Entra ID app registration trusting the GitHub OIDC token",
+      "C": "Generate a user delegation SAS token and store it in GitHub secrets",
+      "D": "Use a managed identity on the GitHub Actions runner VM"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 69,
+    "category": "identity-governance",
+    "question": "You need to ensure that log data from a Log Analytics workspace cannot be deleted or modified for 1 year to meet compliance requirements. Which feature should you enable?",
+    "choices": {
+      "A": "Soft delete on the workspace",
+      "B": "Workspace data export to archive storage",
+      "C": "Log Analytics workspace data immutability (Commitment tier with purge protection)",
+      "D": "Azure Backup for the workspace"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 70,
+    "category": "identity-governance",
+    "question": "An Entra ID group has the Owner role on a resource group. A new user is added to the group. When will the role assignment take effect?",
+    "choices": {
+      "A": "After 24 hours synchronization delay",
+      "B": "Immediately \u2014 group membership is evaluated in real time for RBAC",
+      "C": "After the user signs out and signs back in",
+      "D": "After an Azure Policy compliance scan"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 71,
+    "category": "identity-governance",
+    "question": "Your organization's security policy mandates that all privileged Entra ID roles be reviewed quarterly and unneeded assignments be revoked. Which feature automates this review process?",
+    "choices": {
+      "A": "PIM audit history reports",
+      "B": "Entra ID Access Reviews configured for privileged roles with auto-apply on deny",
+      "C": "Conditional Access sign-in frequency policy",
+      "D": "Microsoft Sentinel UEBA"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 72,
+    "category": "identity-governance",
+    "question": "You want to prevent users in your organization from accidentally deleting resource groups that contain production resources. What is the simplest preventive control?",
+    "choices": {
+      "A": "Assign Reader role to all users on production resource groups",
+      "B": "Apply a CanNotDelete or ReadOnly resource lock on production resource groups",
+      "C": "Create a Deny Azure Policy for resource group deletion",
+      "D": "Enable soft delete on all resources in the resource groups"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 73,
+    "category": "identity-governance",
+    "question": "Your team wants to query Entra ID sign-in logs and correlate them with Azure Activity Logs to investigate a suspicious event. Where should you configure data ingestion to enable cross-log KQL queries?",
+    "choices": {
+      "A": "Export all logs to Azure Blob Storage and query with Data Lake Analytics",
+      "B": "Configure Entra ID diagnostic settings and Activity Log to send to the same Log Analytics workspace",
+      "C": "Use Microsoft Purview to catalog the logs",
+      "D": "Export to Event Hubs and build a custom query tool"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 74,
+    "category": "identity-governance",
+    "question": "A new policy is assigned with the Deny effect. An existing non-compliant resource (a storage account with public access enabled) already exists. What happens to this existing resource?",
+    "choices": {
+      "A": "It is immediately deleted",
+      "B": "It is flagged as non-compliant but continues to operate; the Deny effect only blocks new or updated resources",
+      "C": "It is automatically remediated by the Deny effect",
+      "D": "It triggers a security alert in Defender for Cloud"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 75,
+    "category": "identity-governance",
+    "question": "You are designing the identity strategy for a new Azure landing zone. Internal employees authenticate via Entra ID Connect. External consultants use their own Google accounts. Which Entra ID feature allows consultants to sign in using Google identities?",
+    "choices": {
+      "A": "Entra ID B2C with Google as a social identity provider",
+      "B": "Entra External ID B2B with Google federation for guest users",
+      "C": "Entra ID Pass-Through Authentication with Google LDAP",
+      "D": "Active Directory Federation Services with Google connector"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 76,
+    "category": "data-storage",
+    "question": "Your application stores customer profile images and static assets that are accessed thousands of times per day. You need the lowest latency and cost-effective tier for this access pattern. Which Blob Storage access tier should you choose?",
+    "choices": {
+      "A": "Cool",
+      "B": "Cold",
+      "C": "Hot",
+      "D": "Archive"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 77,
+    "category": "data-storage",
+    "question": "A financial services company must retain compliance documents in Azure Blob Storage for 7 years and ensure they cannot be modified or deleted. Which Blob Storage feature should you configure?",
+    "choices": {
+      "A": "Lifecycle management policy with a delete rule after 7 years",
+      "B": "Immutable blob storage with a time-based retention policy locked to 7 years",
+      "C": "Blob soft delete with 7-year retention",
+      "D": "Azure Backup for blobs with 7-year vault retention"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 78,
+    "category": "data-storage",
+    "question": "Your company needs Azure Blob Storage to automatically move blobs that have not been accessed for 30 days to the Cool tier and delete blobs not accessed for 365 days. How should you configure this?",
+    "choices": {
+      "A": "Azure Backup retention policy",
+      "B": "Blob Storage lifecycle management policy with tier change and delete rules based on last access time",
+      "C": "Azure Data Factory pipeline running nightly",
+      "D": "Azure Functions with a Timer trigger that evaluates each blob daily"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 79,
+    "category": "data-storage",
+    "question": "An organization needs Azure Blob Storage to survive a complete regional Azure outage. They also need to read data from the secondary region during an outage. Which redundancy option should you select?",
+    "choices": {
+      "A": "LRS",
+      "B": "ZRS",
+      "C": "GRS",
+      "D": "RA-GRS"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 80,
+    "category": "data-storage",
+    "question": "You are migrating an on-premises Windows file server to Azure. Remote users access files via mapped drives using SMB. The solution must support Active Directory-based access control. Which Azure service should you use?",
+    "choices": {
+      "A": "Azure Blob Storage with hierarchical namespace",
+      "B": "Azure Files with AD DS authentication",
+      "C": "Azure NetApp Files",
+      "D": "Azure Data Lake Storage Gen2"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 81,
+    "category": "data-storage",
+    "question": "You need to reduce storage costs for a branch office that frequently accesses a subset of files stored in Azure Files. The branch wants local-speed access to hot files and cloud storage for cold files. Which feature should you deploy?",
+    "choices": {
+      "A": "Azure CDN for Azure Files",
+      "B": "Azure File Sync with cloud tiering enabled",
+      "C": "Azure Blob Storage with access tier management",
+      "D": "DFS Replication to Azure Files"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 82,
+    "category": "data-storage",
+    "question": "Your team is migrating a SQL Server 2019 database that uses SQL Server Agent jobs, cross-database queries, and linked servers to an external Oracle database. Which Azure SQL deployment option supports all these features?",
+    "choices": {
+      "A": "Azure SQL Database Serverless",
+      "B": "Azure SQL Database Hyperscale",
+      "C": "Azure SQL Managed Instance",
+      "D": "Azure SQL Database General Purpose with Elastic Pool"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 83,
+    "category": "data-storage",
+    "question": "A startup is building a web application where each customer has a tenant. The database usage pattern varies significantly \u2014 some tenants are very active while others are nearly idle. Cost efficiency is critical. Which Azure SQL solution should you use?",
+    "choices": {
+      "A": "Individual Azure SQL Databases per tenant (Standard tier)",
+      "B": "Azure SQL Database Elastic Pool",
+      "C": "Azure SQL Managed Instance with multiple databases",
+      "D": "SQL Server on an Azure VM with multiple databases"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 84,
+    "category": "data-storage",
+    "question": "You are designing a Cosmos DB solution for a social media application. Users must always read their own recent posts immediately after posting. Other users may occasionally see slightly stale data. Which consistency level should you use?",
+    "choices": {
+      "A": "Strong",
+      "B": "Bounded Staleness",
+      "C": "Session",
+      "D": "Eventual"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 85,
+    "category": "data-storage",
+    "question": "A gaming company is experiencing hot partition issues in their Azure Cosmos DB container. Reads and writes are concentrated on a few items. What is the root cause and solution?",
+    "choices": {
+      "A": "The RU/s provisioning is too low \u2014 increase throughput",
+      "B": "The partition key has low cardinality \u2014 choose a partition key with higher cardinality that distributes load evenly",
+      "C": "The consistency level is too strong \u2014 switch to Eventual",
+      "D": "The container TTL is set too high \u2014 reduce it"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 86,
+    "category": "data-storage",
+    "question": "Your application needs to store 200 TB of relational data with complex queries. The database must scale storage independently from compute, and query performance should remain consistent at any scale. Which Azure SQL tier should you use?",
+    "choices": {
+      "A": "General Purpose",
+      "B": "Business Critical",
+      "C": "Hyperscale",
+      "D": "Serverless"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 87,
+    "category": "data-storage",
+    "question": "You are designing storage for an IoT solution that ingests billions of time-series events. Data is analyzed using Apache Spark. Which storage service provides the best fit?",
+    "choices": {
+      "A": "Azure Table Storage",
+      "B": "Azure SQL Database",
+      "C": "Azure Data Lake Storage Gen2 with Parquet format",
+      "D": "Azure Cache for Redis"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 88,
+    "category": "data-storage",
+    "question": "A manufacturing company stores inspection images (about 1 KB each) that are rarely accessed after 90 days but must be retained for 10 years for compliance. Which Blob Storage tier minimizes total cost after 90 days?",
+    "choices": {
+      "A": "Cool",
+      "B": "Cold",
+      "C": "Archive",
+      "D": "Hot"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 89,
+    "category": "data-storage",
+    "question": "Your Azure SQL Database stores sensitive customer data. Your security team requires encryption with keys managed by your organization, not Microsoft. Which storage feature should you configure?",
+    "choices": {
+      "A": "Transparent Data Encryption (TDE) with a customer-managed key (CMK) stored in Azure Key Vault",
+      "B": "Always Encrypted with client-side keys",
+      "C": "SQL Database row-level security",
+      "D": "Azure Defender for SQL with encryption at rest"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 90,
+    "category": "data-storage",
+    "question": "An enterprise needs to run Hadoop and Spark analytics directly on data stored in Azure. The storage must support POSIX-like ACLs and folder-level operations. Which storage service should you use?",
+    "choices": {
+      "A": "Azure Blob Storage (standard)",
+      "B": "Azure Data Lake Storage Gen2 with hierarchical namespace enabled",
+      "C": "Azure Files (NFS)",
+      "D": "Azure Table Storage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 91,
+    "category": "data-storage",
+    "question": "Your application uses Azure Cache for Redis as a session store. The Redis cache must be resilient to a single zone failure within the same Azure region. Which Redis tier and configuration should you choose?",
+    "choices": {
+      "A": "Basic tier with geo-replication",
+      "B": "Standard tier with zone redundancy enabled",
+      "C": "Premium tier with zone redundancy enabled",
+      "D": "Enterprise tier with active geo-replication"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 92,
+    "category": "data-storage",
+    "question": "You need to design a multi-region Azure Cosmos DB account where users in both East US and West Europe can write to the database with the lowest possible write latency. What should you enable?",
+    "choices": {
+      "A": "Read regions in both East US and West Europe with a single write region",
+      "B": "Multi-region writes (multi-master) with both regions as write regions",
+      "C": "Active geo-replication across both regions",
+      "D": "Cosmos DB serverless with automatic region selection"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 93,
+    "category": "data-storage",
+    "question": "A developer asks about the difference between Azure Blob Storage and Azure Data Lake Storage Gen2 (ADLS Gen2). Which statement is accurate?",
+    "choices": {
+      "A": "ADLS Gen2 is a completely separate service with different pricing and APIs",
+      "B": "ADLS Gen2 is built on top of Azure Blob Storage with hierarchical namespace and POSIX ACLs enabled",
+      "C": "ADLS Gen2 only supports batch access, not streaming",
+      "D": "Azure Blob Storage supports hierarchical namespace by default"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 94,
+    "category": "data-storage",
+    "question": "Your organization stores critical business documents in Azure Blob Storage. You need to ensure that if a document is accidentally deleted, it can be recovered within 30 days. Which feature should you enable?",
+    "choices": {
+      "A": "Blob versioning with lifecycle management",
+      "B": "Blob soft delete with a 30-day retention period",
+      "C": "Azure Backup for blobs with 30-day retention",
+      "D": "RA-GRS with read access to the secondary region"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 95,
+    "category": "data-storage",
+    "question": "An application reads the same product catalog data from Azure SQL Database thousands of times per minute. You need to reduce database load and improve response times. Which Azure service should you add?",
+    "choices": {
+      "A": "Azure SQL Database read replicas",
+      "B": "Azure Cache for Redis as a read-through cache layer",
+      "C": "Azure Content Delivery Network",
+      "D": "Azure Application Gateway with caching"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 96,
+    "category": "data-storage",
+    "question": "You are selecting disk types for an Azure VM running a high-performance database that requires 50,000 IOPS and 800 MB/s throughput per disk, with the ability to change IOPS without detaching the disk. Which disk type should you use?",
+    "choices": {
+      "A": "Premium SSD",
+      "B": "Premium SSD v2",
+      "C": "Ultra Disk",
+      "D": "Standard SSD"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 97,
+    "category": "data-storage",
+    "question": "Your company needs to implement a data warehouse solution in Azure for petabyte-scale analytics with columnar storage and PolyBase support. Which service should you use?",
+    "choices": {
+      "A": "Azure SQL Database Hyperscale",
+      "B": "Azure Synapse Analytics dedicated SQL pool",
+      "C": "Azure Databricks with Delta Lake",
+      "D": "Azure Data Lake Storage Gen2 with Hive"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 98,
+    "category": "data-storage",
+    "question": "A healthcare application stores patient records in Azure Blob Storage. Compliance requires that records cannot be overwritten or deleted for 6 years. During this period, new records can still be added. Which configuration ensures this?",
+    "choices": {
+      "A": "Enable container-level soft delete with 6-year retention",
+      "B": "Enable immutable blob storage with a time-based retention policy of 6 years (locked)",
+      "C": "Configure lifecycle management to archive blobs after 6 years",
+      "D": "Enable Azure Backup for blobs with 6-year vault retention"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 99,
+    "category": "data-storage",
+    "question": "You need to provide a customer with access to a specific blob in Azure Storage for exactly 24 hours without giving them a permanent storage account key. Which mechanism should you use?",
+    "choices": {
+      "A": "RBAC Storage Blob Data Reader role for 24 hours",
+      "B": "A Shared Access Signature (SAS) token with a 24-hour expiry scoped to the specific blob",
+      "C": "A service endpoint policy restricting access to 24 hours",
+      "D": "A temporary API key generated by Key Vault"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 100,
+    "category": "data-storage",
+    "question": "Your SQL Database workload runs heavy queries during business hours and is nearly idle overnight. You want to minimize costs without managing scaling. Which Azure SQL Database compute option should you choose?",
+    "choices": {
+      "A": "General Purpose provisioned with minimum vCores",
+      "B": "Business Critical provisioned tier",
+      "C": "Serverless with auto-pause after 1 hour of inactivity",
+      "D": "Elastic Pool with minimum eDTUs"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 101,
+    "category": "data-storage",
+    "question": "You need to replicate an on-premises PostgreSQL 14 database to Azure with minimal downtime cutover. Which service handles online migration with continuous replication until cutover?",
+    "choices": {
+      "A": "Azure Data Factory",
+      "B": "Azure Database Migration Service (DMS) in online migration mode",
+      "C": "AzCopy with pg_dump export",
+      "D": "Azure Migrate database assessment tool"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 102,
+    "category": "data-storage",
+    "question": "Your Cosmos DB container stores user activity events. Items older than 30 days should be automatically deleted. What is the most efficient way to implement this?",
+    "choices": {
+      "A": "An Azure Function with a Timer trigger that queries and deletes old items daily",
+      "B": "Cosmos DB container-level Time-To-Live (TTL) set to 2592000 seconds",
+      "C": "Azure Data Factory pipeline with a delete activity",
+      "D": "Cosmos DB lifecycle management policy"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 103,
+    "category": "data-storage",
+    "question": "An application requires strong consistency for financial transactions in Azure Cosmos DB. The account has two regions. Which consistency level guarantees that reads always return the most recent committed write globally?",
+    "choices": {
+      "A": "Session",
+      "B": "Bounded Staleness",
+      "C": "Strong",
+      "D": "Consistent Prefix"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 104,
+    "category": "data-storage",
+    "question": "You are designing a storage solution for an application that writes blobs infrequently but reads them very heavily from users in multiple global regions. Which combination minimizes read latency for global users?",
+    "choices": {
+      "A": "GRS with geo-failover",
+      "B": "RA-GRS + Azure CDN in front of Blob Storage",
+      "C": "ZRS with Traffic Manager",
+      "D": "LRS with Application Gateway caching"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 105,
+    "category": "data-storage",
+    "question": "Your organization encrypts Azure Blob Storage with a customer-managed key (CMK) stored in Azure Key Vault. The Key Vault is accidentally deleted. What happens to the encrypted data?",
+    "choices": {
+      "A": "Azure automatically decrypts data using a Microsoft-managed key",
+      "B": "Data becomes inaccessible because the encryption key is lost; Key Vault soft delete must be used to recover the key",
+      "C": "Data is automatically re-encrypted with a Microsoft-managed key",
+      "D": "Nothing \u2014 encryption keys are cached and data remains accessible for 30 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 106,
+    "category": "data-storage",
+    "question": "You need to select a storage redundancy option for a non-critical development environment in a region that supports Availability Zones. Cost is the primary concern. Which option should you choose?",
+    "choices": {
+      "A": "GRS",
+      "B": "ZRS",
+      "C": "LRS",
+      "D": "RA-GZRS"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 107,
+    "category": "data-storage",
+    "question": "A company needs to analyze petabytes of log data daily using Spark. The raw logs are stored in Azure Blob Storage in JSON format. Which service provides the best-integrated Spark processing environment?",
+    "choices": {
+      "A": "Azure HDInsight",
+      "B": "Azure Databricks",
+      "C": "Azure Stream Analytics",
+      "D": "Azure Synapse Analytics serverless SQL pool"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 108,
+    "category": "data-storage",
+    "question": "You have an Azure SQL Database General Purpose with a retention period of 7 days for automated backups. A user accidentally deleted a critical table 5 days ago. How can you recover the data?",
+    "choices": {
+      "A": "Restore from an Azure Backup vault snapshot",
+      "B": "Use Point-in-Time Restore (PITR) to restore the database to a point before the deletion",
+      "C": "Recover from the geo-redundant secondary replica",
+      "D": "Re-import data from the archived transaction logs in blob storage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 109,
+    "category": "data-storage",
+    "question": "Your organization needs a managed, scalable graph database in Azure to store and query complex relationships between entities (e.g., fraud detection networks). Which Cosmos DB API should you use?",
+    "choices": {
+      "A": "Core (SQL) API",
+      "B": "MongoDB API",
+      "C": "Gremlin API",
+      "D": "Table API"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 110,
+    "category": "data-storage",
+    "question": "You are designing storage for VM OS disks that require consistent performance for production workloads, with a maximum of 3,200 IOPS and 48 MB/s. Budget is important. Which managed disk type meets this requirement at lowest cost?",
+    "choices": {
+      "A": "Standard HDD",
+      "B": "Standard SSD",
+      "C": "Premium SSD",
+      "D": "Ultra Disk"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 111,
+    "category": "data-storage",
+    "question": "Your company's compliance team requires that Azure Storage account access keys are never used and all access is via Azure AD identities. Which two configurations enforce this? (Choose two.)",
+    "choices": {
+      "A": "Disable shared key access on all storage accounts",
+      "B": "Configure Conditional Access for storage account access",
+      "C": "Assign Storage Blob Data Contributor RBAC roles to identities that need write access",
+      "D": "Enable private endpoints on storage accounts"
+    },
+    "answer": "A, C"
+  },
+  {
+    "id": 112,
+    "category": "data-storage",
+    "question": "You need to store a large volume of key-value pairs in Azure with very low latency reads (sub-millisecond) and high throughput without complex queries. Your data has no relational requirements. Which service should you use?",
+    "choices": {
+      "A": "Azure SQL Database",
+      "B": "Azure Cosmos DB Table API",
+      "C": "Azure Cache for Redis",
+      "D": "Azure Table Storage"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 113,
+    "category": "data-storage",
+    "question": "An organization uses Azure SQL Managed Instance and needs to back it up to a long-term retention policy of 5 years. Which backup option supports long-term retention for SQL MI?",
+    "choices": {
+      "A": "Azure Backup for SQL MI to a Recovery Services vault with LTR policy",
+      "B": "Export BACPAC to Azure Blob Storage weekly",
+      "C": "Configure SQL MI automated backup long-term retention (LTR) up to 10 years",
+      "D": "Azure Data Factory export pipeline to ADLS Gen2"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 114,
+    "category": "data-storage",
+    "question": "Your team is designing an event-driven microservices architecture. Services publish domain events that other services subscribe to. Events must be retained for 7 days, replayed, and consumed by multiple independent services. Which Azure service best fits?",
+    "choices": {
+      "A": "Azure Queue Storage",
+      "B": "Azure Service Bus queues",
+      "C": "Azure Event Hubs with consumer groups",
+      "D": "Azure Notification Hubs"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 115,
+    "category": "data-storage",
+    "question": "A company stores 500 TB of cold data in Azure Blob Storage Archive tier. They need to read 2 TB of this data urgently. The data must be available within 1 hour. Which rehydration priority should they select?",
+    "choices": {
+      "A": "Standard priority (up to 15 hours)",
+      "B": "High priority (under 1 hour, higher cost)",
+      "C": "Bulk priority (lowest cost)",
+      "D": "Cold tier read with direct access"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 116,
+    "category": "data-storage",
+    "question": "Your organization needs to enforce that all newly created Azure SQL Databases have Advanced Threat Protection (Defender for SQL) enabled. Which Azure Policy effect should you use?",
+    "choices": {
+      "A": "Audit",
+      "B": "DeployIfNotExists",
+      "C": "Modify",
+      "D": "Deny"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 117,
+    "category": "data-storage",
+    "question": "You are designing a multi-region Cosmos DB solution with multi-region writes enabled. Two regions simultaneously update the same item. How does Cosmos DB handle this conflict by default?",
+    "choices": {
+      "A": "The update with the lower timestamp wins",
+      "B": "Last-write-wins (LWW) based on the system timestamp (_ts property)",
+      "C": "Both updates are rejected and an exception is thrown",
+      "D": "The update from the primary write region always wins"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 118,
+    "category": "data-storage",
+    "question": "Your Azure SQL Database is used by a web application. Peak load is 10x normal load during business events. You want the database to scale up automatically during peak load and scale down afterward without manual intervention. What should you configure?",
+    "choices": {
+      "A": "Elastic Pool with auto-scaling",
+      "B": "Serverless tier with autoscale min/max vCores configured",
+      "C": "Business Critical with manual scale-up via alerts",
+      "D": "Azure SQL Managed Instance with scheduled scaling"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 119,
+    "category": "data-storage",
+    "question": "A team needs to share data between Azure Blob Storage and an on-premises NFS-based analytics platform. The storage must support NFSv3 protocol with a flat namespace. Which Azure Storage type supports this?",
+    "choices": {
+      "A": "Azure Files with NFS share",
+      "B": "Azure Blob Storage with NFS 3.0 protocol support (requires HNS enabled account)",
+      "C": "Azure Data Lake Storage Gen2 with Azure File Sync",
+      "D": "Azure NetApp Files"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 120,
+    "category": "data-storage",
+    "question": "An organization's data team wants to run T-SQL queries directly against Parquet files in Azure Data Lake Storage Gen2 without loading data into a database first. Which Azure Synapse Analytics feature supports this?",
+    "choices": {
+      "A": "Dedicated SQL pool",
+      "B": "Serverless SQL pool with OPENROWSET",
+      "C": "Spark pool with SQL magic commands",
+      "D": "Azure Databricks SQL Analytics"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 121,
+    "category": "data-storage",
+    "question": "You need to migrate 80 TB of on-premises video files to Azure Blob Storage. Your internet connection bandwidth is 100 Mbps and is also used for business operations. Which method minimizes impact on business operations?",
+    "choices": {
+      "A": "Use AzCopy to upload overnight for several weeks",
+      "B": "Order an Azure Data Box (80 TB offline device) to ship data physically",
+      "C": "Use Azure ExpressRoute to upload at full bandwidth",
+      "D": "Use Azure Data Factory with a self-hosted integration runtime"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 122,
+    "category": "data-storage",
+    "question": "Your application stores blob data in Azure Storage. Developers occasionally delete entire containers by mistake. Which two features should you enable to protect against accidental container deletion? (Choose two.)",
+    "choices": {
+      "A": "Container soft delete with a retention period",
+      "B": "Blob versioning",
+      "C": "Immutable blob storage with a retention policy",
+      "D": "Resource lock (CanNotDelete) on the storage account"
+    },
+    "answer": "A, D"
+  },
+  {
+    "id": 123,
+    "category": "data-storage",
+    "question": "You are designing a Cosmos DB solution where the application reads data from the closest region but all writes go to a single designated region. Which configuration should you use?",
+    "choices": {
+      "A": "Multi-region writes enabled with automatic failover",
+      "B": "Single write region with multiple read regions; application uses the SDK's preferred regions list",
+      "C": "Strong consistency with one region",
+      "D": "Eventual consistency with serverless throughput"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 124,
+    "category": "data-storage",
+    "question": "Your company requires that Azure Storage account encryption uses keys that are automatically rotated every 90 days without manual intervention. Which Key Vault feature enables automated key rotation?",
+    "choices": {
+      "A": "Key Vault access policies with rotation scripts",
+      "B": "Key Vault key rotation policy with automatic rotation configured",
+      "C": "Azure Automation runbook triggered every 90 days",
+      "D": "Azure Policy DeployIfNotExists for key rotation"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 125,
+    "category": "data-storage",
+    "question": "You are designing storage for a relational database with a predictable workload of 1,000 DTUs consistently throughout the day. Cost predictability is important. Which Azure SQL Database purchasing model should you use?",
+    "choices": {
+      "A": "Serverless vCore model",
+      "B": "DTU-based purchasing model with a fixed tier matching the workload",
+      "C": "vCore model with Serverless auto-pause",
+      "D": "Elastic Pool with min 0 eDTUs"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 126,
+    "category": "data-storage",
+    "question": "A solution architect needs to choose between Azure Queue Storage and Azure Service Bus for a shopping cart checkout workflow that requires guaranteed message ordering (FIFO) and duplicate detection. Which service should they choose?",
+    "choices": {
+      "A": "Azure Queue Storage (FIFO ordering is guaranteed)",
+      "B": "Azure Service Bus queues with sessions enabled for ordering and duplicate detection",
+      "C": "Azure Event Hubs with partition keys",
+      "D": "Azure Event Grid with ordered delivery mode"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 127,
+    "category": "data-storage",
+    "question": "You have an Azure SQL Database General Purpose. Your database regularly exceeds its memory and I/O resources during batch processing, causing timeouts. You need an in-memory OLTP capability. Which tier supports this?",
+    "choices": {
+      "A": "General Purpose \u2014 just increase vCores",
+      "B": "Business Critical tier (includes local SSD and in-memory OLTP)",
+      "C": "Hyperscale with additional read replicas",
+      "D": "Standard DTU tier with premium storage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 128,
+    "category": "data-storage",
+    "question": "Your organization stores sensitive data in Azure Blob Storage. You need to prevent data exfiltration where someone might copy data to a different storage account in a different subscription. Which feature addresses this?",
+    "choices": {
+      "A": "Storage account firewall with IP restrictions",
+      "B": "Private Endpoints for the storage account",
+      "C": "Cross-tenant replication disabled + storage account resource policy (service endpoint policy)",
+      "D": "RBAC with Contributor role restriction"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 129,
+    "category": "data-storage",
+    "question": "You need to design storage for an Azure SQL Database that serves a read-heavy reporting application. The reports must always return consistent, current data but should not impact the performance of the primary write workload. Which SQL Database feature should you use?",
+    "choices": {
+      "A": "Active geo-replication with reads directed to the secondary",
+      "B": "Read Scale-Out using the built-in secondary replica (Business Critical tier)",
+      "C": "Elastic Pool with read replicas",
+      "D": "SQL Database Hyperscale with named replicas"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 130,
+    "category": "data-storage",
+    "question": "Your company has a compliance requirement that storage account access logs must be retained for 1 year. Which Azure feature provides storage diagnostic logs?",
+    "choices": {
+      "A": "Azure Monitor activity logs",
+      "B": "Azure Storage Analytics (diagnostic logging) sent to a Log Analytics workspace or storage account",
+      "C": "Microsoft Defender for Storage alert logs",
+      "D": "Azure Policy compliance logs"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 131,
+    "category": "business-continuity",
+    "question": "You are designing a business continuity plan for an Azure VM-based application. The business requires recovery within 4 hours of a regional disaster (RTO = 4 hours) and can tolerate up to 15 minutes of data loss (RPO = 15 minutes). Which solution meets both requirements?",
+    "choices": {
+      "A": "Azure Backup with daily snapshots",
+      "B": "Azure Site Recovery replicating the VM to a secondary region with app-consistent snapshots every 15 minutes",
+      "C": "Manual VM snapshot taken hourly",
+      "D": "Availability Set with two VMs in the same region"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 132,
+    "category": "business-continuity",
+    "question": "Your production Azure VMs use Premium SSD managed disks. You need to ensure SLA-backed 99.99% availability that protects against a complete datacenter failure within your Azure region. Which configuration should you deploy?",
+    "choices": {
+      "A": "Availability Set with 2 VMs across 2 fault domains",
+      "B": "Two VMs distributed across two Availability Zones in the same region",
+      "C": "Two VMs in the same datacenter with Premium SSD",
+      "D": "Azure Site Recovery with real-time replication"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 133,
+    "category": "business-continuity",
+    "question": "A mission-critical Azure SQL Database requires automatic failover to a secondary region with no application connection string changes. The solution must support both Azure SQL Database and SQL Managed Instance. Which feature should you configure?",
+    "choices": {
+      "A": "Active geo-replication",
+      "B": "Auto-failover groups",
+      "C": "Azure Site Recovery for SQL Managed Instance",
+      "D": "Azure Backup with cross-region restore"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 134,
+    "category": "business-continuity",
+    "question": "Your company's Recovery Point Objective for blob storage is 1 hour. The storage account uses GRS redundancy. A regional outage occurs. What happens to recent write operations that were not yet replicated to the secondary region?",
+    "choices": {
+      "A": "All writes are synchronously replicated to both regions simultaneously",
+      "B": "Writes from up to the replication lag (potentially minutes) before the outage may be lost upon failover",
+      "C": "GRS guarantees zero data loss with synchronous replication",
+      "D": "The primary region automatically recovers all pending writes from a transaction log"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 135,
+    "category": "business-continuity",
+    "question": "An organization runs an e-commerce application on Azure App Service. They need zero-downtime deployments and the ability to roll back quickly if a new release causes issues. Which App Service feature achieves this?",
+    "choices": {
+      "A": "Azure Traffic Manager with priority routing",
+      "B": "App Service deployment slots with slot swap",
+      "C": "Azure Front Door with multiple backends",
+      "D": "Azure Site Recovery for App Service"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 136,
+    "category": "business-continuity",
+    "question": "You need to back up an Azure SQL Database with a recovery point objective of 1 hour and retain backups for 5 years for audit purposes. Azure SQL Database automated backups only retain for up to 35 days. What additional feature should you configure?",
+    "choices": {
+      "A": "Export BACPAC to Azure Blob Storage weekly",
+      "B": "Azure SQL Database Long-Term Retention (LTR) policy",
+      "C": "Azure Backup for SQL MI",
+      "D": "Azure Data Factory export to ADLS Gen2 nightly"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 137,
+    "category": "business-continuity",
+    "question": "Your organization has two geographically separated on-premises data centers connected to Azure via ExpressRoute. You need them to communicate directly using the Microsoft backbone without traversing the public internet. Which ExpressRoute feature enables this?",
+    "choices": {
+      "A": "ExpressRoute multi-circuit peering",
+      "B": "ExpressRoute Global Reach",
+      "C": "ExpressRoute FastPath",
+      "D": "Site-to-Site VPN over ExpressRoute"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 138,
+    "category": "business-continuity",
+    "question": "You are configuring Azure Site Recovery for Azure VM replication. After a failover test, you notice the VM fails to start in the target region. What should you verify first?",
+    "choices": {
+      "A": "The Azure Site Recovery vault's redundancy configuration",
+      "B": "That the target region has sufficient compute quota and that the VM size is available in the target region",
+      "C": "The backup retention policy settings",
+      "D": "The Availability Zone configuration in the source region"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 139,
+    "category": "business-continuity",
+    "question": "A company needs to protect Azure VMs from ransomware. Even if an attacker gains admin access to the subscription, they should not be able to delete backup data for 14 days. Which Azure Backup feature prevents this?",
+    "choices": {
+      "A": "Geo-redundant Recovery Services vault",
+      "B": "Soft delete for Azure Backup (prevents deletion of backup data for 14 days)",
+      "C": "Azure Backup immutable vault with PIN-protected operations",
+      "D": "RA-GRS for the Recovery Services vault storage"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 140,
+    "category": "business-continuity",
+    "question": "Your Azure SQL Database has active geo-replication configured with one readable secondary in West Europe (primary in East US). A developer wants to use the secondary to run heavy reports. What is correct about this secondary?",
+    "choices": {
+      "A": "The secondary is read-only and can be used for reporting without affecting the primary",
+      "B": "The secondary accepts writes and reads; writes are replicated back to primary",
+      "C": "The secondary cannot be queried until a failover is initiated",
+      "D": "The secondary uses the same connection string as the primary"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 141,
+    "category": "business-continuity",
+    "question": "Your company's web application is deployed across East US and West Europe with Azure Front Door load balancing. You need to ensure that if the East US region becomes completely unavailable, traffic automatically routes to West Europe. Which Front Door configuration achieves this?",
+    "choices": {
+      "A": "Traffic Manager with performance routing",
+      "B": "Front Door with health probes and priority-based routing with East US as priority 1 and West Europe as priority 2",
+      "C": "Application Gateway with session affinity",
+      "D": "Azure Load Balancer with geo-redundancy"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 142,
+    "category": "business-continuity",
+    "question": "You need to design a backup solution for an on-premises Windows Server file server. The solution must allow you to restore individual files and protect against site-level disasters. Which combination should you use?",
+    "choices": {
+      "A": "DFS Replication to another on-premises server",
+      "B": "Azure Backup with the MARS agent (file-level backup) to a Recovery Services vault",
+      "C": "Robocopy to Azure Files via Azure File Sync",
+      "D": "Azure Site Recovery for the file server"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 143,
+    "category": "business-continuity",
+    "question": "An organization's Cosmos DB account currently has a single region. Compliance requires data to be recoverable to within 1 hour of any failure, and the account must have a 99.999% availability SLA. Which configuration changes should you make?",
+    "choices": {
+      "A": "Enable multi-region writes with at least two regions",
+      "B": "Add a second read region and enable automatic failover",
+      "C": "Switch to Bounded Staleness consistency",
+      "D": "Enable Cosmos DB serverless mode"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 144,
+    "category": "business-continuity",
+    "question": "You are designing a multi-region deployment for a web application. The primary region is East US and the failover region is West US 2. The application's DNS must automatically point to West US 2 when East US is unavailable. The application uses TCP port 80 and 443. Which service should you use for DNS-based failover?",
+    "choices": {
+      "A": "Azure Load Balancer Standard with geo-redundancy",
+      "B": "Azure Traffic Manager with priority routing and HTTP health probes",
+      "C": "Azure Front Door with custom domains",
+      "D": "Azure Application Gateway multi-region deployment"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 145,
+    "category": "business-continuity",
+    "question": "A large financial institution requires that their Azure VMs in production have a 99.99% uptime SLA. The application tier has 4 VMs. How should you distribute them?",
+    "choices": {
+      "A": "All 4 VMs in the same Availability Set",
+      "B": "2 VMs in Availability Zone 1, 2 VMs in Availability Zone 2",
+      "C": "All 4 VMs using Azure Site Recovery",
+      "D": "2 VMs in East US, 2 VMs in West US using geo-distribution"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 146,
+    "category": "business-continuity",
+    "question": "Your organization needs to be able to restore Azure VMs to the paired region (cross-region restore) in a disaster scenario. What must you enable on the Recovery Services vault?",
+    "choices": {
+      "A": "Geo-redundant storage for vault backups and Cross Region Restore (CRR) feature",
+      "B": "Zone-redundant storage for the vault",
+      "C": "Long-Term Retention policy",
+      "D": "Azure Site Recovery in the same vault"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 147,
+    "category": "business-continuity",
+    "question": "An e-commerce site experiences peak traffic during holiday sales. You need the solution to automatically scale out from 2 to 20 instances during peak periods with no manual intervention and no downtime. Which compute service with which scaling mechanism should you use?",
+    "choices": {
+      "A": "Azure VMs with manual scaling scripts",
+      "B": "Azure VM Scale Sets (VMSS) with autoscale rules based on CPU/request metrics",
+      "C": "Azure App Service with horizontal scaling triggers",
+      "D": "Both B and C are valid solutions depending on the application type"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 148,
+    "category": "business-continuity",
+    "question": "You configure Azure Site Recovery to replicate Azure VMs from East US to West Europe. What is the correct sequence of actions to perform a planned failover (with no data loss)?",
+    "choices": {
+      "A": "Initiate unplanned failover \u2192 commit failover \u2192 re-protect",
+      "B": "Prepare the workload (drain connections) \u2192 run planned failover \u2192 commit \u2192 re-protect to reverse replication",
+      "C": "Take a snapshot \u2192 delete VMs in source region \u2192 deploy in target",
+      "D": "Stop ASR replication \u2192 deploy VMs manually in target region"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 149,
+    "category": "business-continuity",
+    "question": "Your organization's backup policy requires that Azure VM backups are retained for 30 days for daily recovery points, 12 weeks for weekly, and 12 months for monthly recovery points. Where do you configure this policy?",
+    "choices": {
+      "A": "Azure VM backup settings in the Azure portal",
+      "B": "A custom backup policy in the Recovery Services vault",
+      "C": "Azure Policy with backup retention parameters",
+      "D": "Azure Backup Center with a global policy"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 150,
+    "category": "business-continuity",
+    "question": "A financial application writes transactions to Azure SQL Database with an RPO of near-zero (seconds). Which Azure SQL feature provides continuous synchronous replication to a secondary replica in the same region?",
+    "choices": {
+      "A": "Active geo-replication (async)",
+      "B": "Business Critical tier with built-in Always On Availability Group (synchronous secondary replica)",
+      "C": "Azure Backup with 15-minute snapshots",
+      "D": "SQL Database auto-failover group"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 151,
+    "category": "business-continuity",
+    "question": "Your web application uses Azure App Service and Azure SQL Database in East US. For business continuity, you need automated failover to West Europe with minimal downtime and no connection string changes for the database. What should you configure?",
+    "choices": {
+      "A": "Active geo-replication with manual failover scripts",
+      "B": "Auto-failover group spanning East US and West Europe; update the app to use the failover group endpoint",
+      "C": "Azure Site Recovery for App Service + Azure Backup for SQL",
+      "D": "Traffic Manager with health probes to both regions"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 152,
+    "category": "business-continuity",
+    "question": "You need to ensure that an Azure Storage account can continue to serve read requests from a secondary region during a primary region outage. The account currently uses GRS. What change do you need to make?",
+    "choices": {
+      "A": "Upgrade to GZRS",
+      "B": "Enable account failover in GRS settings",
+      "C": "Change to RA-GRS to enable read access to the secondary region",
+      "D": "Enable Azure CDN on the storage account"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 153,
+    "category": "business-continuity",
+    "question": "Your organization suffers a ransomware attack that encrypts all data on Azure VMs and their backup vault. Azure Backup soft delete is enabled. The attackers have admin access and try to delete the backups. What happens?",
+    "choices": {
+      "A": "Backups are immediately deleted as the attacker has admin rights",
+      "B": "Backups enter a soft-deleted state and cannot be permanently deleted for 14 days; Azure Backup alerts are triggered",
+      "C": "The vault is locked automatically by Microsoft",
+      "D": "Soft delete is bypassed if the attacker uses Azure CLI"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 154,
+    "category": "business-continuity",
+    "question": "A company wants to test their DR plan without affecting the production environment. They use Azure Site Recovery. Which operation should they perform?",
+    "choices": {
+      "A": "Planned Failover",
+      "B": "Unplanned Failover",
+      "C": "Test Failover (to an isolated test VNet)",
+      "D": "Re-protection of the replicated VM"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 155,
+    "category": "business-continuity",
+    "question": "An Azure SQL Database auto-failover group has a primary in East US and a secondary in West Europe. A network partition isolates East US for 1 hour, which exceeds the grace period. What happens?",
+    "choices": {
+      "A": "The group waits indefinitely for the primary to recover",
+      "B": "The secondary in West Europe automatically becomes the new primary and the DNS endpoint redirects traffic",
+      "C": "The database goes offline until manual intervention",
+      "D": "Active geo-replication takes over the failover"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 156,
+    "category": "business-continuity",
+    "question": "You are designing the RPO for a critical Azure workload. The business can tolerate a maximum data loss of 5 minutes. Which combination of features best meets this RPO?",
+    "choices": {
+      "A": "Azure Backup daily snapshots",
+      "B": "Azure SQL Database auto-failover group with async replication (typically seconds) + Azure Site Recovery for VM replication with a 5-minute RPO configuration",
+      "C": "Weekly full backup + daily differential backup",
+      "D": "RA-GRS storage with 15-minute replication lag SLA"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 157,
+    "category": "business-continuity",
+    "question": "Your company uses Azure Files for shared documents. Users have accidentally deleted important folders. You need to restore the deleted folder from a previous point in time. Which feature enables this?",
+    "choices": {
+      "A": "Azure Backup for Azure Files \u2014 restore from a backup snapshot",
+      "B": "Azure File Sync \u2014 restore from local on-premises cache",
+      "C": "RA-GRS \u2014 read from the secondary region",
+      "D": "Container soft delete"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 158,
+    "category": "business-continuity",
+    "question": "An enterprise wants to ensure their Azure infrastructure design follows the Reliability pillar of the Azure Well-Architected Framework. Which two practices are most aligned? (Choose two.)",
+    "choices": {
+      "A": "Deploy VMs across Availability Zones for zone-redundant HA",
+      "B": "Use the smallest possible VM size to minimize cost",
+      "C": "Define and test RTO/RPO with Azure Site Recovery and Azure Backup",
+      "D": "Disable auto-scaling to prevent unexpected cost increases"
+    },
+    "answer": "A, C"
+  },
+  {
+    "id": 159,
+    "category": "business-continuity",
+    "question": "Your Recovery Services vault has soft delete enabled and an attacker deletes a backup item. After 14 days the item is permanently purged. Before the 14 days elapse, a legitimate admin wants to reprotect the backup. What should they do?",
+    "choices": {
+      "A": "Create a new backup policy and rerun the first backup",
+      "B": "Undelete the soft-deleted item and then re-enable protection",
+      "C": "Restore from the geo-secondary copy of the vault",
+      "D": "Contact Microsoft Support to recover the deleted item"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 160,
+    "category": "business-continuity",
+    "question": "A company runs SQL Server on Azure VMs. They need application-consistent backups every 4 hours with 30-day retention. Which Azure Backup workload type and configuration should they use?",
+    "choices": {
+      "A": "Azure VM backup with enhanced policy \u2014 4-hour backup frequency, 30-day retention",
+      "B": "SQL Server in Azure VM workload backup with hourly log backups and 30-day retention",
+      "C": "Azure Backup for Azure SQL Database",
+      "D": "Manual SQL Server backup to Azure Blob Storage every 4 hours"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 161,
+    "category": "infrastructure",
+    "question": "You need to design a compute solution for a stateless web application that must scale from 2 to 50 instances automatically based on HTTP request count. The application team does not want to manage OS patching. Which service should you recommend?",
+    "choices": {
+      "A": "Azure Virtual Machine Scale Sets (Uniform)",
+      "B": "Azure App Service with auto-scaling rules",
+      "C": "Azure Kubernetes Service with Horizontal Pod Autoscaler",
+      "D": "Azure Batch"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 162,
+    "category": "infrastructure",
+    "question": "Your organization needs to connect its on-premises data center to Azure with a private, dedicated 10 Gbps connection that does not traverse the public internet. Which Azure networking service should you use?",
+    "choices": {
+      "A": "Azure VPN Gateway (VpnGw5 SKU)",
+      "B": "Azure ExpressRoute",
+      "C": "Azure Virtual WAN",
+      "D": "Site-to-Site VPN with BGP"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 163,
+    "category": "infrastructure",
+    "question": "You are designing a hub-and-spoke network topology. Spoke VNets must be able to communicate with each other. All inter-spoke traffic must be inspected by a firewall. Which combination of features enables this?",
+    "choices": {
+      "A": "VNet Peering between all spokes directly; no firewall needed",
+      "B": "Peer all spokes to the hub; deploy Azure Firewall in the hub; add UDRs in each spoke to route inter-spoke traffic through the Azure Firewall",
+      "C": "VNet Peering with transitive routing enabled",
+      "D": "Azure Virtual WAN with spoke VNets and no Firewall"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 164,
+    "category": "infrastructure",
+    "question": "An organization needs to expose a web application to the internet with SSL termination, cookie-based session affinity, and protection against SQL injection and cross-site scripting (XSS). Which Azure service should you deploy?",
+    "choices": {
+      "A": "Azure Load Balancer Standard with NSG",
+      "B": "Azure Application Gateway with WAF (Web Application Firewall) enabled",
+      "C": "Azure Front Door with custom security headers",
+      "D": "Azure Traffic Manager with HTTP health probes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 165,
+    "category": "infrastructure",
+    "question": "You are designing a network architecture. An Azure VM in Spoke A needs to access an Azure SQL Database using a private IP address, not the public endpoint. What should you implement?",
+    "choices": {
+      "A": "Service endpoint for Azure SQL on the spoke subnet",
+      "B": "Private endpoint for the SQL Database with a private DNS zone linked to the spoke VNet",
+      "C": "NSG rule allowing traffic to the SQL Database public IP",
+      "D": "VNet peering between the spoke VNet and the SQL Database VNet"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 166,
+    "category": "infrastructure",
+    "question": "A company runs a containerized microservices application. The development team wants to use Kubernetes for orchestration but does not want to manage Kubernetes control plane nodes. Which Azure service meets this requirement?",
+    "choices": {
+      "A": "Azure Container Instances",
+      "B": "Azure Service Fabric",
+      "C": "Azure Kubernetes Service (AKS)",
+      "D": "Azure Container Apps"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 167,
+    "category": "infrastructure",
+    "question": "Your web application deployed on Azure App Service Premium v3 needs to access a database hosted in an Azure VNet without exposing the database to the internet. Which feature should you enable on the App Service?",
+    "choices": {
+      "A": "Hybrid Connections",
+      "B": "Regional VNet Integration",
+      "C": "Private Endpoint on the App Service",
+      "D": "App Service Environment (ASE)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 168,
+    "category": "infrastructure",
+    "question": "You need to provide secure, browser-based RDP and SSH access to Azure VMs that have no public IP addresses. Which Azure service should you deploy?",
+    "choices": {
+      "A": "Azure VPN Gateway Point-to-Site",
+      "B": "JIT VM Access via Defender for Cloud",
+      "C": "Azure Bastion",
+      "D": "Network Watcher connection troubleshoot"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 169,
+    "category": "infrastructure",
+    "question": "A global SaaS application serves users in North America, Europe, and Asia. You need to route each user to the nearest Azure region for lowest latency. Which Azure load balancing service should you use?",
+    "choices": {
+      "A": "Azure Load Balancer with geo-distributed backends",
+      "B": "Azure Traffic Manager with Performance routing method",
+      "C": "Application Gateway with geo-routing rules",
+      "D": "Azure Front Door with origin groups"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 170,
+    "category": "infrastructure",
+    "question": "You are designing an AKS cluster for production microservices. The cluster needs to scale node count automatically based on pod resource requests, and pods need to have VNet-routable IP addresses accessible from other Azure services. Which two configurations should you enable? (Choose two.)",
+    "choices": {
+      "A": "Cluster Autoscaler on the node pool",
+      "B": "Azure CNI networking (not kubenet)",
+      "C": "Kubenet networking for IP conservation",
+      "D": "Azure Policy add-on for Kubernetes"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 171,
+    "category": "infrastructure",
+    "question": "Your company uses Azure Functions in the Consumption plan. Functions are triggered infrequently but must respond within 500ms when triggered (no cold start delays). Which change should you make?",
+    "choices": {
+      "A": "Upgrade to the Dedicated (App Service) plan",
+      "B": "Move to the Azure Functions Premium plan with pre-warmed instances",
+      "C": "Increase the Consumption plan instance count",
+      "D": "Deploy Functions inside an AKS cluster"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 172,
+    "category": "infrastructure",
+    "question": "An organization needs to migrate 200 on-premises VMs to Azure. They want to discover VMs, assess compatibility and sizing, and then replicate and migrate them. Which Azure service handles the entire end-to-end migration workflow?",
+    "choices": {
+      "A": "Azure Site Recovery alone",
+      "B": "Azure Migrate (Discovery & Assessment + Server Migration tool)",
+      "C": "Azure Database Migration Service",
+      "D": "Azure Data Box + manual VM recreation"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 173,
+    "category": "infrastructure",
+    "question": "Your application uses an Azure VM Scale Set. During a surge, 8 new instances are added. Thirty minutes later, demand drops. You want the extra instances to be automatically removed. Which VMSS feature handles this?",
+    "choices": {
+      "A": "Manual scaling with scheduled runbooks",
+      "B": "Autoscale with scale-in rules and a cooldown period",
+      "C": "Azure Advisor VM resize recommendations",
+      "D": "Instance protection settings"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 174,
+    "category": "infrastructure",
+    "question": "You need to design a network topology that connects 50 branch offices to Azure and allows branch-to-branch communication through the Microsoft backbone, all managed from a single point. Which Azure service simplifies this at scale?",
+    "choices": {
+      "A": "Individual Site-to-Site VPN gateways per branch",
+      "B": "Azure Virtual WAN (vWAN) with hub-and-spoke managed topology",
+      "C": "50 separate ExpressRoute circuits",
+      "D": "Azure Firewall with BGP routing tables"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 175,
+    "category": "infrastructure",
+    "question": "Your web application serves static content (images, CSS, JS) globally. You want to reduce latency for global users and reduce the load on your origin App Service. Which Azure service should you add?",
+    "choices": {
+      "A": "Azure Traffic Manager with geographic routing",
+      "B": "Azure Content Delivery Network (CDN) caching static content at edge PoPs",
+      "C": "Azure Application Gateway with response caching",
+      "D": "Azure Cache for Redis for static files"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 176,
+    "category": "infrastructure",
+    "question": "A company needs to isolate their Azure App Service environment completely within their own VNet, with no shared infrastructure with other Azure customers, and inbound/outbound traffic completely controlled. Which App Service tier enables this?",
+    "choices": {
+      "A": "Premium v3 with Regional VNet Integration",
+      "B": "Standard with service endpoints",
+      "C": "App Service Environment v3 (Isolated v2 plan)",
+      "D": "Basic with private endpoints"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 177,
+    "category": "infrastructure",
+    "question": "You are designing a solution where Azure Functions process events from Azure Event Hubs. The function must scale automatically based on the number of unprocessed events in Event Hubs. Which Functions plan supports KEDA-based scaling with VNet integration?",
+    "choices": {
+      "A": "Consumption plan",
+      "B": "Premium plan",
+      "C": "Dedicated (App Service) plan",
+      "D": "Azure Container Apps with Functions"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 178,
+    "category": "infrastructure",
+    "question": "Your organization needs to protect internet-facing Azure VMs from DDoS attacks. You need detailed metrics, attack telemetry, and automated mitigation. Which Azure DDoS tier should you enable?",
+    "choices": {
+      "A": "DDoS Basic (default, free)",
+      "B": "DDoS Network Protection (Standard)",
+      "C": "Azure Firewall with threat intelligence",
+      "D": "NSG flow logs with DDoS detection"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 179,
+    "category": "infrastructure",
+    "question": "An enterprise needs to deploy a Kubernetes-based application without managing Kubernetes clusters or nodes. The application uses event-driven scaling. Which Azure service provides serverless containers with KEDA scaling?",
+    "choices": {
+      "A": "Azure Kubernetes Service (AKS)",
+      "B": "Azure Container Instances",
+      "C": "Azure Container Apps",
+      "D": "Azure App Service with Docker containers"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 180,
+    "category": "infrastructure",
+    "question": "You need to route traffic between an on-premises network and Azure, with BGP dynamic routing and high-availability (active-active) for the VPN connection. Which Azure VPN Gateway configuration provides this?",
+    "choices": {
+      "A": "Policy-based VPN Gateway Basic SKU",
+      "B": "Route-based VPN Gateway with active-active configuration and BGP",
+      "C": "ExpressRoute circuit with BGP",
+      "D": "Azure Virtual WAN with hub VPN gateway"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 181,
+    "category": "infrastructure",
+    "question": "Your company needs to deploy microservices that communicate with each other over HTTP. Some services are internal only; one service must be exposed to the internet. The team does not want to manage Kubernetes. Which Azure service provides this with built-in ingress management?",
+    "choices": {
+      "A": "Azure Container Instances with Azure Load Balancer",
+      "B": "Azure Container Apps with ingress enabled per app",
+      "C": "Azure App Service multi-container deployment",
+      "D": "Azure Kubernetes Service with Helm"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 182,
+    "category": "infrastructure",
+    "question": "You need to migrate a database from on-premises Oracle to Azure Database for PostgreSQL with minimal downtime. Which service handles the online migration with continuous replication?",
+    "choices": {
+      "A": "Azure Data Factory with JDBC source",
+      "B": "Azure Database Migration Service (DMS) in online mode",
+      "C": "Azure Migrate database assessment tool",
+      "D": "AzCopy with PostgreSQL dump files"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 183,
+    "category": "infrastructure",
+    "question": "You are designing an NSG for a multi-tier application. The web tier (Subnet A) should only be able to communicate with the app tier (Subnet B) on port 8080. No other traffic should be allowed between subnets. Which NSG rule configuration achieves this?",
+    "choices": {
+      "A": "Add an allow rule for any-to-any traffic within the VNet; block is handled by Azure Firewall",
+      "B": "Add an inbound rule on Subnet B's NSG allowing TCP 8080 from Subnet A's address prefix; add a deny-all rule",
+      "C": "Create a service endpoint from Subnet A to Subnet B",
+      "D": "Use Application Security Groups to tag web VMs and app VMs; create NSG rules using ASG names"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 184,
+    "category": "infrastructure",
+    "question": "Your organization uses ExpressRoute for hybrid connectivity. Your on-premises team wants to access Azure VMs using private IP addresses. Which ExpressRoute peering type should you configure?",
+    "choices": {
+      "A": "Microsoft peering (for Microsoft 365 and Azure PaaS public endpoints)",
+      "B": "Private peering (for Azure VNets and private IP connectivity)",
+      "C": "Public peering (deprecated)",
+      "D": "Global peering"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 185,
+    "category": "infrastructure",
+    "question": "A company needs to deploy 10 identical web server VMs and ensure they receive equal amounts of HTTP traffic from the internet. The VMs are in the same Azure region. Which load balancing service provides L7 HTTP distribution across these VMs?",
+    "choices": {
+      "A": "Azure Load Balancer (Standard) \u2014 L4 only",
+      "B": "Azure Application Gateway \u2014 L7 HTTP with session affinity options",
+      "C": "Azure Traffic Manager \u2014 DNS-based only",
+      "D": "Azure Front Door \u2014 global only"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 186,
+    "category": "infrastructure",
+    "question": "You need to filter outbound internet traffic from Azure VMs to allow only specific FQDNs (fully qualified domain names). NSGs do not support FQDN-based rules. Which Azure service should you deploy?",
+    "choices": {
+      "A": "Azure Application Gateway with outbound rules",
+      "B": "Azure Firewall with application rules using FQDN tags or custom FQDN rules",
+      "C": "Azure DDoS Protection Standard",
+      "D": "Network Watcher packet capture"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 187,
+    "category": "infrastructure",
+    "question": "Your AKS cluster has both CPU-intensive and memory-intensive workloads. You want to ensure CPU-intensive pods always run on nodes with high CPU, and memory-intensive pods run on nodes with large memory, without manual placement. Which Kubernetes / AKS features support this?",
+    "choices": {
+      "A": "Node taints and tolerations + pod affinity rules with appropriate node pool configuration",
+      "B": "AKS manual node assignment via Azure portal",
+      "C": "VMSS manual scaling per node pool",
+      "D": "AKS cluster upgrade policy"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 188,
+    "category": "infrastructure",
+    "question": "You are architecting a solution where Azure Functions need to access an on-premises SQL Server database over a private connection without deploying a full VPN Gateway. Which App Service networking feature enables this?",
+    "choices": {
+      "A": "Regional VNet Integration + Site-to-Site VPN in the VNet",
+      "B": "Azure Relay Hybrid Connections",
+      "C": "Private Endpoint on the Function App",
+      "D": "App Service Environment with ExpressRoute"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 189,
+    "category": "infrastructure",
+    "question": "Your company needs to implement a global load balancing solution for a web application with backends in East US, West Europe, and Southeast Asia. Requirements include WAF, SSL offload, URL-based routing, and CDN capabilities. Which single Azure service provides all of these?",
+    "choices": {
+      "A": "Azure Traffic Manager + Azure Application Gateway per region",
+      "B": "Azure Front Door (Standard or Premium tier)",
+      "C": "Azure Load Balancer with global tier",
+      "D": "Nginx deployed on Azure VMs in each region"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 190,
+    "category": "infrastructure",
+    "question": "You need to implement network segmentation where each application tier (web, app, database) is isolated in its own subnet with controlled traffic flow between tiers. Which Azure networking features should you use?",
+    "choices": {
+      "A": "Multiple VNets with VNet peering between each tier",
+      "B": "A single VNet with separate subnets per tier, NSGs on each subnet with inter-tier rules, and Azure Firewall for centralized policy",
+      "C": "Application Security Groups (ASGs) only",
+      "D": "Private DNS zones per tier"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 191,
+    "category": "infrastructure",
+    "question": "Your organization's architecture review requires that all outbound internet traffic from Azure VMs in a production VNet flows through a centralized Azure Firewall in a hub VNet. How do you enforce this routing?",
+    "choices": {
+      "A": "Configure NSG rules to deny direct internet access on all VMs",
+      "B": "Deploy Azure Firewall in the hub VNet and create a UDR (User-Defined Route) in the spoke VNet with 0.0.0.0/0 pointing to the Azure Firewall private IP",
+      "C": "Enable service endpoints for all Azure services on the spoke subnet",
+      "D": "Configure BGP on the VPN Gateway to advertise 0.0.0.0/0"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 192,
+    "category": "infrastructure",
+    "question": "A startup wants to run containerized batch jobs that process uploaded files. Each job runs for 5 minutes and is triggered by an Azure Storage event. The team wants no infrastructure management. Which service should they use?",
+    "choices": {
+      "A": "Azure Kubernetes Service",
+      "B": "Azure Container Instances triggered via Azure Event Grid + Logic App",
+      "C": "Azure Container Apps Jobs",
+      "D": "Azure Batch with auto-pool"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 193,
+    "category": "infrastructure",
+    "question": "You need to design an AKS solution for a financial application that requires pods to communicate over private IPs routable within the corporate VNet (not a separate overlay network). Which AKS networking plugin should you configure?",
+    "choices": {
+      "A": "Kubenet",
+      "B": "Azure CNI",
+      "C": "Calico network policy",
+      "D": "Azure CNI Overlay"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 194,
+    "category": "infrastructure",
+    "question": "Your company needs to host a multi-tenant SaaS application. Each tenant requires complete isolation at the network level (no shared infrastructure). Cost is important but isolation cannot be compromised. Which App Service option should you use?",
+    "choices": {
+      "A": "Separate Premium v3 App Service Plans per tenant",
+      "B": "Azure App Service Environment v3 (one per tenant for strict isolation) or Premium v3 with per-tenant private endpoints",
+      "C": "Shared App Service Plan (Free tier) with NSG restrictions",
+      "D": "AKS with namespace isolation per tenant"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 195,
+    "category": "infrastructure",
+    "question": "Your team is building an event-driven pipeline: Azure Event Hubs ingests IoT telemetry, Azure Stream Analytics processes events in real time, and results are stored in Azure SQL Database. The pipeline must handle 1 million events per second. Which Event Hubs tier supports this scale?",
+    "choices": {
+      "A": "Basic tier",
+      "B": "Standard tier",
+      "C": "Premium or Dedicated tier",
+      "D": "Basic tier with multiple consumer groups"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 196,
+    "category": "infrastructure",
+    "question": "You are designing a disaster recovery solution for a web application that runs on Azure App Service. The RTO is 15 minutes and the RPO is 1 hour. The primary region is East US and the failover is West US 2. What combination meets these requirements?",
+    "choices": {
+      "A": "Azure Backup for App Service + manual deployment to West US 2",
+      "B": "Active-passive: deploy App Service in both regions, use Azure Traffic Manager or Front Door with health probes; use RA-GRS storage and SQL auto-failover groups",
+      "C": "Azure Site Recovery for App Service instances",
+      "D": "Geo-replication via Azure DevOps pipeline re-deployment"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 197,
+    "category": "infrastructure",
+    "question": "You need to implement a VPN connection between an on-premises office and an Azure VNet that can survive a single gateway instance failure with automatic failover and no IP changes. Which VPN Gateway configuration provides this?",
+    "choices": {
+      "A": "Basic SKU VPN Gateway with single instance",
+      "B": "Active-Active VPN Gateway with BGP enabled and two public IPs",
+      "C": "Active-Standby VPN Gateway (default HA)",
+      "D": "ExpressRoute with VPN failover"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 198,
+    "category": "infrastructure",
+    "question": "Your architecture includes a spoke VNet with an Azure App Service (via VNet Integration) that needs to reach a private endpoint for Azure SQL in the hub VNet. DNS resolution for the SQL private endpoint must work from the App Service. What must you configure?",
+    "choices": {
+      "A": "DNS forwarding from the spoke VNet to the hub's private DNS zone",
+      "B": "Link the Private DNS zone for the SQL private endpoint to the spoke VNet",
+      "C": "Configure the App Service with a static host file entry for the SQL FQDN",
+      "D": "Deploy a custom DNS server in the spoke VNet"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 199,
+    "category": "infrastructure",
+    "question": "An enterprise needs to deploy Kubernetes-based workloads that must comply with strict security policies preventing privileged container escalation and enforcing pod security standards. Which AKS feature enforces this at the cluster level?",
+    "choices": {
+      "A": "AKS RBAC with Azure AD integration",
+      "B": "Azure Policy add-on for AKS (Gatekeeper) with built-in security policy definitions",
+      "C": "Network policies for pod-to-pod traffic",
+      "D": "Managed identities for pods (AAD Pod Identity)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 200,
+    "category": "infrastructure",
+    "question": "You are selecting a VM series for a SAP HANA production database that requires 6 TB of RAM and high memory bandwidth. Which Azure VM series should you choose?",
+    "choices": {
+      "A": "E-series (memory-optimized)",
+      "B": "M-series (large memory, SAP-certified up to 12 TB RAM)",
+      "C": "D-series (general purpose)",
+      "D": "L-series (storage-optimized)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 201,
+    "category": "infrastructure",
+    "question": "Your organization needs to deploy a network virtual appliance (NVA) in a hub VNet. All traffic between spokes and to the internet must be routed through the NVA. What is the correct Azure networking construct to force this routing?",
+    "choices": {
+      "A": "NSG rules with deny-all between subnets",
+      "B": "User-Defined Routes (UDR) on each spoke subnet with next hop set to the NVA's private IP; associate the route table to the subnets",
+      "C": "BGP route propagation from the NVA",
+      "D": "Service endpoints pointing to the NVA"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 202,
+    "category": "infrastructure",
+    "question": "You need to design an Azure App Service solution that auto-scales based on a schedule: scale out to 10 instances at 8 AM and scale in to 2 instances at 6 PM on weekdays. Which feature should you configure?",
+    "choices": {
+      "A": "Metric-based autoscale rules for CPU",
+      "B": "Schedule-based autoscale rules in the App Service Plan autoscale settings",
+      "C": "Azure Automation runbook with a timer trigger",
+      "D": "Azure Functions with a timer trigger to adjust instance count via ARM API"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 203,
+    "category": "infrastructure",
+    "question": "A company deploys Azure VMs in a spoke VNet and needs them to resolve on-premises DNS names. The on-premises DNS server is 10.0.0.10. What should you configure to ensure VMs in Azure can resolve on-premises hostnames?",
+    "choices": {
+      "A": "Configure a conditional forwarder in Azure Private DNS",
+      "B": "Set the VNet custom DNS settings to point to 10.0.0.10 (on-premises DNS server); route DNS traffic over VPN/ExpressRoute",
+      "C": "Use Azure DNS public zone for on-premises names",
+      "D": "Deploy Azure DNS Private Resolver with inbound endpoint only"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 204,
+    "category": "infrastructure",
+    "question": "Your microservices application runs on AKS. One service handles authentication and must be highly available with zero downtime during upgrades. Which AKS upgrade strategy minimizes downtime?",
+    "choices": {
+      "A": "Recreate deployment strategy (delete all pods then recreate)",
+      "B": "Rolling update strategy with maxSurge and maxUnavailable configured to allow gradual replacement",
+      "C": "Blue-green deployment using AKS node pools",
+      "D": "Canary release using deployment slots"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 205,
+    "category": "infrastructure",
+    "question": "You are designing the compute tier for a batch processing solution. Jobs run for up to 8 hours, can be interrupted and restarted, and cost efficiency is the top priority. Which VM purchasing option minimizes cost?",
+    "choices": {
+      "A": "On-demand VMs",
+      "B": "Reserved Instances (1-year)",
+      "C": "Azure Spot VMs",
+      "D": "Dedicated Hosts"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 206,
+    "category": "infrastructure",
+    "question": "Your organization's ExpressRoute circuit goes down. You have a VPN Gateway in the same VNet as the ExpressRoute gateway. How does Azure route traffic during the ExpressRoute outage?",
+    "choices": {
+      "A": "Traffic is automatically blocked until ExpressRoute is restored",
+      "B": "Traffic falls back to the Site-to-Site VPN connection automatically, as VPN acts as a backup path",
+      "C": "Traffic is rerouted via the public internet without VPN encryption",
+      "D": "Azure Traffic Manager reroutes the traffic"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 207,
+    "category": "infrastructure",
+    "question": "You need to provide internet users with access to an internal web application hosted on Azure VMs using HTTPS, while protecting against common web attacks. The solution must terminate SSL at Azure and forward traffic to VMs using HTTP internally. Which service should you use?",
+    "choices": {
+      "A": "Azure Load Balancer Standard with SSL passthrough",
+      "B": "Azure Application Gateway with SSL termination and WAF enabled",
+      "C": "Azure Traffic Manager with HTTPS health probes",
+      "D": "Azure Firewall with HTTPS inspection"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 208,
+    "category": "infrastructure",
+    "question": "A company is planning to migrate on-premises VMware VMs to Azure. The VMs have not been assessed for Azure compatibility yet. What is the correct first step using Azure Migrate?",
+    "choices": {
+      "A": "Begin replication immediately using Azure Migrate Server Migration",
+      "B": "Deploy Azure Migrate appliance on-premises and run Discovery and Assessment to understand VM dependencies, sizes, and costs",
+      "C": "Export a CSV of on-premises VMs and import into Azure Migrate",
+      "D": "Create the target Azure VMs first, then migrate data using AzCopy"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 209,
+    "category": "infrastructure",
+    "question": "Your team needs to implement automated canary deployments for an AKS application where 10% of traffic goes to the new version and 90% to the old version, with automatic promotion if error rate stays below 1%. Which approach should you use?",
+    "choices": {
+      "A": "Manual editing of Kubernetes deployment replicas",
+      "B": "AKS deployment with Argo Rollouts or Flagger for progressive delivery with Prometheus metrics",
+      "C": "Azure Front Door with weighted backends (90/10 split)",
+      "D": "Azure Traffic Manager weighted routing to two AKS clusters"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 210,
+    "category": "infrastructure",
+    "question": "You are designing an Azure network architecture that must prevent any VM in a subnet from having outbound internet access, while still allowing it to reach Azure PaaS services (like Azure Storage and Azure SQL). Which networking approach enables this?",
+    "choices": {
+      "A": "NSG deny-all outbound rule at the subnet level + Service Endpoints for required Azure services",
+      "B": "Azure Firewall with FQDN rules blocking all but Azure services",
+      "C": "Private endpoints for all Azure services + NSG deny-all outbound",
+      "D": "Both A and C are valid design approaches"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 211,
+    "category": "infrastructure",
+    "question": "A company needs to expose multiple web applications on the same Application Gateway using a single public IP address, routing traffic based on the hostname (e.g., app1.contoso.com vs app2.contoso.com). Which Application Gateway feature enables this?",
+    "choices": {
+      "A": "URL path-based routing",
+      "B": "Multi-site hosting with host header-based routing rules",
+      "C": "Redirection rules",
+      "D": "Rewrite rules"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 212,
+    "category": "infrastructure",
+    "question": "You are designing a Landing Zone for a large enterprise following the Cloud Adoption Framework (CAF). Which stage of the CAF defines the governance policies, RBAC structure, and network topology before any workloads are migrated?",
+    "choices": {
+      "A": "Migrate",
+      "B": "Govern",
+      "C": "Ready (Landing Zone design)",
+      "D": "Plan"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 213,
+    "category": "infrastructure",
+    "question": "Your AKS cluster pulls container images from Azure Container Registry (ACR). You want to configure this without managing any credentials or secrets. Which approach should you use?",
+    "choices": {
+      "A": "Store ACR admin credentials in a Kubernetes secret",
+      "B": "Attach the ACR to the AKS cluster using managed identity \u2014 AKS gets the AcrPull role on the registry",
+      "C": "Use a service principal with client secret stored in Key Vault",
+      "D": "Enable anonymous pull on the ACR registry"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 214,
+    "category": "infrastructure",
+    "question": "A developer needs to run a quick, isolated container for a one-time data transformation task. The container runs for 30 minutes and the developer does not want to manage any cluster or infrastructure. Which Azure service is most appropriate?",
+    "choices": {
+      "A": "Azure Kubernetes Service",
+      "B": "Azure Container Apps",
+      "C": "Azure Container Instances",
+      "D": "Azure App Service (Docker container)"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 215,
+    "category": "infrastructure",
+    "question": "Your architecture team is evaluating Azure Front Door vs Azure Traffic Manager for a global application. Which statement correctly differentiates the two?",
+    "choices": {
+      "A": "Both services proxy traffic at the application layer",
+      "B": "Azure Front Door is an anycast L7 proxy that also provides CDN and WAF; Traffic Manager is DNS-based and does not proxy traffic \u2014 clients connect directly to the backend",
+      "C": "Traffic Manager supports WebSocket and HTTP/2; Front Door does not",
+      "D": "Azure Front Door only works with App Service backends; Traffic Manager works with any endpoint"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 216,
+    "category": "infrastructure",
+    "question": "You need to design a network solution for an application that connects to multiple Azure PaaS services (Storage, SQL, Key Vault) from within an Azure VNet, ensuring no traffic to these services traverses the public internet. Which approach should you use for each service?",
+    "choices": {
+      "A": "Service Endpoints for all PaaS services",
+      "B": "Private Endpoints for each PaaS service with corresponding private DNS zones linked to the VNet",
+      "C": "VNet injection for all PaaS services",
+      "D": "Azure Firewall application rules filtering to Azure PaaS FQDNs"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 217,
+    "category": "infrastructure",
+    "question": "Your Azure VMSS uses Uniform orchestration mode and runs 20 instances. You need to apply OS updates to instances in batches of 5, automatically rolling out and verifying health before proceeding. Which VMSS feature provides this?",
+    "choices": {
+      "A": "Automatic OS image upgrades with rolling upgrade policy",
+      "B": "VMSS overprovisioning setting",
+      "C": "Azure Update Manager scheduled maintenance",
+      "D": "Manual instance reimage"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 218,
+    "category": "infrastructure",
+    "question": "An e-commerce company uses Azure App Service for their web frontend. During the Black Friday sale, request volume increases 20x. They want the App Service to scale out automatically when average CPU exceeds 70% and scale in when it drops below 30%. Where should you configure this?",
+    "choices": {
+      "A": "App Service Plan autoscale rules with metric-based scale out/in conditions",
+      "B": "Azure Functions consumption plan (migrate the app)",
+      "C": "Azure Load Balancer health probe settings",
+      "D": "VMSS with scale rules"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 219,
+    "category": "infrastructure",
+    "question": "You are designing a hub-and-spoke network. Multiple spoke VNets need to communicate with each other AND with on-premises networks. All routing must go through the hub. You have 30+ spokes. Which feature simplifies this at scale compared to manually managing UDRs?",
+    "choices": {
+      "A": "VNet Peering with full mesh connectivity",
+      "B": "Azure Virtual WAN (vWAN) with automated route management",
+      "C": "Azure Firewall with BGP route injection",
+      "D": "ExpressRoute Global Reach for all spokes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 220,
+    "category": "infrastructure",
+    "question": "A startup deploys a Node.js REST API on Azure App Service. They use deployment slots to test new versions before promoting to production. The test slot must be able to connect to the same backend database as production. Which App Service configuration ensures this?",
+    "choices": {
+      "A": "Set the database connection string as a non-sticky (slot) setting so it swaps with the slot",
+      "B": "Configure the database connection string as a deployment slot setting so it sticks to the production slot and does not swap",
+      "C": "Hard-code the connection string in the application code",
+      "D": "Use separate databases for each deployment slot"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 221,
+    "category": "infrastructure",
+    "question": "Your Azure Firewall is in Standard tier. You need to add TLS inspection for outbound HTTPS traffic to identify threats embedded in encrypted traffic. Which Azure Firewall tier supports this?",
+    "choices": {
+      "A": "Standard tier with threat intelligence enabled",
+      "B": "Premium tier (supports TLS inspection and IDPS)",
+      "C": "Basic tier with additional security extensions",
+      "D": "Standard tier with network rules for HTTPS"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 222,
+    "category": "infrastructure",
+    "question": "You need to design a solution where Azure VMs can access Azure Blob Storage without the traffic leaving the Azure network and without a public IP. The VMs are in a VNet. Which two options achieve this? (Choose two.)",
+    "choices": {
+      "A": "Service Endpoint for Microsoft.Storage on the VM subnet",
+      "B": "Private Endpoint for the storage account with private DNS zone linked to the VNet",
+      "C": "Configure an NSG rule to allow traffic to the storage account public IP",
+      "D": "Enable storage firewall to allow all virtual networks"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 223,
+    "category": "infrastructure",
+    "question": "Your architecture requires that an Azure App Service hosted API be accessible only from within a corporate VNet and not from the public internet. Which App Service feature restricts inbound access to the VNet?",
+    "choices": {
+      "A": "Regional VNet Integration (outbound only)",
+      "B": "Private Endpoint on the App Service (restricts inbound access to the VNet)",
+      "C": "Service Endpoint for App Service on the corporate VNet",
+      "D": "Access restrictions via IP allowlist"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 224,
+    "category": "infrastructure",
+    "question": "A financial services company needs to process high-performance compute (HPC) jobs that are tightly coupled (MPI workloads) and require InfiniBand networking between nodes. Which Azure VM series provides this?",
+    "choices": {
+      "A": "N-series (GPU-optimized)",
+      "B": "H-series (HPC, InfiniBand-enabled)",
+      "C": "M-series (memory-optimized)",
+      "D": "F-series (compute-optimized)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 225,
+    "category": "infrastructure",
+    "question": "Your organization wants to use a microservices architecture with independent deployability, automated scaling, and built-in service discovery without managing Kubernetes control planes or node pools. Which Azure service should you recommend?",
+    "choices": {
+      "A": "Azure Kubernetes Service with managed node pools",
+      "B": "Azure Container Apps with Dapr and KEDA",
+      "C": "Azure Service Fabric managed cluster",
+      "D": "Azure App Service with Docker Compose"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 226,
+    "category": "infrastructure",
+    "question": "You are designing a network security architecture for a 3-tier web application. The web tier NSG should allow inbound HTTPS (443) from the internet. The app tier NSG should only allow traffic from the web tier. The database tier should only allow traffic from the app tier. Which approach simplifies managing NSG rules as VMs are added or removed from each tier?",
+    "choices": {
+      "A": "Use IP address ranges for each subnet in NSG rules",
+      "B": "Use Application Security Groups (ASGs) to tag VMs by tier; write NSG rules referencing ASGs instead of IPs",
+      "C": "Use Azure Firewall rules for all inter-tier traffic",
+      "D": "Apply deny-all NSG on all tiers and explicitly allow only required traffic by VM IP"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 227,
+    "category": "infrastructure",
+    "question": "You need to design an Azure solution for a media company that encodes video files. Jobs are batch-oriented, variable in count, can run in parallel, and must use the cheapest compute possible. Which Azure service is specifically designed for this?",
+    "choices": {
+      "A": "Azure Functions Premium plan",
+      "B": "Azure Batch with Spot VM pools",
+      "C": "Azure Container Instances with multiple containers",
+      "D": "Azure VM Scale Sets with preemptible instances"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 228,
+    "category": "infrastructure",
+    "question": "Your organization needs to verify an Azure architecture design before production deployment. You want to check for misconfigurations, security vulnerabilities, and cost optimization issues automatically. Which service provides these checks?",
+    "choices": {
+      "A": "Azure Monitor Workbooks",
+      "B": "Microsoft Defender for Cloud with Defender CSPM",
+      "C": "Azure Well-Architected Review + Advisor recommendations",
+      "D": "Azure Policy compliance dashboard"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 229,
+    "category": "infrastructure",
+    "question": "You are designing connectivity between an Azure VNet and a customer's on-premises network using ExpressRoute. The customer requires failover to a VPN connection if the ExpressRoute circuit fails. What should you deploy?",
+    "choices": {
+      "A": "Two ExpressRoute circuits for redundancy",
+      "B": "ExpressRoute Gateway and VPN Gateway in the same VNet; configure the VPN as a failover path with higher BGP weight on ExpressRoute routes",
+      "C": "Azure Virtual WAN with dual connectivity",
+      "D": "ExpressRoute with zone-redundant gateway only"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 230,
+    "category": "infrastructure",
+    "question": "You need to ensure that an Azure Kubernetes Service cluster's nodes are automatically updated with the latest OS security patches with minimal disruption. Which AKS feature handles this?",
+    "choices": {
+      "A": "Manual node reimaging after each patch Tuesday",
+      "B": "AKS node OS upgrade channel (unmanaged, node-image, or auto-upgrade) with maintenance windows",
+      "C": "Azure Update Manager applied to AKS node VMs",
+      "D": "Kubernetes DaemonSet running an OS update script"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 231,
+    "category": "infrastructure",
+    "question": "Your solution requires Azure Functions to process messages from Azure Service Bus in order, ensuring exactly-once delivery and no parallel processing of messages in the same session. Which Service Bus feature and Functions trigger configuration should you use?",
+    "choices": {
+      "A": "Service Bus queue with peek-lock sessions; Functions Service Bus trigger with isSessionsEnabled set to true",
+      "B": "Service Bus topic with multiple subscriptions",
+      "C": "Event Hubs with partition key for ordering",
+      "D": "Azure Queue Storage with visibility timeout"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 232,
+    "category": "infrastructure",
+    "question": "You are designing a global application that must route users to the closest healthy backend and support weighted traffic distribution for A/B testing. Which Azure service supports BOTH geographic proximity routing and weighted distribution natively?",
+    "choices": {
+      "A": "Azure Traffic Manager with nested profiles (Performance + Weighted routing)",
+      "B": "Azure Load Balancer with geo-routing",
+      "C": "Application Gateway with path-based routing",
+      "D": "Azure DNS with multiple A records"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 233,
+    "category": "infrastructure",
+    "question": "Your company is adopting the Azure Well-Architected Framework. The operations team complains that deployments are inconsistent and manual. Which WAF pillar and recommended practice should you address this?",
+    "choices": {
+      "A": "Reliability \u2014 use Availability Zones",
+      "B": "Operational Excellence \u2014 implement Infrastructure as Code (IaC) and CI/CD pipelines for consistent deployments",
+      "C": "Performance Efficiency \u2014 use auto-scaling",
+      "D": "Cost Optimization \u2014 use reserved instances"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 234,
+    "category": "infrastructure",
+    "question": "Your organization needs to centrally manage DNS for all Azure private resources across 10 VNets. Private DNS zones must automatically register new VM hostnames. Which Azure service handles this?",
+    "choices": {
+      "A": "Azure DNS Public Zone with forwarding",
+      "B": "Azure Private DNS zones with auto-registration enabled, linked to each VNet",
+      "C": "Custom DNS servers deployed in each VNet",
+      "D": "Azure Virtual WAN DNS resolver"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 235,
+    "category": "infrastructure",
+    "question": "A company needs to run a containerized application that requires GPU resources for machine learning inference. The team wants to manage the containers using Kubernetes with Azure-managed control plane. Which service and configuration should they use?",
+    "choices": {
+      "A": "Azure Container Instances with GPU support",
+      "B": "Azure Kubernetes Service (AKS) with a GPU node pool (NC or ND series VMs)",
+      "C": "Azure Machine Learning compute clusters",
+      "D": "Azure Batch with GPU VMs"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 236,
+    "category": "infrastructure",
+    "question": "Your architecture uses Azure App Service with Regional VNet Integration. The App Service needs to resolve private DNS names for services in the VNet. What configuration is required for private DNS resolution to work from App Service?",
+    "choices": {
+      "A": "Nothing \u2014 VNet Integration automatically enables private DNS",
+      "B": "Set the WEBSITE_DNS_SERVER app setting to 168.63.129.16 (Azure DNS) and ensure Private DNS zones are linked to the integrated VNet",
+      "C": "Deploy a custom DNS server in the VNet",
+      "D": "Configure the App Service with the private IP of the DNS server in the app settings"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 237,
+    "category": "infrastructure",
+    "question": "You need to design a solution to handle millions of small IoT messages per second, ensure ordered delivery per device, and allow multiple downstream consumers to independently read the stream at their own pace. Which Azure service should you use?",
+    "choices": {
+      "A": "Azure Service Bus queues",
+      "B": "Azure Event Hubs with partition keys per device and consumer groups per downstream service",
+      "C": "Azure Queue Storage with multiple consumers",
+      "D": "Azure Event Grid with fan-out subscriptions"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 238,
+    "category": "infrastructure",
+    "question": "A team deploys Azure App Service in East US. For disaster recovery, they want the same app to be running in West US 2 but only serve traffic when East US is unhealthy. Which solution achieves active-passive routing with automatic failover?",
+    "choices": {
+      "A": "Azure Load Balancer Standard with health probes",
+      "B": "Azure Traffic Manager with Priority routing: East US = Priority 1, West US 2 = Priority 2",
+      "C": "Azure Front Door with equal-weight backends",
+      "D": "Azure Application Gateway multi-region with session affinity"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 239,
+    "category": "infrastructure",
+    "question": "You are designing an AKS solution where multiple teams share the same cluster. Each team must be isolated from other teams' resources and should only be able to deploy to their own namespace. Which Kubernetes feature enforces namespace-level isolation for identity and authorization?",
+    "choices": {
+      "A": "Network policies between namespaces",
+      "B": "Kubernetes RBAC with RoleBindings scoped per namespace + Azure AD integration for team identity",
+      "C": "AKS node pool per team",
+      "D": "Azure Policy add-on for namespace quotas only"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 240,
+    "category": "infrastructure",
+    "question": "Your company wants to implement Zero Trust network access for Azure workloads. VMs should never have public IP addresses, and all internet-inbound connections must be explicitly authorized. Which combination of Azure services enforces this? (Choose two.)",
+    "choices": {
+      "A": "Azure Bastion for secure management access (no public IP on VMs)",
+      "B": "Azure Application Gateway or Azure Front Door as the only internet-facing ingress",
+      "C": "NSG with outbound-only rules on all VMs",
+      "D": "Assign public IPs only to VMs that need them"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 241,
+    "category": "infrastructure",
+    "question": "You need to migrate an on-premises SQL Server database (500 GB) to Azure SQL Managed Instance with a maximum downtime of 2 hours during the final cutover. Which migration strategy should you use?",
+    "choices": {
+      "A": "Backup and restore from URL (offline migration \u2014 typically >2 hours for 500 GB)",
+      "B": "Azure Database Migration Service online migration using log shipping and continuous sync until cutover",
+      "C": "Export BACPAC and import to SQL MI",
+      "D": "Azure Migrate server migration with database agent"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 242,
+    "category": "infrastructure",
+    "question": "Your organization needs to inspect all inbound and outbound traffic for an Azure VNet, including decrypting HTTPS traffic to detect threats. Which Azure Firewall configuration supports this?",
+    "choices": {
+      "A": "Azure Firewall Standard with threat intelligence enabled",
+      "B": "Azure Firewall Premium with IDPS and TLS inspection enabled",
+      "C": "Azure Application Gateway WAF in detection mode",
+      "D": "Network Security Groups with flow logs enabled"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 243,
+    "category": "infrastructure",
+    "question": "You need to design a multi-region active-active web application where users in different regions are served by the nearest backend, and both regions can accept writes simultaneously. Which combination of Azure services supports this architecture?",
+    "choices": {
+      "A": "Azure Traffic Manager + Azure SQL Database with active geo-replication",
+      "B": "Azure Front Door + Azure Cosmos DB with multi-region write enabled",
+      "C": "Azure Load Balancer + Azure SQL Database auto-failover group",
+      "D": "Azure Application Gateway + Azure SQL Database Business Critical"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 244,
+    "category": "infrastructure",
+    "question": "A company wants to deploy Azure VMs in an isolated, single-tenant Azure physical infrastructure dedicated to their organization for compliance and regulatory reasons. Which Azure compute option provides this?",
+    "choices": {
+      "A": "Azure Reserved Instances on dedicated VMs",
+      "B": "Azure Dedicated Hosts",
+      "C": "Azure Spot VMs on isolated hardware",
+      "D": "Azure Confidential Computing VMs"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 245,
+    "category": "infrastructure",
+    "question": "Your organization's security policy requires that all traffic between Azure spoke VNets and on-premises networks be inspected by Azure Firewall in the hub. BGP routes from on-premises should be propagated to spokes but filtered through the firewall. Which Azure networking feature enables BGP route propagation while forcing inspection?",
+    "choices": {
+      "A": "Disable BGP route propagation on spoke route tables and add specific UDRs through Azure Firewall",
+      "B": "Enable BGP propagation on spoke route tables \u2014 routes automatically go through Azure Firewall",
+      "C": "Use Azure Firewall to broadcast routes via BGP to all spokes",
+      "D": "Configure ExpressRoute to filter routes before they reach spokes"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 246,
+    "category": "infrastructure",
+    "question": "You are designing an Azure infrastructure for a regulated industry. All data at rest and in transit must be encrypted. Azure VMs store data on managed disks. Which feature encrypts data at the OS level (not just at the Azure storage layer)?",
+    "choices": {
+      "A": "Azure Storage Service Encryption (SSE) with customer-managed keys",
+      "B": "Azure Disk Encryption (ADE) using BitLocker (Windows) or DM-Crypt (Linux) \u2014 encrypts within the VM OS",
+      "C": "Double encryption at the storage layer",
+      "D": "Trusted Launch VMs with Secure Boot"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 247,
+    "category": "infrastructure",
+    "question": "Your company's developers use Azure DevOps to deploy applications to Azure. You need to ensure that the Azure DevOps service connection used for deployments only has permissions to deploy to specific resource groups in production, not to create or delete them. Which RBAC role should you assign to the service connection's service principal?",
+    "choices": {
+      "A": "Owner on the production subscription",
+      "B": "Contributor scoped to the specific resource groups (not the subscription)",
+      "C": "Contributor on the subscription with a Deny assignment for resource group deletion",
+      "D": "Custom role with only Microsoft.Resources/deployments/* permissions scoped to the resource groups"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 248,
+    "category": "infrastructure",
+    "question": "You are architecting a solution for a healthcare company. Patient data is processed by Azure Functions and stored in Azure SQL Database. All communication between the Function App and SQL must use private IPs within the VNet. Which two configurations are required? (Choose two.)",
+    "choices": {
+      "A": "Enable Regional VNet Integration on the Function App (Premium plan) for outbound traffic",
+      "B": "Deploy a Private Endpoint for Azure SQL Database with a private DNS zone",
+      "C": "Configure the Function App with a public IP whitelist for SQL Database",
+      "D": "Enable Service Endpoint for SQL on the Function App subnet"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 249,
+    "category": "infrastructure",
+    "question": "Your company uses Azure Kubernetes Service. The operations team wants to enforce that all container images deployed to the cluster come from a trusted Azure Container Registry and not from Docker Hub or other public registries. Which solution enforces this?",
+    "choices": {
+      "A": "Network policy blocking outbound traffic to Docker Hub",
+      "B": "Azure Policy for AKS with the 'Kubernetes cluster containers should only use allowed images' policy, restricting to the ACR registry URL",
+      "C": "Admission webhook validating image names manually",
+      "D": "AKS node pool configured with a private image pull secret"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 250,
+    "category": "infrastructure",
+    "question": "A new application requires a 99.99% SLA for the web tier. The application runs on Azure VMs. The team proposes using 2 VMs in an Availability Set. Does this meet the SLA requirement?",
+    "choices": {
+      "A": "Yes \u2014 an Availability Set with 2 VMs provides a 99.99% SLA",
+      "B": "No \u2014 an Availability Set provides 99.95% SLA; to achieve 99.99%, deploy 2+ VMs across Availability Zones",
+      "C": "Yes \u2014 the SLA is determined by the VM disk type, not placement",
+      "D": "No \u2014 you need at least 3 VMs in an Availability Set for 99.99%"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 251,
+    "category": "data-storage",
+    "question": "Your application stores time-series sensor data and requires sub-millisecond reads by a compound key (deviceId + timestamp). The data is never updated, only appended and queried. Which Azure storage option provides the best fit with minimal management?",
+    "choices": {
+      "A": "Azure SQL Database with a composite index",
+      "B": "Azure Cosmos DB Core (SQL) API with a partition key on deviceId and sort key on timestamp",
+      "C": "Azure Table Storage with deviceId as partition key and timestamp as row key",
+      "D": "Azure Cache for Redis with sorted sets"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 252,
+    "category": "data-storage",
+    "question": "A company needs to share a dataset stored in Azure Data Lake Storage Gen2 with an external analytics partner. The partner must have read-only access to a specific folder for 30 days. Which mechanism should you use?",
+    "choices": {
+      "A": "Add the partner as a Guest user and assign Storage Blob Data Reader at the folder level",
+      "B": "Generate a User Delegation SAS with read permission scoped to the folder and a 30-day expiry",
+      "C": "Give the partner the storage account key",
+      "D": "Create a public blob container and share the URL"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 253,
+    "category": "data-storage",
+    "question": "You need to replicate an Azure SQL Database to a secondary region for reporting purposes. The secondary must be queryable at all times and should not impact primary performance. Which feature and tier should you use?",
+    "choices": {
+      "A": "Azure SQL Database General Purpose with active geo-replication \u2014 secondary is always readable",
+      "B": "Azure SQL Database Business Critical with built-in readable secondary replica (same region)",
+      "C": "Azure SQL Database auto-failover group in passive mode",
+      "D": "Azure SQL Managed Instance with database mirroring"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 254,
+    "category": "data-storage",
+    "question": "Your organization needs to implement column-level encryption in Azure SQL Database so that specific columns (e.g., SSN) are encrypted client-side and the database engine never sees plaintext values. Which SQL feature provides this?",
+    "choices": {
+      "A": "Transparent Data Encryption (TDE)",
+      "B": "Always Encrypted with column encryption keys stored in Azure Key Vault",
+      "C": "Dynamic Data Masking",
+      "D": "Row-Level Security with encryption predicates"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 255,
+    "category": "data-storage",
+    "question": "A media company stores 5 PB of archived video content in Azure Blob Storage Archive tier. They need to retrieve 1 TB of specific videos within 12 hours at the lowest possible cost. Which rehydration priority should they use?",
+    "choices": {
+      "A": "High Priority (under 1 hour, highest cost)",
+      "B": "Standard Priority (up to 15 hours, lower cost than High Priority)",
+      "C": "Bulk Priority (up to 15 hours, lowest cost but not guaranteed SLA)",
+      "D": "Cold tier direct read (no rehydration needed)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 256,
+    "category": "data-storage",
+    "question": "You are designing a multi-tenant application where each tenant's data must be strictly isolated at the storage level in Azure SQL. The number of tenants is expected to grow to 1,000. Which data isolation model best balances isolation and cost?",
+    "choices": {
+      "A": "Separate Azure SQL Managed Instance per tenant",
+      "B": "Database-per-tenant model with an Elastic Pool to share resources",
+      "C": "Schema-per-tenant in a single shared database",
+      "D": "Row-level security in a single shared database with a tenant ID column"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 257,
+    "category": "data-storage",
+    "question": "Your data engineering team needs to run both batch ETL jobs and real-time streaming analytics on the same platform, with a unified metadata catalog. Which Azure service provides this unified analytics platform?",
+    "choices": {
+      "A": "Azure Databricks",
+      "B": "Azure Synapse Analytics (with Spark pools, SQL pools, and Synapse Link)",
+      "C": "Azure HDInsight",
+      "D": "Azure Data Factory with SSIS"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 258,
+    "category": "data-storage",
+    "question": "An organization uses Azure Storage with customer-managed keys (CMK) in Azure Key Vault. A key is due for rotation. What happens to data encrypted with the old key version after rotation?",
+    "choices": {
+      "A": "All data is automatically re-encrypted with the new key version immediately",
+      "B": "Data remains accessible; Azure Storage wraps the data encryption key with the new key version upon next access or during background re-encryption",
+      "C": "Data becomes inaccessible until manually re-encrypted",
+      "D": "The old key version must be kept active permanently"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 259,
+    "category": "data-storage",
+    "question": "You need to design storage for a globally distributed application where each region needs its own local write endpoint and the data model uses document storage. Which Azure service and configuration should you use?",
+    "choices": {
+      "A": "Azure SQL Database with active geo-replication (all secondaries are read-only)",
+      "B": "Azure Cosmos DB with multi-region writes enabled and a document-oriented API (Core SQL or MongoDB)",
+      "C": "Azure Blob Storage with RA-GZRS",
+      "D": "Azure Cache for Redis with geo-replication"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 260,
+    "category": "data-storage",
+    "question": "A company's compliance team requires that deleted Azure Blob Storage items are recoverable for 90 days, and previous versions of overwritten blobs must be retained for 30 days. Which two features should you enable? (Choose two.)",
+    "choices": {
+      "A": "Blob soft delete with 90-day retention period",
+      "B": "Blob versioning to retain previous versions",
+      "C": "Azure Backup for blobs with 90-day retention",
+      "D": "Lifecycle management policy to archive versions after 30 days"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 261,
+    "category": "data-storage",
+    "question": "Your organization is choosing between Azure Table Storage and Azure Cosmos DB Table API for a new application. Which statement is a key advantage of Cosmos DB Table API over Azure Table Storage?",
+    "choices": {
+      "A": "Azure Table Storage supports global distribution and SLA 99.999%",
+      "B": "Cosmos DB Table API provides single-digit millisecond latency globally, multi-region replication, and configurable consistency levels",
+      "C": "Azure Table Storage offers lower cost at any scale",
+      "D": "Cosmos DB Table API only works with the existing Table Storage SDK without any changes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 262,
+    "category": "data-storage",
+    "question": "You need to configure Azure SQL Database to automatically scale storage up to 4 TB without downtime when it reaches 80% capacity. Which feature enables automatic storage growth?",
+    "choices": {
+      "A": "Elastic Pool with auto-grow enabled",
+      "B": "Azure SQL Database Auto-grow (storage auto-scale) \u2014 enabled by default on General Purpose and Business Critical tiers",
+      "C": "Hyperscale with named replicas",
+      "D": "SQL MI with auto-provisioning"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 263,
+    "category": "data-storage",
+    "question": "A business requires that all writes to a specific Azure Cosmos DB container are replicated to an Azure Synapse Analytics dedicated SQL pool in near real time for reporting, without custom ETL code. Which feature enables this?",
+    "choices": {
+      "A": "Azure Data Factory scheduled pipeline from Cosmos DB to Synapse",
+      "B": "Azure Synapse Link for Cosmos DB (Analytical Store) with Synapse Spark or SQL Serverless",
+      "C": "Cosmos DB Change Feed with Azure Functions writing to Synapse",
+      "D": "Cosmos DB continuous backup to Azure Blob Storage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 264,
+    "category": "data-storage",
+    "question": "Your application requires reading a specific Azure Blob that was in the Hot tier 6 months ago and has since been moved to Archive tier by a lifecycle policy. The read must complete within 2 hours. Which option should you choose?",
+    "choices": {
+      "A": "Read directly from Archive tier \u2014 it is accessible immediately",
+      "B": "Submit a High Priority rehydration request to move the blob to Hot or Cool tier",
+      "C": "Copy the blob to a new container using AzCopy \u2014 this bypasses rehydration",
+      "D": "Change the lifecycle policy to move it back to Hot tier automatically"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 265,
+    "category": "data-storage",
+    "question": "Your team needs to implement a caching layer for Azure SQL Database to serve frequently read data with sub-millisecond latency. The cache must automatically invalidate entries when the underlying SQL data changes. Which Azure service and pattern should you use?",
+    "choices": {
+      "A": "Azure CDN with SQL Database origin",
+      "B": "Azure Cache for Redis with the cache-aside pattern, combined with SQL change notifications or TTL-based expiry",
+      "C": "Azure Application Gateway with response caching",
+      "D": "Azure Blob Storage as a pre-populated cache"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 266,
+    "category": "data-storage",
+    "question": "An enterprise has 50 Azure SQL Databases across 10 applications. They need centralized backup management, a unified view of backup status, and the ability to set different retention policies per application. Which Azure service provides this?",
+    "choices": {
+      "A": "Azure SQL Database automated backups only (per-database settings)",
+      "B": "Azure Backup Center with backup policies applied to SQL Database instances",
+      "C": "Azure Monitor alerts for backup failures",
+      "D": "Azure Policy for SQL Database backup settings"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 267,
+    "category": "data-storage",
+    "question": "Your IoT application stores device telemetry in Azure Cosmos DB. Telemetry items should automatically expire 7 days after creation. Which Cosmos DB feature handles this without external automation?",
+    "choices": {
+      "A": "Lifecycle management policy on the container",
+      "B": "Container-level TTL (Time-To-Live) set to 604800 seconds (7 days)",
+      "C": "Azure Functions timer trigger deleting old items",
+      "D": "Cosmos DB serverless auto-cleanup policy"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 268,
+    "category": "data-storage",
+    "question": "You need to store 10 million small objects (average 1 KB each) that are accessed randomly with high throughput requirements. Azure Blob Storage has per-request overhead. Which storage service provides better performance for this access pattern?",
+    "choices": {
+      "A": "Azure Blob Storage Premium (block blob) for lower latency",
+      "B": "Azure Cache for Redis for extremely hot data; Azure Table Storage or Cosmos DB for the full dataset",
+      "C": "Azure Files with NFS mount",
+      "D": "Azure SQL Database with VARBINARY columns"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 269,
+    "category": "data-storage",
+    "question": "Your organization uses Azure SQL Managed Instance in a VNet. The compliance team requires that SQL MI backups are replicated to a separate Azure region in case of regional disaster. Which SQL MI backup feature supports cross-region backup redundancy?",
+    "choices": {
+      "A": "SQL MI automated backups are always stored in the same region as the instance",
+      "B": "Configure SQL MI backup storage redundancy to Geo-redundant (GRS or GZRS) when creating or updating the instance",
+      "C": "Export BACPAC to RA-GRS storage account manually each night",
+      "D": "Azure Backup for SQL MI with cross-region restore enabled on the vault"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 270,
+    "category": "data-storage",
+    "question": "Your organization needs to process a stream of events, detect patterns across a 5-minute sliding window (e.g., average temperature per device), and output alerts to Azure Service Bus. Which Azure service should you use?",
+    "choices": {
+      "A": "Azure Data Factory with streaming datasets",
+      "B": "Azure Stream Analytics with a sliding window query and Service Bus output",
+      "C": "Azure Databricks Structured Streaming",
+      "D": "Azure Synapse Analytics serverless SQL pool"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 271,
+    "category": "business-continuity",
+    "question": "You are designing a business continuity plan for an Azure App Service application. The application stores session state in Azure Cache for Redis. During a regional outage, you want the secondary region's Redis instance to have the most recent session data. Which Redis tier supports geo-replication?",
+    "choices": {
+      "A": "Basic tier",
+      "B": "Standard tier",
+      "C": "Premium tier with geo-replication",
+      "D": "Enterprise tier only"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 272,
+    "category": "business-continuity",
+    "question": "A company's recovery strategy requires that in the event of a primary region failure, the secondary region can begin serving traffic within 30 minutes (RTO) with no more than 5 minutes of data loss (RPO). Which SQL Database feature best meets these requirements?",
+    "choices": {
+      "A": "Daily automated backups with PITR",
+      "B": "Active geo-replication with a readable secondary (async, typically seconds lag) + Traffic Manager with 30-minute TTL",
+      "C": "Long-term backup retention with cross-region restore",
+      "D": "SQL MI with geo-redundant backups"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 273,
+    "category": "business-continuity",
+    "question": "Your Azure Blob Storage account uses GRS redundancy. A regional disaster occurs and Microsoft initiates a failover. What happens to writes that were in-flight at the time of the disaster?",
+    "choices": {
+      "A": "All in-flight writes are preserved on the new primary",
+      "B": "Up to 15 minutes of writes may be lost due to the asynchronous replication lag between primary and secondary regions",
+      "C": "GRS uses synchronous replication so no writes are lost",
+      "D": "In-flight writes are queued and applied after the failover completes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 274,
+    "category": "business-continuity",
+    "question": "Your company has a mission-critical Azure SQL Managed Instance. You need transparent automatic failover with no connection string changes and support for both SQL MI read-write workloads. Which feature should you configure?",
+    "choices": {
+      "A": "Active geo-replication (SQL Database only)",
+      "B": "Auto-failover group for SQL Managed Instance",
+      "C": "Azure Site Recovery for SQL MI",
+      "D": "SQL MI manual failover with DNS update script"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 275,
+    "category": "business-continuity",
+    "question": "You are designing HA for a stateful AKS workload that uses Azure Disk (persistent volumes). You deploy pods across 3 Availability Zones. What is the challenge with Availability Zone-redundant persistent volumes for stateful AKS pods?",
+    "choices": {
+      "A": "Azure Disks can be attached to pods in any zone automatically",
+      "B": "Azure Disks are zone-pinned \u2014 if a pod moves to a different zone (e.g., after node failure), the disk cannot follow; use Azure Files (ZRS) or zone-redundant disk options for stateful zone-redundant pods",
+      "C": "Stateful sets cannot use Azure Disks with AKS",
+      "D": "Zone-redundant disks are only available on Ultra Disk tier"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 276,
+    "category": "business-continuity",
+    "question": "Your organization's RTO requirement for a critical workload is 1 hour. The workload runs on Azure VMs with Azure Backup (daily at 2 AM). A disaster occurs at 10 PM. What is the worst-case recovery scenario?",
+    "choices": {
+      "A": "Recovery from the backup taken at 2 AM that day \u2014 ~20 hours of data loss; RTO depends on restore time which may exceed 1 hour for large VMs",
+      "B": "Recovery is instant because Azure Backup keeps the VM running in a standby mode",
+      "C": "Azure Backup triggers automatic restore within 1 hour of detecting the failure",
+      "D": "Recovery takes exactly 1 hour regardless of VM size"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 277,
+    "category": "business-continuity",
+    "question": "A company hosts a web application on Azure App Service with a database on Azure SQL Database. They want near-zero RTO and RPO using an active-active multi-region deployment. What combination of Azure services achieves this?",
+    "choices": {
+      "A": "Azure Traffic Manager + Azure SQL Database active geo-replication (secondary read-only, requires failover for writes)",
+      "B": "Azure Front Door with both regions as active backends + Azure SQL Database auto-failover group with both regions in active-active read pattern",
+      "C": "Azure Load Balancer + Azure SQL Database manual failover",
+      "D": "Azure Backup + Azure Site Recovery for active-active"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 278,
+    "category": "business-continuity",
+    "question": "Your Azure Backup for Azure VMs fails with an error indicating the Recovery Services vault is in a different region than the VM. What is the issue and the correct approach?",
+    "choices": {
+      "A": "This is expected \u2014 Azure Backup always replicates to a different region; no action needed",
+      "B": "Recovery Services vaults must be in the same region as the VMs being backed up; create a vault in the VM's region",
+      "C": "Enable geo-replication on the vault to extend to the VM's region",
+      "D": "Move the VMs to the same region as the vault using Azure Site Recovery"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 279,
+    "category": "business-continuity",
+    "question": "You need to design a HA solution for a 3-tier web application. The web tier uses Azure App Service, the app tier uses Azure VMs, and the data tier uses Azure SQL Database. Which combination achieves 99.99% SLA across all tiers?",
+    "choices": {
+      "A": "App Service Standard + VMs in Availability Set + SQL Database General Purpose",
+      "B": "App Service Standard (99.95%) + VMs across Availability Zones (99.99%) + SQL Database General Purpose (99.99%) \u2014 overall SLA is product of individual SLAs",
+      "C": "App Service Premium + VMs in single zone + SQL Database Business Critical",
+      "D": "App Service Isolated + VMs in Availability Set + SQL Database Serverless"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 280,
+    "category": "business-continuity",
+    "question": "You are the architect for a financial trading platform. The business requires that in a disaster scenario, the platform can recover to a point no earlier than 30 seconds ago (RPO = 30 seconds). Which Azure SQL Database feature achieves this?",
+    "choices": {
+      "A": "Azure SQL Database automated backups (full + differential + log, minimum 5-minute RPO)",
+      "B": "Azure SQL Database Business Critical tier with built-in Always On secondary and continuous log shipping (seconds RPO within region)",
+      "C": "Active geo-replication to another region (typically seconds but no guaranteed 30-second RPO)",
+      "D": "Azure SQL Database Long-Term Retention with 30-second granularity"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 281,
+    "category": "business-continuity",
+    "question": "Your organization stores critical regulatory documents in Azure Blob Storage. To comply with regulations, documents must remain unmodified for 10 years. After 10 years, they can be deleted. You also need to add new documents during this period. Which configuration supports this?",
+    "choices": {
+      "A": "Enable soft delete with 10-year retention on the container",
+      "B": "Enable container-level immutable storage with a time-based retention policy of 10 years, locked, in append-only mode",
+      "C": "Configure a lifecycle management policy to archive documents after 10 years",
+      "D": "Enable Azure Backup for blobs with 10-year vault retention"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 282,
+    "category": "business-continuity",
+    "question": "A global retailer runs an e-commerce platform on Azure with a primary region in East US. During a planned maintenance window, you need to failover the entire application to West US 2 with zero data loss. Which sequence of actions should you take?",
+    "choices": {
+      "A": "Unplanned failover in ASR \u2192 update DNS \u2192 validate \u2192 re-protect",
+      "B": "Planned failover in ASR (drains connections, syncs data, zero data loss) \u2192 validate in target region \u2192 commit failover \u2192 re-protect back to East US",
+      "C": "Stop all VMs \u2192 restore from backup in West US 2 \u2192 update DNS",
+      "D": "Enable active-active replication \u2192 split traffic 50/50 \u2192 complete maintenance \u2192 restore to primary"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 283,
+    "category": "business-continuity",
+    "question": "You need to ensure that Azure Backup for an AKS cluster backs up both persistent volumes (Azure Disks) and Kubernetes resource configurations (deployments, services, configmaps). Which Azure Backup workload supports this?",
+    "choices": {
+      "A": "Azure Backup for Azure VMs (backs up AKS node VMs only)",
+      "B": "Azure Backup for AKS (application-consistent backup including persistent volumes and K8s resources) using a Backup Vault",
+      "C": "Azure Site Recovery for AKS cluster replication",
+      "D": "Velero open-source tool only (no Azure native support)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 284,
+    "category": "business-continuity",
+    "question": "A company's compliance requirement states that all production data must have a tested DR plan with a documented RTO and RPO. The team uses Azure Site Recovery. How should they verify the DR plan without impacting production?",
+    "choices": {
+      "A": "Initiate a planned failover to the DR region during a maintenance window",
+      "B": "Run a Test Failover to an isolated VNet in the DR region; validate the application, then clean up the test VMs",
+      "C": "Review ASR replication status metrics in Azure Monitor",
+      "D": "Perform an unplanned failover and then fail back"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 285,
+    "category": "business-continuity",
+    "question": "Your application uses Azure Cosmos DB with a single write region. A full regional outage occurs in the write region. You have automatic failover enabled. What happens?",
+    "choices": {
+      "A": "All writes are immediately available in the next region; no data is lost",
+      "B": "Cosmos DB automatically promotes a read region to the write region based on the failover priority list; potential data loss depends on consistency level and replication lag",
+      "C": "The database goes offline until Microsoft restores the primary region",
+      "D": "Writes are automatically replicated to all regions before the failover completes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 286,
+    "category": "business-continuity",
+    "question": "You need to protect Azure Files shares from ransomware attacks where attackers delete or encrypt file share content. Which Azure Backup feature specifically protects Azure Files with snapshot-based recovery?",
+    "choices": {
+      "A": "Azure Backup for Azure VMs with file-level recovery",
+      "B": "Azure Backup for Azure Files \u2014 creates daily share-level snapshots stored in the Recovery Services vault",
+      "C": "Azure File Sync with versioning enabled",
+      "D": "RA-GRS redundancy with read access to the secondary region"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 287,
+    "category": "business-continuity",
+    "question": "Your organization has a legacy on-premises application that cannot be cloud-native. You are migrating it to Azure VMs. The application requires a 4-hour RTO and 1-hour RPO after a regional disaster. What is the most cost-effective BC solution?",
+    "choices": {
+      "A": "Active-active deployment in two regions with real-time sync",
+      "B": "Azure Site Recovery continuous replication (RPO typically <1 hour for Azure VMs) + Traffic Manager failover (meets 4-hour RTO with proper recovery plans)",
+      "C": "Daily Azure Backup only (cannot meet 4-hour RTO reliably for large VMs)",
+      "D": "Manual VM creation in DR region from monthly snapshots"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 288,
+    "category": "business-continuity",
+    "question": "You are designing a HA solution for a critical microservices application on AKS. Node failures must not cause service downtime. Which Kubernetes and AKS features ensure pod-level HA?",
+    "choices": {
+      "A": "Single replica deployment per service in a single Availability Zone",
+      "B": "Deployments with multiple replicas + pod anti-affinity rules to spread pods across nodes and AZs + AKS cluster with nodes in multiple Availability Zones",
+      "C": "DaemonSets deploying one pod per node",
+      "D": "StatefulSets with a single replica and persistent volume claims"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 289,
+    "category": "business-continuity",
+    "question": "A company's Azure SQL Database is in a premium Business Critical tier. A read-heavy reporting workload is causing performance issues on the primary replica. What built-in Business Critical feature can offload the reporting workload without additional cost?",
+    "choices": {
+      "A": "Configure active geo-replication to a read replica in the same region",
+      "B": "Use the built-in read-only secondary replica (Read Scale-Out) via ApplicationIntent=ReadOnly in the connection string",
+      "C": "Deploy a separate Azure SQL Database for reporting with manual data sync",
+      "D": "Enable elastic pool with reporting-specific eDTU allocation"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 290,
+    "category": "business-continuity",
+    "question": "Your organization's DR strategy requires that all critical Azure workloads can be recovered within 2 hours in a separate Azure region. You use Azure Backup and Azure Site Recovery. What is the most important practice to validate readiness?",
+    "choices": {
+      "A": "Review Azure Backup completion status in Azure portal weekly",
+      "B": "Conduct regular DR drills: perform Test Failovers with ASR, validate restored backups, and measure actual RTO/RPO against targets",
+      "C": "Enable Cross-Region Restore on Recovery Services vaults",
+      "D": "Monitor ASR replication health metrics daily"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 291,
+    "category": "business-continuity",
+    "question": "A critical on-premises application is being migrated to Azure VMs. The application has a 4-hour RTO and 30-minute RPO. You select Azure Site Recovery (ASR). What replication frequency does ASR use for Azure VMs?",
+    "choices": {
+      "A": "Every 30 minutes \u2014 configurable snapshot frequency",
+      "B": "Continuous replication using change block tracking \u2014 RPO typically under 5 minutes for Azure-to-Azure",
+      "C": "Daily replication at midnight",
+      "D": "Every 15 minutes \u2014 minimum replication interval for ASR"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 292,
+    "category": "business-continuity",
+    "question": "Your company wants to ensure that even if the Azure subscription admin account is compromised and all backup data in a Recovery Services vault is deleted, the backups cannot be permanently lost for at least 7 days. Which vault feature provides this protection?",
+    "choices": {
+      "A": "Vault soft delete (14 days by default)",
+      "B": "Immutable vault with Azure Backup \u2014 prevents deletion operations and requires Multi-User Authorization (MUA) with a separate Resource Guard resource",
+      "C": "Geo-redundant vault storage",
+      "D": "Cross-region restore capability"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 293,
+    "category": "business-continuity",
+    "question": "Your Azure SQL Database General Purpose tier has 7-day automated backup retention. A critical table was corrupted 10 days ago due to a slow-running bad update. The corruption was discovered today. Can you recover the data?",
+    "choices": {
+      "A": "Yes \u2014 Azure SQL Database keeps all backups indefinitely",
+      "B": "No \u2014 the 7-day retention window does not cover 10 days ago; you need Long-Term Retention (LTR) or a longer retention period to recover from this scenario",
+      "C": "Yes \u2014 Azure SQL Database can recover from any point using transaction logs",
+      "D": "Yes \u2014 active geo-replication keeps a historical copy in the secondary"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 294,
+    "category": "business-continuity",
+    "question": "You are implementing business continuity for an Azure Cosmos DB workload. The compliance requirement states that data loss must not exceed 15 minutes under any failure scenario. Which Cosmos DB configuration meets this requirement?",
+    "choices": {
+      "A": "Single-region account with periodic backup mode (backup every 4 hours)",
+      "B": "Multi-region account with automatic failover and at least one additional read region \u2014 replication lag typically seconds; worst-case bounded staleness covers up to the configured K/T parameters",
+      "C": "Single-region account with continuous backup mode (30-day PITR)",
+      "D": "Serverless account with geo-redundant backup"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 295,
+    "category": "business-continuity",
+    "question": "Your organization deploys Azure App Service web apps in two regions (East US primary, West Europe secondary) using Azure Traffic Manager with Priority routing. The East US App Service goes down. DNS TTL is set to 60 seconds. What is the approximate time before users are routed to West Europe?",
+    "choices": {
+      "A": "Instant \u2014 Traffic Manager uses anycast for immediate routing",
+      "B": "Approximately 60-120 seconds \u2014 Traffic Manager detects the failure via health probes, waits for DNS TTL to expire, then clients get the West Europe IP",
+      "C": "30 minutes \u2014 Traffic Manager's default failover grace period",
+      "D": "Immediate \u2014 Traffic Manager updates DNS A records in real time"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 296,
+    "category": "business-continuity",
+    "question": "Your organization runs a critical workload on Azure VMs in East US. A full regional failure occurs and ASR fails over to West Europe. The workload is now running in West Europe. Once East US recovers, you want to return to East US as primary. What ASR operation enables this?",
+    "choices": {
+      "A": "Initiate a second unplanned failover back to East US",
+      "B": "Re-protect the VMs (reverses replication direction to East US), then perform a planned failover back to East US",
+      "C": "Delete the VMs in West Europe and redeploy in East US",
+      "D": "Disable ASR and set up new replication from West Europe to East US"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 297,
+    "category": "business-continuity",
+    "question": "A company stores sensitive backup data in a Recovery Services vault. Compliance requires that no single administrator can disable backup protection or delete backup data without approval from a second administrator. Which Azure feature enforces this dual-approval requirement?",
+    "choices": {
+      "A": "Azure RBAC with two separate Owner accounts",
+      "B": "Multi-User Authorization (MUA) with an Azure Backup Resource Guard in a separate subscription",
+      "C": "PIM with approval workflow for the Backup Operator role",
+      "D": "Azure Policy Deny effect on vault deletion operations"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 298,
+    "category": "business-continuity",
+    "question": "You need to design a BCDR solution for an Azure SQL Database where both RTO and RPO must be under 1 minute for a same-region hardware failure. The application connection string must not change. Which configuration meets this requirement?",
+    "choices": {
+      "A": "Azure SQL Database General Purpose with auto-failover groups",
+      "B": "Azure SQL Database Business Critical tier \u2014 built-in Always On AG provides automatic failover within seconds for local hardware failures with near-zero data loss",
+      "C": "Azure SQL Database active geo-replication with manual failover",
+      "D": "Azure SQL Managed Instance with auto-failover group"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 299,
+    "category": "business-continuity",
+    "question": "Your disaster recovery runbook requires that Azure VMs in the DR region are started in a specific order: database VMs first, then application VMs, then web VMs. Which ASR feature automates this sequencing during failover?",
+    "choices": {
+      "A": "ASR replication frequency settings",
+      "B": "ASR Recovery Plans with groups \u2014 database VMs in Group 1, app VMs in Group 2, web VMs in Group 3, with scripts/manual steps between groups",
+      "C": "Azure Automation runbook triggered after each VM starts",
+      "D": "VMSS with ordered instance start configurations"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 300,
+    "category": "business-continuity",
+    "question": "A financial services company needs to meet an RPO of near zero (seconds) and RTO of under 2 minutes for their Azure SQL Database workload, including automatic failover with no manual intervention. Which combination provides the highest level of protection?",
+    "choices": {
+      "A": "SQL Database General Purpose + Azure Backup with 15-minute PITR",
+      "B": "SQL Database Business Critical tier + Auto-failover group \u2014 Business Critical provides near-zero RPO via synchronous replicas and auto-failover group provides automatic regional failover with stable DNS endpoint",
+      "C": "SQL Database Hyperscale + active geo-replication",
+      "D": "SQL Managed Instance + geo-redundant backups"
+    },
+    "answer": "B"
+  }
+]
