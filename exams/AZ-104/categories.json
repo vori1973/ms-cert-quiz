@@ -1,0 +1,35 @@
+{
+  "totalQuizQuestions": 50,
+  "categories": [
+    {
+      "id": "identity-governance",
+      "name": "Manage Azure Identities and Governance",
+      "weight": 17.5,
+      "questionsInQuiz": 10
+    },
+    {
+      "id": "storage",
+      "name": "Implement and Manage Storage",
+      "weight": 17.5,
+      "questionsInQuiz": 10
+    },
+    {
+      "id": "compute",
+      "name": "Deploy and Manage Azure Compute Resources",
+      "weight": 22.5,
+      "questionsInQuiz": 13
+    },
+    {
+      "id": "networking",
+      "name": "Implement and Manage Virtual Networking",
+      "weight": 17.5,
+      "questionsInQuiz": 10
+    },
+    {
+      "id": "monitor-maintain",
+      "name": "Monitor and Maintain Azure Resources",
+      "weight": 12.5,
+      "questionsInQuiz": 7
+    }
+  ]
+}

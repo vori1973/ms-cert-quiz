@@ -1,0 +1,2078 @@
+[
+  {
+    "id": 1,
+    "category": "identity-governance",
+    "question": "You run Get-MgUser for a user and see UserPrincipalName: bsmith_contoso.com#EXT#@fabrikam.com. Which statement accurately describes this user?",
+    "choices": {
+      "A": "The user account is disabled.",
+      "B": "The user is a guest in the tenant.",
+      "C": "The user is assigned an administrative role.",
+      "D": "The user account is deleted."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "category": "identity-governance",
+    "question": "You create a new user named User1 in a Microsoft Entra tenant and need to assign a Microsoft 365 E5 license. Which user attribute must be configured first?",
+    "choices": {
+      "A": "First name",
+      "B": "Last name",
+      "C": "Usage location",
+      "D": "User type"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "category": "identity-governance",
+    "question": "A Microsoft Entra tenant contains Group1 with User1 (synced from on-premises), User2 (cloud-only member), and User3 (guest). Password writeback is enabled. SSPR is enabled for Group1. Which users can use SSPR?",
+    "choices": {
+      "A": "User2 only",
+      "B": "User1 and User2 only",
+      "C": "User2 and User3 only",
+      "D": "User1, User2, and User3"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 4,
+    "category": "identity-governance",
+    "question": "You create a custom RBAC role with Actions: Microsoft.Compute/*/read, Microsoft.Compute/snapshots/write, Microsoft.Compute/snapshots/read and NotActions: Microsoft.Compute/snapshots/delete. Which two operations can a user assigned this role perform? (Select two.)",
+    "choices": {
+      "A": "Create and delete a snapshot",
+      "B": "Create and read a snapshot",
+      "C": "Create virtual machines",
+      "D": "Read all virtual machine settings"
+    },
+    "answer": "B, D"
+  },
+  {
+    "id": 5,
+    "category": "identity-governance",
+    "question": "You need to ensure User1 can view all resources in resource group RG1. You must use the principle of least privilege. Which role should you assign?",
+    "choices": {
+      "A": "Billing Reader",
+      "B": "Contributor",
+      "C": "Reader",
+      "D": "Tag Contributor"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "category": "identity-governance",
+    "question": "You need to assign User1 a role that allows creating and managing all resource types in a subscription, but User1 must NOT be able to assign roles to other users. Which role should you assign?",
+    "choices": {
+      "A": "API Management Service Contributor",
+      "B": "Contributor",
+      "C": "Owner",
+      "D": "Reader"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 7,
+    "category": "identity-governance",
+    "question": "The finance team needs to view costs and manage budgets for Azure services without the ability to modify resources. Which role should you assign at the subscription scope?",
+    "choices": {
+      "A": "Reader",
+      "B": "Billing Reader",
+      "C": "Contributor",
+      "D": "Cost Management Contributor"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 8,
+    "category": "identity-governance",
+    "question": "A virtual machine runs daily reports in resource group RG1. You need to ensure the VM shuts down when RG1 costs exceed 75% of the allocated budget. Which two actions should you perform? (Select two.)",
+    "choices": {
+      "A": "Create an action group of type Runbook and select Scale Up VM.",
+      "B": "Create an action group of type Runbook and select Stop VM.",
+      "C": "From Cost Management + Billing, create a new cost analysis.",
+      "D": "From Cost Management + Billing, modify the Budgets settings."
+    },
+    "answer": "B, D"
+  },
+  {
+    "id": 9,
+    "category": "identity-governance",
+    "question": "You have hundreds of virtual machines migrated from on-premises. You need to identify which VMs are underutilized. Which Azure Advisor category should you use?",
+    "choices": {
+      "A": "Cost",
+      "B": "High Availability",
+      "C": "Operational Excellence",
+      "D": "Performance"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 10,
+    "category": "identity-governance",
+    "question": "You need to ensure that each of 25 virtual machines is associated to a specific department for reporting purposes. What should you use?",
+    "choices": {
+      "A": "Administrative units",
+      "B": "Management groups",
+      "C": "Storage accounts",
+      "D": "Tags"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 11,
+    "category": "identity-governance",
+    "question": "You have 200 virtual machines and need all Azure admins to be notified whenever an Azure Advisor alert is generated, with minimum administrative effort. What should you include in the solution?",
+    "choices": {
+      "A": "An action group",
+      "B": "An application security group",
+      "C": "An Azure Automation account",
+      "D": "A capacity reservation group"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 12,
+    "category": "identity-governance",
+    "question": "You need to enforce a policy that automatically adds a required 'Department' tag to all new resource groups that are missing it. Which Azure Policy effect should you use?",
+    "choices": {
+      "A": "Audit",
+      "B": "Deny",
+      "C": "Modify",
+      "D": "AuditIfNotExists"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "category": "identity-governance",
+    "question": "You are designing a management group hierarchy. What is the maximum number of levels of management groups you can create (excluding the root)?",
+    "choices": {
+      "A": "3",
+      "B": "6",
+      "C": "10",
+      "D": "Unlimited"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "category": "identity-governance",
+    "question": "You need to prevent anyone (including subscription owners) from deleting a critical resource group, but still allow modifications. Which lock type should you apply?",
+    "choices": {
+      "A": "ReadOnly",
+      "B": "CanNotDelete",
+      "C": "Delete",
+      "D": "DoNotDelete"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "category": "identity-governance",
+    "question": "You assign the Contributor role to User1 at the subscription level. RG1 is a resource group within that subscription. What access does User1 have to resources in RG1?",
+    "choices": {
+      "A": "No access \u2014 role must be assigned at the resource group level.",
+      "B": "Read-only access to resources in RG1.",
+      "C": "Contributor access to resources in RG1 \u2014 role assignment inherits downward.",
+      "D": "Owner access to resources in RG1."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 16,
+    "category": "identity-governance",
+    "question": "You need to scope an admin's permissions so they can only reset passwords for users in the Sales department, not the entire directory. Which feature should you use?",
+    "choices": {
+      "A": "Conditional Access policy",
+      "B": "Administrative unit",
+      "C": "Custom RBAC role",
+      "D": "Privileged Identity Management"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "category": "identity-governance",
+    "question": "Which Microsoft Entra ID license tier is the minimum required to use Conditional Access policies?",
+    "choices": {
+      "A": "Free",
+      "B": "Microsoft Entra ID P1",
+      "C": "Microsoft Entra ID P2",
+      "D": "Microsoft 365 F1"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "category": "identity-governance",
+    "question": "You need to create 500 new user accounts in Microsoft Entra ID from an HR data export. What is the most efficient method?",
+    "choices": {
+      "A": "Use the Azure portal to create each user individually.",
+      "B": "Use bulk create via CSV file upload in the Azure portal.",
+      "C": "Use the New-AzADUser PowerShell cmdlet in a for-each loop.",
+      "D": "Use Azure Policy with DeployIfNotExists effect."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "category": "identity-governance",
+    "question": "You apply a ReadOnly lock to resource group RG1. Which statement is correct?",
+    "choices": {
+      "A": "You cannot read resources in RG1.",
+      "B": "You can read resources but cannot create, update, or delete them.",
+      "C": "You can create new resources but cannot delete existing ones.",
+      "D": "Only Owner-role users are exempt from the lock."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "category": "identity-governance",
+    "question": "Which role can manage role assignments (grant/revoke roles) in Azure RBAC, in addition to Owner?",
+    "choices": {
+      "A": "Contributor",
+      "B": "Reader",
+      "C": "User Access Administrator",
+      "D": "Security Admin"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "category": "storage",
+    "question": "You plan to provide identity-based access to a storage account linked to a Microsoft Entra tenant. Which data service can be configured to use identity-based access?",
+    "choices": {
+      "A": "Containers (Blob)",
+      "B": "File shares",
+      "C": "Queues",
+      "D": "Tables"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "category": "storage",
+    "question": "You need to ensure that access to a storage account is prevented from the internet. What should you configure?",
+    "choices": {
+      "A": "Access keys",
+      "B": "Data protection",
+      "C": "Encryption",
+      "D": "Networking"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 23,
+    "category": "storage",
+    "question": "An on-premises Windows Server (synced to Entra ID) needs to access an Azure Files share in a storage account. What should you do first?",
+    "choices": {
+      "A": "From File share settings, configure identity-based access for the storage account.",
+      "B": "From the server, modify the membership of an existing local group.",
+      "C": "From the server, modify the Security file share settings of the storage account.",
+      "D": "From the storage account, enable a shared access signature (SAS)."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 24,
+    "category": "storage",
+    "question": "You need to copy data to a storage account using AzCopy. Which two data storage types does AzCopy support? (Select two.)",
+    "choices": {
+      "A": "Blob",
+      "B": "File",
+      "C": "Queue",
+      "D": "Table"
+    },
+    "answer": "A, B"
+  },
+  {
+    "id": 25,
+    "category": "storage",
+    "question": "You need to create a storage account that provides POSIX-compliant access control lists (ACLs) for big data analytics workloads. Which option must you configure?",
+    "choices": {
+      "A": "Access tier",
+      "B": "Hierarchical namespace",
+      "C": "SFTP",
+      "D": "Version-level immutable support"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "category": "storage",
+    "question": "A company stores large amounts of unstructured data accessed infrequently but requiring fast retrieval when needed. You need to minimize storage costs. What should you do?",
+    "choices": {
+      "A": "Configure the access tier to Cold.",
+      "B": "Configure the access tier to Hot.",
+      "C": "Enable object replication.",
+      "D": "Configure the access tier to Cool."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 27,
+    "category": "storage",
+    "question": "You need to ensure that content in a blob container is not modified or deleted for six months after the last modification date. What should you configure?",
+    "choices": {
+      "A": "A custom Azure role",
+      "B": "Lifecycle management policy",
+      "C": "The change feed",
+      "D": "An immutability policy"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 28,
+    "category": "storage",
+    "question": "A file share named share1 is at 99% capacity. You need to enable it to support large files and store up to 100 TiB. Which two PowerShell commands should you run? (Select two.)",
+    "choices": {
+      "A": "New-AzRmStorageShare -QuotaGiB 100GB",
+      "B": "Set-AzStorageAccount -EnableLargeFileShare",
+      "C": "Set-AzStorageAccount -Type Standard_RAGRS",
+      "D": "Update-AzRmStorageShare -QuotaGiB 102400"
+    },
+    "answer": "B, D"
+  },
+  {
+    "id": 29,
+    "category": "storage",
+    "question": "You need to recommend a storage solution for infrequently accessed data that must be stored at least 90 days, available within seconds, and with minimized storage costs. Which tier should you recommend?",
+    "choices": {
+      "A": "Cold",
+      "B": "Cool",
+      "C": "Hot",
+      "D": "Premium"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 30,
+    "category": "storage",
+    "question": "You need to protect against zone failures for a storage account in a single region. Which redundancy option should you configure?",
+    "choices": {
+      "A": "LRS",
+      "B": "ZRS",
+      "C": "GRS",
+      "D": "GZRS"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 31,
+    "category": "storage",
+    "question": "You need to allow users in a secondary region to read from a storage account without triggering a failover. Which redundancy option should you configure?",
+    "choices": {
+      "A": "GRS",
+      "B": "LRS",
+      "C": "RA-GRS",
+      "D": "ZRS"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 32,
+    "category": "storage",
+    "question": "You archived a blob 20 days ago and now need to read it. What must you do before you can access the data?",
+    "choices": {
+      "A": "Delete and re-upload the blob to the Hot tier.",
+      "B": "Enable versioning on the container.",
+      "C": "Rehydrate the blob to the Hot or Cool tier.",
+      "D": "Change the container access level to public."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "category": "storage",
+    "question": "You want to automatically move blobs that have not been accessed for 30 days from Hot to Cool tier, and delete blobs older than 365 days. What should you configure?",
+    "choices": {
+      "A": "Immutability policy",
+      "B": "Lifecycle management policy",
+      "C": "Azure Backup policy",
+      "D": "Azure Policy with DeployIfNotExists"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 34,
+    "category": "storage",
+    "question": "You need to generate a SAS token for blob access that is backed by Microsoft Entra ID credentials and provides the most secure form of SAS. Which SAS type should you use?",
+    "choices": {
+      "A": "Account SAS",
+      "B": "Service SAS",
+      "C": "User Delegation SAS",
+      "D": "Stored Access Policy SAS"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 35,
+    "category": "storage",
+    "question": "You need to transfer 70 TB of data from on-premises to Azure Blob Storage. The network bandwidth is insufficient for an online transfer. What should you use?",
+    "choices": {
+      "A": "AzCopy with parallel threads",
+      "B": "Azure Data Box",
+      "C": "Azure Storage Explorer",
+      "D": "Azure Migrate"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "category": "storage",
+    "question": "Which storage account type is recommended for most general-purpose scenarios supporting blob, file, queue, and table storage?",
+    "choices": {
+      "A": "Premium Block Blob",
+      "B": "Premium File Shares",
+      "C": "Standard GPv2",
+      "D": "Premium Page Blob"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 37,
+    "category": "storage",
+    "question": "You are setting up Azure File Sync. What is the correct hierarchy of components?",
+    "choices": {
+      "A": "Storage Sync Service \u2192 Sync Group \u2192 Server Endpoint \u2192 Cloud Endpoint",
+      "B": "Storage Sync Service \u2192 Sync Group \u2192 Cloud Endpoint + Server Endpoint(s)",
+      "C": "Recovery Services Vault \u2192 Sync Group \u2192 Cloud Endpoint",
+      "D": "Azure Backup \u2192 File Sync Agent \u2192 Server Endpoint"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 38,
+    "category": "storage",
+    "question": "You created a Service SAS with a Stored Access Policy. You need to immediately revoke all access granted by this SAS. What is the fastest method?",
+    "choices": {
+      "A": "Rotate the storage account access key.",
+      "B": "Delete the Stored Access Policy on the server side.",
+      "C": "Wait for the SAS expiry time to pass.",
+      "D": "Disable the container's public access setting."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 39,
+    "category": "storage",
+    "question": "You store log files in blob storage. The files are appended to continuously by a running application. Which blob type is optimized for this workload?",
+    "choices": {
+      "A": "Block blob",
+      "B": "Page blob",
+      "C": "Append blob",
+      "D": "Archive blob"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 40,
+    "category": "storage",
+    "question": "You move a blob from the Hot tier to the Cool tier. What is the minimum storage duration to avoid early deletion charges?",
+    "choices": {
+      "A": "No minimum \u2014 Cool tier has no early deletion fee.",
+      "B": "30 days",
+      "C": "90 days",
+      "D": "180 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "category": "compute",
+    "question": "You need to use an existing Azure VM named VM1 as a template to create a new VM. Which three methods can you use? (Select two that together represent valid options.)",
+    "choices": {
+      "A": "From Cloud Shell, run Get-AzVM and New-AzVM cmdlets.",
+      "B": "From Cloud Shell, run Save-AzDeploymentScriptLog and New-AzResourceGroupDeployment cmdlets.",
+      "C": "From Cloud Shell, run Save-AzDeploymentTemplate and New-AzResourceGroupDeployment cmdlets.",
+      "D": "From VM1, select Export template, and then select Deploy."
+    },
+    "answer": "A, C, D"
+  },
+  {
+    "id": 42,
+    "category": "compute",
+    "question": "You have an ARM template and need to use PowerShell to provision a virtual machine in resource group RG1. Which cmdlet should you run?",
+    "choices": {
+      "A": "New-AzManagementGroupDeployment",
+      "B": "New-AzResourceGroupDeployment",
+      "C": "New-AzSubscriptionDeployment",
+      "D": "New-AzVM"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 43,
+    "category": "compute",
+    "question": "You have an ARM template named deploy.json stored in Azure Blob Storage. You plan to deploy it using the New-AzDeployment cmdlet. Which parameter references the template by URL?",
+    "choices": {
+      "A": "-Tag",
+      "B": "-TemplateFile",
+      "C": "-TemplateSpecId",
+      "D": "-TemplateUri"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 44,
+    "category": "compute",
+    "question": "Resources were deployed to resource group app-grp1 using ARM templates. You need to verify the date and time the resources were created. Which blade should you review in the Azure portal?",
+    "choices": {
+      "A": "Deployments",
+      "B": "Diagnostics settings",
+      "C": "Deployment stacks",
+      "D": "Policy"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 45,
+    "category": "compute",
+    "question": "You need to pass an array as an inline parameter during the deployment of an ARM template using Azure CLI. What should you do?",
+    "choices": {
+      "A": "Modify the template to include the array values.",
+      "B": "Use the --template-file switch to pass the array values.",
+      "C": "Provide the array values in the --parameters switch in the deployment command.",
+      "D": "Create a separate parameters file that includes the array values."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 46,
+    "category": "compute",
+    "question": "You are creating a new Azure virtual machine running Windows Server and need to ensure VM1 will be part of a virtual machine scale set. Which setting should you configure during VM creation?",
+    "choices": {
+      "A": "Availability options",
+      "B": "Azure Spot instance",
+      "C": "Management",
+      "D": "Region"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 47,
+    "category": "compute",
+    "question": "You have VM1 connected to Subnet1. You need to ensure VM1 is connected directly to both Subnet1 and Subnet2. What should you do first?",
+    "choices": {
+      "A": "From the Azure portal, add a network interface.",
+      "B": "From the Azure portal, create an IP group.",
+      "C": "From the Azure portal, modify the IP configurations of the existing NIC.",
+      "D": "Sign in to Windows Server and create a network bridge."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 48,
+    "category": "compute",
+    "question": "You receive a notification that VM1 will be affected by underlying physical infrastructure maintenance. You need to move VM1 to a different host to avoid a service interruption. What should you do?",
+    "choices": {
+      "A": "Apply an Azure policy.",
+      "B": "Apply an Azure tag.",
+      "C": "Move the VM to another subscription.",
+      "D": "Redeploy the virtual machine."
+    },
+    "answer": "D"
+  },
+  {
+    "id": 49,
+    "category": "compute",
+    "question": "You are evaluating Azure Spot instances. Which two factors can cause an Azure Spot instance to be evicted? (Select two.)",
+    "choices": {
+      "A": "The average CPU usage of the instance",
+      "B": "The Azure capacity needs",
+      "C": "The current price of the instance exceeding your max price",
+      "D": "The time of day"
+    },
+    "answer": "B, C"
+  },
+  {
+    "id": 50,
+    "category": "compute",
+    "question": "You have a Docker container image and want to use it for a new Azure App Service web app. Which App Service setting should you configure?",
+    "choices": {
+      "A": "Continuous deployment",
+      "B": "Pricing plan",
+      "C": "Publish",
+      "D": "Runtime stack"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 51,
+    "category": "compute",
+    "question": "You have a container app named App1 configured to use cached data. You need a new container that automatically refreshes the cache used by App1 while running alongside it. Which container type should you configure?",
+    "choices": {
+      "A": "Blob",
+      "B": "Init",
+      "C": "Privileged",
+      "D": "Sidecar"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 52,
+    "category": "compute",
+    "question": "You have a Basic Azure App Service plan with a web app. You need to ensure it can scale automatically when CPU usage exceeds 80% for 15 minutes. Which two actions should you perform? (Select two.)",
+    "choices": {
+      "A": "Configure a scaling condition to scale based on a metric and add the rules.",
+      "B": "Configure a scaling condition to scale based on an instance count.",
+      "C": "Configure a deployment slot.",
+      "D": "Scale up the App Service plan."
+    },
+    "answer": "A, D"
+  },
+  {
+    "id": 53,
+    "category": "compute",
+    "question": "You configure a web app with a custom domain webapp1.contoso.com. You need a DNS record that ensures the app remains accessible if its IP address changes. Which record type should you create?",
+    "choices": {
+      "A": "A",
+      "B": "CNAME",
+      "C": "SOA",
+      "D": "TXT"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 54,
+    "category": "compute",
+    "question": "At which App Service plan tier do deployment slots first become available?",
+    "choices": {
+      "A": "Free",
+      "B": "Shared",
+      "C": "Basic",
+      "D": "Standard"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 55,
+    "category": "compute",
+    "question": "You want to deploy a new version of a web app to production with zero downtime by first testing in a staging slot. Which App Service feature should you use?",
+    "choices": {
+      "A": "Custom domains",
+      "B": "Deployment slot swap",
+      "C": "Azure Traffic Manager",
+      "D": "Blue/green deployment via Azure DevOps only"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 56,
+    "category": "compute",
+    "question": "You are creating a Virtual Machine Scale Set (VMSS) for a stateless high-scale web tier that requires identical VM instances. Which orchestration mode is most appropriate?",
+    "choices": {
+      "A": "Flexible",
+      "B": "Uniform",
+      "C": "Standard",
+      "D": "Static"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 57,
+    "category": "compute",
+    "question": "You configure an availability set for two virtual machines. What is the maximum number of fault domains and update domains available?",
+    "choices": {
+      "A": "Fault domains: 2, Update domains: 5",
+      "B": "Fault domains: 3, Update domains: 20",
+      "C": "Fault domains: 5, Update domains: 3",
+      "D": "Fault domains: 20, Update domains: 3"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 58,
+    "category": "compute",
+    "question": "A Windows Azure VM has an OS disk, a data disk, and a temp disk (D: drive). The VM is deallocated overnight. What happens to data on the temp disk?",
+    "choices": {
+      "A": "Data is preserved because it is backed up automatically.",
+      "B": "Data is preserved as long as the VM is in the same datacenter.",
+      "C": "Data is lost \u2014 the temp disk is ephemeral and cleared on deallocation.",
+      "D": "Data is moved to the OS disk automatically."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 59,
+    "category": "compute",
+    "question": "You need to run a short-lived batch processing container in Azure without managing any cluster infrastructure. Which service should you use?",
+    "choices": {
+      "A": "Azure Kubernetes Service (AKS)",
+      "B": "Azure Container Instances (ACI)",
+      "C": "Azure Container Apps",
+      "D": "Azure App Service (Linux container)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 60,
+    "category": "compute",
+    "question": "You are building an event-driven Azure Function that processes messages from an Azure Storage queue. Which hosting plan offers the lowest cost for intermittent, unpredictable workloads, with the trade-off of a cold start?",
+    "choices": {
+      "A": "Dedicated (App Service Plan)",
+      "B": "Premium Plan",
+      "C": "Consumption Plan",
+      "D": "Elastic Premium Plan"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 61,
+    "category": "compute",
+    "question": "You need a container in Azure Container Apps that performs a database migration script once before the main application container starts. Which container type should you use?",
+    "choices": {
+      "A": "Sidecar",
+      "B": "Init",
+      "C": "Privileged",
+      "D": "Dapr"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 62,
+    "category": "compute",
+    "question": "You want to use an infrastructure-as-code language that is a DSL (domain-specific language) that compiles to ARM JSON, offers cleaner syntax, and is the recommended IaC tool for new Azure deployments. What should you use?",
+    "choices": {
+      "A": "Terraform",
+      "B": "ARM JSON template",
+      "C": "Azure Bicep",
+      "D": "Ansible"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 63,
+    "category": "compute",
+    "question": "After deploying a Windows VM, you need to run a PowerShell configuration script on it without connecting via RDP. Which VM extension should you use?",
+    "choices": {
+      "A": "Azure Monitor Agent",
+      "B": "DSC Extension",
+      "C": "Custom Script Extension",
+      "D": "VMAccess Extension"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 64,
+    "category": "compute",
+    "question": "You need to deploy resources at the Azure subscription level (not a resource group) using an ARM template. Which PowerShell cmdlet should you use?",
+    "choices": {
+      "A": "New-AzResourceGroupDeployment",
+      "B": "New-AzSubscriptionDeployment",
+      "C": "New-AzManagementGroupDeployment",
+      "D": "New-AzTenantDeployment"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 65,
+    "category": "compute",
+    "question": "An App Service web app needs outbound connectivity to resources within a VNet. At which App Service plan tier does outbound VNet Integration first become available?",
+    "choices": {
+      "A": "Basic",
+      "B": "Standard",
+      "C": "Premium",
+      "D": "Isolated (ASE)"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 66,
+    "category": "networking",
+    "question": "You have two VNets (VNet1 and VNet2) in the same subscription. You need resources on both VNets to communicate seamlessly. What should you configure?",
+    "choices": {
+      "A": "Connected devices",
+      "B": "Firewall",
+      "C": "Peerings",
+      "D": "Service endpoints"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 67,
+    "category": "networking",
+    "question": "VM1 can only be accessed from the internal network. An external contractor needs temporary access to VM1 with minimum administrative effort. What should you configure?",
+    "choices": {
+      "A": "A public IP address",
+      "B": "A second private IP address",
+      "C": "A Site-to-Site VPN",
+      "D": "Azure Firewall"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 68,
+    "category": "networking",
+    "question": "You configure VNet peering between VNet1 (which has a VPN gateway) and VNet2 after a Point-to-Site VPN client (Device1) is already installed. Device1 cannot access VNet2 via VPN. What should you do?",
+    "choices": {
+      "A": "Create a private endpoint in VNet2's subscription.",
+      "B": "Deploy Azure Front Door.",
+      "C": "Download and reinstall the P2S VPN client on Device1.",
+      "D": "Run New-SelfSignedCertificate on Device1."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 69,
+    "category": "networking",
+    "question": "Which two resources can be associated with a Network Security Group (NSG)? (Select two.)",
+    "choices": {
+      "A": "Virtual networks",
+      "B": "Virtual machines (directly)",
+      "C": "Network interfaces",
+      "D": "Subnets"
+    },
+    "answer": "C, D"
+  },
+  {
+    "id": 70,
+    "category": "networking",
+    "question": "You need to configure an NSG to allow Remote Desktop Management and Secured HTTPS traffic. Which two ports should you allow? (Select two.)",
+    "choices": {
+      "A": "80",
+      "B": "443",
+      "C": "587",
+      "D": "3389"
+    },
+    "answer": "B, D"
+  },
+  {
+    "id": 71,
+    "category": "networking",
+    "question": "You have four subnets, each with 10 VMs. An NSG associated with each subnet should allow inbound TCP port 8080 to exactly 2 VMs per subnet using the fewest NSG rules. What should you use as the destination?",
+    "choices": {
+      "A": "An application security group",
+      "B": "A service tag",
+      "C": "The subnet address ranges",
+      "D": "Individual VM IP addresses"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 72,
+    "category": "networking",
+    "question": "Port 80 is blocked in NSG3 and allowed in NSG1 and NSG2. VM1 (Subnet1/NIC1) \u2014 NIC1 has NSG2; Subnet1 has NSG1. VM2 (Subnet1/NIC2) \u2014 NIC2 has NSG3. VM3 (Subnet3/NIC3) \u2014 NIC3 has NSG3; Subnet3 has no NSG. VM4 (Subnet2) \u2014 Subnet2 has NSG3. Which VM can be accessed over the internet on port 80?",
+    "choices": {
+      "A": "VM1",
+      "B": "VM2",
+      "C": "VM3",
+      "D": "VM4"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 73,
+    "category": "networking",
+    "question": "You are migrating dev, test, and production VMs to a single VNet and need to restrict traffic between the tiers to specific ports. What should you use?",
+    "choices": {
+      "A": "A Network Security Group (NSG)",
+      "B": "An Azure Firewall",
+      "C": "An Azure Load Balancer",
+      "D": "An Azure Virtual Network"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 74,
+    "category": "networking",
+    "question": "You created a Private DNS zone named contoso.com. You need VMs in VNet1 to automatically register their names in this zone. What should you do?",
+    "choices": {
+      "A": "Add a virtual network link to contoso.com with auto-registration enabled.",
+      "B": "Add Azure DNS Private Resolver to VNet1.",
+      "C": "Configure each VM to use a custom DNS server.",
+      "D": "Configure VNet1 to use a custom DNS server."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 75,
+    "category": "networking",
+    "question": "An Azure Load Balancer distributes traffic across multiple VMs but users experience intermittent connection timeouts. You need to resolve this and ensure even traffic distribution. What should you do?",
+    "choices": {
+      "A": "Change the distribution mode to five-tuple hash.",
+      "B": "Configure a health probe.",
+      "C": "Enable session persistence with source IP affinity.",
+      "D": "Upgrade to a higher SKU."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 76,
+    "category": "networking",
+    "question": "VNet A is peered with VNet B, and VNet B is peered with VNet C. A VM in VNet A tries to connect to a VM in VNet C but cannot. Why?",
+    "choices": {
+      "A": "VNet peering only works within the same region.",
+      "B": "VNet peering is non-transitive \u2014 A\u2194B and B\u2194C does not create A\u2194C routing.",
+      "C": "VNet peering requires the same subscription.",
+      "D": "NSG rules are blocking traffic at VNet B."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 77,
+    "category": "networking",
+    "question": "What is the priority number of the default inbound NSG rule that blocks all inbound traffic from the internet when no other rule matches?",
+    "choices": {
+      "A": "100",
+      "B": "1000",
+      "C": "4096",
+      "D": "65500"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 78,
+    "category": "networking",
+    "question": "You need to filter outbound internet traffic from Azure VMs based on fully qualified domain names (FQDNs), not just IP addresses. Which service should you use?",
+    "choices": {
+      "A": "Network Security Group",
+      "B": "Azure Firewall",
+      "C": "Application Gateway",
+      "D": "Azure DDoS Protection"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 79,
+    "category": "networking",
+    "question": "You connect your on-premises network to Azure via ExpressRoute. A security audit reveals traffic is not encrypted in transit. What should you add?",
+    "choices": {
+      "A": "Nothing \u2014 ExpressRoute encrypts all traffic by default.",
+      "B": "IPsec over the ExpressRoute connection.",
+      "C": "A VPN gateway in active-active mode.",
+      "D": "Azure DDoS Protection Standard."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 80,
+    "category": "networking",
+    "question": "You need an Azure Load Balancer that supports Availability Zones for zone-redundant architecture. Which SKU is required?",
+    "choices": {
+      "A": "Basic",
+      "B": "Standard",
+      "C": "Gateway",
+      "D": "Any SKU supports zones"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 81,
+    "category": "networking",
+    "question": "You need to route incoming HTTP requests to different backend pools based on the URL path (e.g., /images to one pool, /api to another). Which Azure service should you use?",
+    "choices": {
+      "A": "Azure Load Balancer (Standard)",
+      "B": "Traffic Manager",
+      "C": "Application Gateway",
+      "D": "Azure Front Door"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 82,
+    "category": "networking",
+    "question": "You need to expose an Azure Storage account to VMs in a VNet via a private IP address, preventing any traffic from traversing the public internet. What should you configure?",
+    "choices": {
+      "A": "Service endpoint",
+      "B": "Private endpoint",
+      "C": "VNet peering",
+      "D": "NSG outbound rule blocking internet"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 83,
+    "category": "networking",
+    "question": "A VPN gateway requires a dedicated subnet. What must this subnet be named?",
+    "choices": {
+      "A": "VPNSubnet",
+      "B": "GatewaySubnet",
+      "C": "AzureFirewallSubnet",
+      "D": "VpnGatewaySubnet"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 84,
+    "category": "networking",
+    "question": "You need to connect multiple remote employees (individual devices) to an Azure VNet over the internet. Which VPN type should you configure?",
+    "choices": {
+      "A": "Site-to-Site (S2S)",
+      "B": "VNet-to-VNet",
+      "C": "Point-to-Site (P2S)",
+      "D": "ExpressRoute"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 85,
+    "category": "networking",
+    "question": "You need to route users to the nearest Azure region based on network latency. Which Azure service provides DNS-based global traffic routing?",
+    "choices": {
+      "A": "Azure Load Balancer",
+      "B": "Application Gateway",
+      "C": "Traffic Manager",
+      "D": "Azure Front Door"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 86,
+    "category": "monitor-maintain",
+    "question": "You need to send an email to an administrator when a VM is connected to VNet1. Which two settings should you configure? (Select two.)",
+    "choices": {
+      "A": "An action group",
+      "B": "An alert processing rule",
+      "C": "An alert rule",
+      "D": "A mail-enabled security group"
+    },
+    "answer": "A, C"
+  },
+  {
+    "id": 87,
+    "category": "monitor-maintain",
+    "question": "A third-party application on a VM is experiencing performance issues. You need to find the root cause. What should you use?",
+    "choices": {
+      "A": "Activity logs",
+      "B": "Azure Advisor",
+      "C": "Azure Cost Management",
+      "D": "Azure Monitor"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 88,
+    "category": "monitor-maintain",
+    "question": "You have a Kusto query returning 1,000 events from the SecurityEvent table. You need to aggregate results by the Account column. Which KQL operator should you use?",
+    "choices": {
+      "A": "extend",
+      "B": "project",
+      "C": "summarize",
+      "D": "where"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 89,
+    "category": "monitor-maintain",
+    "question": "A Linux VM outputs custom application logs in JSON format. You need to collect those logs in a Log Analytics workspace. What should you deploy?",
+    "choices": {
+      "A": "The Azure VMAccess extension",
+      "B": "The Custom Script Extension Version 2",
+      "C": "The DSC extension for Linux",
+      "D": "The Azure Monitor agent for Linux"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 90,
+    "category": "monitor-maintain",
+    "question": "You have 100 VMs with Azure Monitor alerts configured. You open Azure Monitor and find 50 alerts in Closed state. What can cause an alert to be in Closed state?",
+    "choices": {
+      "A": "An administrator manually changed the state of the alerts.",
+      "B": "The alerts are older than 60 days.",
+      "C": "An action group remediated the alert conditions.",
+      "D": "The conditions that caused the alerts are no longer present."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 91,
+    "category": "monitor-maintain",
+    "question": "VM1 is protected by Azure Site Recovery. You fail over VM1 from primary to secondary region. You need to reprotect VM1 so it replicates back to primary. What status must VM1 be in before reprotection?",
+    "choices": {
+      "A": "Committing failover",
+      "B": "Failover committed",
+      "C": "Failover confirmed",
+      "D": "Starting failover"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 92,
+    "category": "monitor-maintain",
+    "question": "You install the MARS agent on Server1 and create a Recovery Services vault (Vault1). What should you do next to enable backups to Vault1?",
+    "choices": {
+      "A": "Create a backup policy for Vault1.",
+      "B": "Download the credentials of Vault1 and register Server1 with Vault1.",
+      "C": "Enable soft delete for Vault1.",
+      "D": "Modify the security settings of Vault1."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 93,
+    "category": "monitor-maintain",
+    "question": "How long are Azure Activity Logs retained by default before they are automatically deleted?",
+    "choices": {
+      "A": "30 days",
+      "B": "60 days",
+      "C": "90 days",
+      "D": "1 year"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 94,
+    "category": "monitor-maintain",
+    "question": "You want to receive personalized recommendations to right-size or shut down underused VMs to reduce costs. Which Azure service provides this?",
+    "choices": {
+      "A": "Azure Cost Management budgets",
+      "B": "Azure Advisor \u2014 Cost category",
+      "C": "Azure Monitor metric alerts",
+      "D": "Azure Service Health"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 95,
+    "category": "monitor-maintain",
+    "question": "You accidentally delete a VM backup. How long is the backup data retained under Azure Backup soft delete before permanent deletion?",
+    "choices": {
+      "A": "7 days",
+      "B": "14 days",
+      "C": "30 days",
+      "D": "60 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 96,
+    "category": "monitor-maintain",
+    "question": "What is the approximate RPO (Recovery Point Objective) for Azure Site Recovery when replicating Azure VMs between regions?",
+    "choices": {
+      "A": "5 minutes",
+      "B": "30 seconds",
+      "C": "15 minutes",
+      "D": "1 hour"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 97,
+    "category": "monitor-maintain",
+    "question": "What is the default data retention period for a Log Analytics workspace (free tier)?",
+    "choices": {
+      "A": "7 days",
+      "B": "14 days",
+      "C": "30 days",
+      "D": "90 days"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 98,
+    "category": "monitor-maintain",
+    "question": "You need to filter a KQL query to only show SecurityEvent records where the EventID equals 4625 (failed logons). Which KQL operator should you use?",
+    "choices": {
+      "A": "summarize",
+      "B": "extend",
+      "C": "project",
+      "D": "where"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 99,
+    "category": "monitor-maintain",
+    "question": "You need to schedule and apply OS patch updates across 200 Azure VMs using a maintenance window, replacing the old Azure Automation Update Management. Which service should you use?",
+    "choices": {
+      "A": "Azure Automation Runbooks",
+      "B": "Azure Policy \u2014 DeployIfNotExists",
+      "C": "Azure Update Manager",
+      "D": "Azure Arc"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 100,
+    "category": "monitor-maintain",
+    "question": "Azure Monitor stores metric data by default for how many days?",
+    "choices": {
+      "A": "30 days",
+      "B": "60 days",
+      "C": "93 days",
+      "D": "365 days"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 101,
+    "category": "networking",
+    "question": "You have a subnet (Subnet1) whose VMs must send all internet-bound traffic through Azure Firewall (private IP 10.0.1.4) for inspection before leaving Azure. What should you configure?",
+    "choices": {
+      "A": "Add an inbound NSG rule on Subnet1 that references Azure Firewall as the source.",
+      "B": "Create a route table with a route for 0.0.0.0/0, next hop type VirtualAppliance pointed at 10.0.1.4, and associate it with Subnet1.",
+      "C": "Create VNet peering between Subnet1's VNet and the Azure Firewall VNet.",
+      "D": "Configure a service endpoint on Subnet1 for Azure Firewall."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 102,
+    "category": "networking",
+    "question": "VMs in Subnet1 need scalable outbound internet connectivity through a fixed, predictable set of public IP addresses. No inbound connections from the internet are permitted. Which Azure service should you use?",
+    "choices": {
+      "A": "Azure Load Balancer with outbound rules",
+      "B": "Azure Firewall in transparent mode",
+      "C": "NAT Gateway",
+      "D": "Application Gateway with public frontend IP"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 103,
+    "category": "networking",
+    "question": "You plan to use an Application Security Group (ASG) in NSG rules to logically group VM NICs instead of specifying IP addresses. Which constraint must all NICs in the ASG satisfy?",
+    "choices": {
+      "A": "All NICs must be in the same resource group.",
+      "B": "All NICs must be in the same VNet.",
+      "C": "All NICs must be in the same subnet.",
+      "D": "ASG membership is limited to VMs in the same availability set."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 104,
+    "category": "networking",
+    "question": "On-premises DNS servers need to resolve hostnames registered in an Azure Private DNS zone (contoso.internal) linked to VNet1. What is the recommended solution?",
+    "choices": {
+      "A": "Manually create A records for every Azure VM in the on-premises DNS server.",
+      "B": "Deploy an Azure DNS Private Resolver with an inbound endpoint in VNet1 and configure on-premises DNS to forward contoso.internal queries to that endpoint's IP.",
+      "C": "Enable public access on the Private DNS zone so on-premises servers can query it over the internet.",
+      "D": "Add a VPN Gateway to VNet1 and configure DNS delegation from the on-premises zone to Azure DNS."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 105,
+    "category": "compute",
+    "question": "You need to deploy an Azure Container Instances solution where two containers share the same network namespace and storage volume on the same host (a container group). Which operating system supports this multi-container group configuration?",
+    "choices": {
+      "A": "Windows only",
+      "B": "Linux only",
+      "C": "Both Windows and Linux equally",
+      "D": "Neither \u2014 ACI containers cannot share network namespaces"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 106,
+    "category": "monitor-maintain",
+    "question": "An Azure Monitor alert fires for high CPU on VM1; the CPU later drops and the alert condition clears automatically. A second alert for VM2 is reviewed and manually dismissed by an administrator. Which states do the two alerts end up in, respectively?",
+    "choices": {
+      "A": "Both move to Closed",
+      "B": "Both move to Resolved",
+      "C": "VM1 alert moves to Resolved; VM2 alert moves to Closed",
+      "D": "VM1 alert moves to Closed; VM2 alert moves to Resolved"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 107,
+    "category": "networking",
+    "question": "You add a User-Defined Route (UDR) to a subnet's route table with address prefix 0.0.0.0/0 and next hop type 'None'. What happens to outbound internet traffic from VMs in that subnet?",
+    "choices": {
+      "A": "Traffic is forwarded to the Azure default internet gateway as normal.",
+      "B": "All outbound internet traffic is dropped (blackholed).",
+      "C": "Azure ignores the UDR because 0.0.0.0/0 is a system-reserved prefix that cannot be overridden.",
+      "D": "Only DNS traffic is blocked; all other traffic routes normally."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 108,
+    "category": "identity-governance",
+    "question": "You need to ensure that a user can activate the Owner role on a subscription only when needed, for a maximum of 4 hours, and only after an approver grants access. Which feature should you configure?",
+    "choices": {
+      "A": "A Conditional Access policy with a sign-in frequency of 4 hours",
+      "B": "Privileged Identity Management (PIM) with an eligible role assignment and approval workflow",
+      "C": "An Azure Policy with a time-based condition restricting Owner actions",
+      "D": "A custom RBAC role scoped to 4-hour renewable tokens"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 109,
+    "category": "identity-governance",
+    "question": "You need to create a Microsoft Entra ID group that automatically includes every user whose Department attribute equals 'Engineering', with no manual membership management. Which group membership type should you configure?",
+    "choices": {
+      "A": "Assigned",
+      "B": "Dynamic User",
+      "C": "Dynamic Device",
+      "D": "Microsoft 365"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 110,
+    "category": "identity-governance",
+    "question": "You assign an Azure Policy with DeployIfNotExists effect to a subscription. Dozens of existing resources are already non-compliant. The policy does not remediate them automatically. What must you create to bring them into compliance?",
+    "choices": {
+      "A": "A second policy assignment at the resource group level with higher priority",
+      "B": "A remediation task for the policy assignment",
+      "C": "An Azure Automation runbook that re-deploys the missing resources",
+      "D": "A policy initiative that wraps the existing policy"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 111,
+    "category": "identity-governance",
+    "question": "Which Microsoft Entra ID license tier is the minimum required to use Privileged Identity Management (PIM) and Access Reviews?",
+    "choices": {
+      "A": "Microsoft Entra ID Free",
+      "B": "Microsoft Entra ID P1",
+      "C": "Microsoft Entra ID P2",
+      "D": "Microsoft 365 F1"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 112,
+    "category": "identity-governance",
+    "question": "You need to periodically review and certify that users in the Finance group still require their current role assignments, removing access for anyone who no longer needs it. Which Microsoft Entra ID feature should you use?",
+    "choices": {
+      "A": "Conditional Access \u2014 sign-in risk policy",
+      "B": "Access Reviews",
+      "C": "Administrative Units",
+      "D": "Identity Protection \u2014 user risk remediation"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 113,
+    "category": "storage",
+    "question": "You need to ensure that if a blob is accidentally overwritten, you can restore the previous version of that blob without any data loss. Which blob storage feature should you enable?",
+    "choices": {
+      "A": "Blob soft delete",
+      "B": "Blob versioning",
+      "C": "Point-in-time restore",
+      "D": "Change feed"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 114,
+    "category": "storage",
+    "question": "You have a storage account in East US and need to asynchronously copy new and changed blobs to a second storage account in West Europe to serve read-heavy workloads in that region. Which feature should you configure?",
+    "choices": {
+      "A": "Geo-redundant storage (GRS) on the source account",
+      "B": "Azure File Sync between the two accounts",
+      "C": "Object replication between the two storage accounts",
+      "D": "AzCopy on a scheduled task"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 115,
+    "category": "storage",
+    "question": "A media processing workload requires high-throughput, low-latency access to block blobs only. File, Queue, and Table services are not needed. Which storage account type best fits this requirement?",
+    "choices": {
+      "A": "Standard GPv2",
+      "B": "Premium File Shares",
+      "C": "Premium Block Blob",
+      "D": "Premium Page Blob"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 116,
+    "category": "storage",
+    "question": "A compliance requirement mandates that your storage account's encryption keys are owned, stored, and rotated by your organization rather than Microsoft. What should you configure?",
+    "choices": {
+      "A": "Storage account access key rotation policy",
+      "B": "Customer-managed keys (CMK) via Azure Key Vault",
+      "C": "Azure Disk Encryption (ADE) on the storage account",
+      "D": "Infrastructure encryption (double encryption) using Microsoft-managed keys"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 117,
+    "category": "storage",
+    "question": "You need to restrict access to a storage account so that only resources in Subnet1 of VNet1 can reach it, while DNS resolution continues to use the storage account's public FQDN without a private IP. Which option should you configure?",
+    "choices": {
+      "A": "Private endpoint with a private DNS zone for the storage account",
+      "B": "Service endpoint on Subnet1 and a VNet firewall rule on the storage account",
+      "C": "NSG outbound deny rule blocking traffic to the storage account's public IP",
+      "D": "Storage account key with IP-based SAS limited to Subnet1's address range"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 118,
+    "category": "compute",
+    "question": "You need to capture a Windows Azure VM as a reusable generalized image in Azure Compute Gallery so other teams can deploy identical VMs from it. What must you do to the VM before capturing?",
+    "choices": {
+      "A": "Deallocate the VM \u2014 no OS-level preparation is needed.",
+      "B": "Run sysprep /generalize inside the VM, then deallocate and generalize it in Azure.",
+      "C": "Take an OS disk snapshot and store it in a Blob storage container.",
+      "D": "Enable Azure Disk Encryption before capturing the image."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 119,
+    "category": "compute",
+    "question": "You are deploying a latency-sensitive 3-tier application on Azure VMs and need to minimize network latency between the VMs by ensuring they are physically co-located within the same datacenter. Which Azure feature should you use?",
+    "choices": {
+      "A": "Availability Set",
+      "B": "Availability Zone",
+      "C": "Proximity Placement Group",
+      "D": "VM Scale Set with Uniform orchestration"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 120,
+    "category": "compute",
+    "question": "Your AKS cluster has enough nodes, but pods are failing to schedule because CPU demand exceeds current pod capacity. You need Azure to automatically add more pod replicas to handle the load. Which AKS feature should you configure?",
+    "choices": {
+      "A": "Cluster autoscaler",
+      "B": "Horizontal Pod Autoscaler (HPA)",
+      "C": "Vertical Pod Autoscaler (VPA)",
+      "D": "Manual node pool scale-out"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 121,
+    "category": "compute",
+    "question": "You need to implement a long-running Azure Functions workflow that calls several activity functions in sequence, maintains state across the steps, and can be queried for its current status at any time. Which Durable Functions function type manages this workflow?",
+    "choices": {
+      "A": "Entity function",
+      "B": "Activity function",
+      "C": "Orchestrator function",
+      "D": "HTTP trigger function"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 122,
+    "category": "compute",
+    "question": "You deploy a new revision of an Azure Container App with a code change. You want to route 20% of incoming traffic to the new revision and 80% to the previous revision to validate the change gradually. Which Container Apps feature enables this?",
+    "choices": {
+      "A": "Deployment slot swap with traffic weighting",
+      "B": "Revision-based traffic splitting",
+      "C": "KEDA scaling rule with weighted routing",
+      "D": "Dapr service invocation with load balancing"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 123,
+    "category": "networking",
+    "question": "You need to allow administrators to connect to Azure VMs via RDP and SSH securely through the Azure portal, without assigning public IP addresses to the VMs or opening port 3389/22 to the internet. Which service should you deploy?",
+    "choices": {
+      "A": "Azure VPN Gateway Point-to-Site connection",
+      "B": "Azure Bastion",
+      "C": "Just-in-time (JIT) VM access via Defender for Cloud",
+      "D": "Network Watcher connection monitor"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 124,
+    "category": "networking",
+    "question": "You need to protect public-facing Azure resources against volumetric and protocol-based DDoS attacks, with adaptive tuning based on your traffic patterns and attack analytics reports. Which service should you enable?",
+    "choices": {
+      "A": "Azure Firewall Premium with IDPS enabled",
+      "B": "Azure DDoS Protection \u2014 Network Protection",
+      "C": "Application Gateway WAF in Prevention mode",
+      "D": "NSG flow logs with Traffic Analytics"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 125,
+    "category": "networking",
+    "question": "You need to create an NSG inbound rule that allows traffic from Azure Load Balancer health probes to your VMs without listing specific IP addresses or CIDR ranges. What should you specify as the source?",
+    "choices": {
+      "A": "Any (*)",
+      "B": "VirtualNetwork service tag",
+      "C": "AzureLoadBalancer service tag",
+      "D": "Internet service tag"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 126,
+    "category": "networking",
+    "question": "A VM in Azure cannot reach an on-premises server. You suspect a specific NSG or UDR is blocking the outbound traffic, but you are not sure which rule applies. Which Azure Network Watcher tool instantly evaluates whether traffic would be allowed or denied and identifies the matching rule?",
+    "choices": {
+      "A": "Connection monitor",
+      "B": "Packet capture",
+      "C": "IP flow verify",
+      "D": "Next hop"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 127,
+    "category": "networking",
+    "question": "You have two on-premises sites, each connected to Azure via separate ExpressRoute circuits. You need the two sites to communicate directly with each other over the Microsoft backbone without routing traffic through a central on-premises device. Which feature should you enable?",
+    "choices": {
+      "A": "ExpressRoute FastPath on both circuits",
+      "B": "ExpressRoute Global Reach",
+      "C": "Virtual WAN hub-to-hub peering",
+      "D": "VNet-to-VNet peering between the two gateway VNets"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 128,
+    "category": "monitor-maintain",
+    "question": "You need to simultaneously send Azure SQL Database diagnostic logs to a Log Analytics workspace (for KQL queries), a Storage Account (for long-term archival), and an Event Hub (for streaming to a SIEM). What is the most efficient way to configure this?",
+    "choices": {
+      "A": "Create three separate Azure Monitor alert rules, one per destination.",
+      "B": "Create a single diagnostic setting and enable all three destinations within it.",
+      "C": "Create three separate diagnostic settings, one targeting each destination.",
+      "D": "Use Azure Policy with DeployIfNotExists to push logs to each destination."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 129,
+    "category": "monitor-maintain",
+    "question": "You want to monitor CPU, memory, disk I/O, and network performance of Azure VMs at scale using Azure Monitor, and also visualize process dependencies between VMs on a map. Which Azure Monitor feature should you enable?",
+    "choices": {
+      "A": "Azure Advisor \u2014 Performance recommendations",
+      "B": "Log Analytics workspace with basic Heartbeat collection only",
+      "C": "VM Insights",
+      "D": "Application Insights with live metrics stream"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 130,
+    "category": "monitor-maintain",
+    "question": "Your web application is returning intermittent HTTP 500 errors. You need to collect end-to-end request traces, failed dependency calls, and application exceptions from within the application code itself. Which Azure monitoring service should you instrument the application with?",
+    "choices": {
+      "A": "Azure Monitor Metrics",
+      "B": "Azure Activity Log alerts",
+      "C": "Application Insights",
+      "D": "Log Analytics workspace with Syslog collection"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 131,
+    "category": "monitor-maintain",
+    "question": "Users report that a specific Azure VM is unreachable. You want to check whether the VM itself is unhealthy (e.g., OS crash, failed allocation) vs. a broader platform outage affecting the region. Which Azure Service Health component should you check first?",
+    "choices": {
+      "A": "Azure Status page (status.azure.com)",
+      "B": "Service Health \u2014 Service Issues blade for your subscription",
+      "C": "Resource Health for the specific VM",
+      "D": "Azure Advisor \u2014 Reliability recommendations"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 132,
+    "category": "monitor-maintain",
+    "question": "An Azure Monitor alert fires when disk space on a VM drops below 10%. You need Azure to automatically execute a PowerShell script to clean up old log files on the VM in response to the alert. Which action group action type should you configure?",
+    "choices": {
+      "A": "Email/SMS notification",
+      "B": "Azure Function",
+      "C": "Automation Runbook",
+      "D": "Webhook to an external endpoint"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 133,
+    "category": "identity-governance",
+    "question": "You need to ensure that only specific VM sizes can be deployed in subscription Sub1, but existing non-compliant VMs should remain running. Which Azure Policy effect should you use?",
+    "choices": {
+      "A": "Deny",
+      "B": "Audit",
+      "C": "Modify",
+      "D": "DeployIfNotExists"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 134,
+    "category": "storage",
+    "question": "You need users in West Europe to read blob data from a paired-region replica even before any failover occurs. Which redundancy option should you choose?",
+    "choices": {
+      "A": "GRS",
+      "B": "LRS",
+      "C": "RA-GRS",
+      "D": "ZRS"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 135,
+    "category": "compute",
+    "question": "A business-critical Azure Function must avoid cold starts and run for long durations during peak periods. Which hosting plan is the best fit?",
+    "choices": {
+      "A": "Consumption",
+      "B": "Premium",
+      "C": "Dedicated only with Free tier",
+      "D": "Spot"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 136,
+    "category": "networking",
+    "question": "You need to simplify NSG rules by allowing traffic from web tier VMs to database tier VMs without hard-coding IP addresses. Which feature should you use?",
+    "choices": {
+      "A": "Service endpoints",
+      "B": "Application Security Groups",
+      "C": "Route filters",
+      "D": "Traffic Manager"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 137,
+    "category": "monitor-maintain",
+    "question": "You need to silence non-critical alerts during a planned maintenance window without deleting or disabling existing alert rules. What should you configure?",
+    "choices": {
+      "A": "A second Action Group",
+      "B": "A Smart Group",
+      "C": "An Alert processing rule",
+      "D": "A Diagnostic setting"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 138,
+    "category": "networking",
+    "question": "A subnet has a route table with a UDR `0.0.0.0/0 -> VirtualAppliance 10.0.2.4` (Azure Firewall private IP). What is the expected result for internet-bound traffic from VMs in that subnet?",
+    "choices": {
+      "A": "Traffic bypasses the firewall and exits directly to the internet.",
+      "B": "Traffic is sent to Azure Firewall first, then forwarded based on firewall rules.",
+      "C": "Only HTTPS traffic is sent to the firewall; other protocols use system routes.",
+      "D": "The route is ignored unless an NSG outbound allow rule to 10.0.2.4 is added."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 139,
+    "category": "networking",
+    "question": "You need deterministic outbound public IP addresses for all VMs in Subnet1, without exposing inbound access. Which solution best fits?",
+    "choices": {
+      "A": "Assign a public IP to each VM NIC.",
+      "B": "Deploy Application Gateway with a public frontend.",
+      "C": "Associate a NAT Gateway to Subnet1.",
+      "D": "Enable service endpoints on Subnet1."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 140,
+    "category": "networking",
+    "question": "On-premises DNS must resolve names hosted in an Azure Private DNS zone. Which component provides a managed forwarding endpoint in Azure without maintaining DNS forwarder VMs?",
+    "choices": {
+      "A": "Azure Bastion",
+      "B": "Azure DNS Private Resolver",
+      "C": "Traffic Manager",
+      "D": "Azure Front Door"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 141,
+    "category": "networking",
+    "question": "You enable auto-registration on a Private DNS zone link to VNet1. Which resources are automatically registered?",
+    "choices": {
+      "A": "All resources with private IPs in VNet1, including App Service and AKS.",
+      "B": "Only VM NIC hostnames in linked VNets where auto-registration is enabled.",
+      "C": "Only resources behind private endpoints.",
+      "D": "Only resources in the same resource group as the DNS zone."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 142,
+    "category": "networking",
+    "question": "You need to identify which effective route Azure selected for traffic from a VM to 10.20.0.10. Which Network Watcher capability should you use?",
+    "choices": {
+      "A": "IP flow verify",
+      "B": "Connection monitor",
+      "C": "Effective routes on the VM NIC",
+      "D": "Packet capture"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 143,
+    "category": "monitor-maintain",
+    "question": "An alert condition clears by itself after CPU normalizes, and no admin manually updates state. What state should that alert move to?",
+    "choices": {
+      "A": "Closed",
+      "B": "Suppressed",
+      "C": "Resolved",
+      "D": "Acknowledged"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 144,
+    "category": "monitor-maintain",
+    "question": "You need a historical record of who deleted a resource group and when. Which log should you query first?",
+    "choices": {
+      "A": "Resource logs for the deleted resources",
+      "B": "Azure Activity Log",
+      "C": "VM guest OS event logs",
+      "D": "Application Insights traces"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 145,
+    "category": "monitor-maintain",
+    "question": "You already have a metric alert and action group configured. During a maintenance window you want alerts to still evaluate but notifications temporarily suppressed. What should you use?",
+    "choices": {
+      "A": "Disable the alert rule",
+      "B": "Remove the action group",
+      "C": "Alert processing rule (suppression)",
+      "D": "Change severity from Sev2 to Sev4"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 146,
+    "category": "compute",
+    "question": "An HTTP-triggered Azure Function runs for 8 minutes on the Consumption plan and times out. Which plan change directly addresses timeout and cold-start concerns for production workloads?",
+    "choices": {
+      "A": "Move to Premium plan",
+      "B": "Move to Basic App Service plan",
+      "C": "Keep Consumption and increase memory only",
+      "D": "Use Azure Container Instances"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 147,
+    "category": "storage",
+    "question": "You need storage access from Subnet1 while keeping the storage service endpoint model (public endpoint, Azure backbone path) instead of private IP injection. What should you configure?",
+    "choices": {
+      "A": "Private endpoint only",
+      "B": "Service endpoint on Subnet1 plus storage firewall VNet rule",
+      "C": "NSG inbound allow from storage public IPs",
+      "D": "A route table to force traffic through internet"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 148,
+    "category": "identity-governance",
+    "question": "A user signs in from the corporate office without being prompted for MFA, but is prompted for MFA when signing in from home. No device compliance policy is in place. Which Conditional Access condition is most likely responsible?",
+    "choices": {
+      "A": "Sign-in risk level set to High",
+      "B": "Named locations (office is a trusted location; home is not)",
+      "C": "User risk policy requiring MFA for risky users",
+      "D": "Device platform condition excluding Windows"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 149,
+    "category": "identity-governance",
+    "question": "A Conditional Access policy targets All Users with grant control \"Require MFA\". You need to exclude two break-glass emergency accounts so they are never blocked by this policy. Where in the policy should this be configured?",
+    "choices": {
+      "A": "Conditions \u2192 User risk",
+      "B": "Session controls \u2192 Sign-in frequency",
+      "C": "Assignments \u2192 Exclude users/groups",
+      "D": "Grant \u2192 Require compliant device"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 150,
+    "category": "identity-governance",
+    "question": "You need to block access to a sensitive application from unmanaged devices, while allowing users on Microsoft Entra ID-joined (corporate) devices to access the app without MFA. Which Conditional Access grant control achieves this?",
+    "choices": {
+      "A": "Require MFA",
+      "B": "Require approved client app",
+      "C": "Require compliant device",
+      "D": "Require Hybrid Entra ID-joined device"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 151,
+    "category": "identity-governance",
+    "question": "You configure a Conditional Access policy with a Sign-in risk condition set to \"High\" and grant control \"Require MFA\". Which Microsoft Entra ID license is the minimum required to use risk-based Conditional Access conditions?",
+    "choices": {
+      "A": "Microsoft Entra ID Free",
+      "B": "Microsoft Entra ID P1",
+      "C": "Microsoft Entra ID P2",
+      "D": "Microsoft 365 Business Basic"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 152,
+    "category": "identity-governance",
+    "question": "A Conditional Access policy has Session control \"Sign-in frequency\" set to 4 hours. What is the effect on users?",
+    "choices": {
+      "A": "Users are signed out automatically after 4 hours of inactivity",
+      "B": "Users are prompted to reauthenticate every 4 hours regardless of activity",
+      "C": "Access tokens issued to apps expire after 4 hours",
+      "D": "The policy only applies to the first 4-hour shift of each day"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 153,
+    "category": "identity-governance",
+    "question": "Microsoft Entra ID Identity Protection flags a user with high user risk due to leaked credentials. You need a policy that automatically forces the user to change their password on next sign-in. Which policy type should you configure?",
+    "choices": {
+      "A": "Sign-in risk policy requiring MFA",
+      "B": "User risk policy requiring password change",
+      "C": "Conditional Access policy blocking the user",
+      "D": "SSPR policy with email verification"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 154,
+    "category": "identity-governance",
+    "question": "Which Microsoft Entra ID feature automatically detects risk events such as sign-ins from anonymous IP addresses, impossible travel, and leaked credentials, and can trigger automated remediation via Conditional Access?",
+    "choices": {
+      "A": "Privileged Identity Management (PIM)",
+      "B": "Access Reviews",
+      "C": "Identity Protection",
+      "D": "Microsoft Defender for Cloud Apps"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 155,
+    "category": "identity-governance",
+    "question": "Your security team requires that no user password hashes or credentials are ever stored in Microsoft Entra ID. Users must authenticate using their on-premises Active Directory credentials. Which hybrid identity authentication method meets this requirement?",
+    "choices": {
+      "A": "Password Hash Synchronization (PHS)",
+      "B": "Pass-through Authentication (PTA)",
+      "C": "Seamless SSO with PHS",
+      "D": "Entra ID B2C"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 156,
+    "category": "identity-governance",
+    "question": "Your company uses Entra Connect with Password Hash Synchronization (PHS). The on-premises domain controllers become unavailable for several hours. What happens to user sign-ins for Entra ID-connected applications during this outage?",
+    "choices": {
+      "A": "All sign-ins fail because PHS requires on-premises connectivity",
+      "B": "Sign-ins succeed because password hashes are already stored in Entra ID",
+      "C": "Sign-ins succeed only for cached sessions; new sign-ins fail",
+      "D": "Sign-ins redirect to AD FS for authentication"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 157,
+    "category": "identity-governance",
+    "question": "Your company uses Entra Connect with Pass-through Authentication (PTA). The on-premises PTA agents are all stopped for maintenance. What happens to user sign-ins for Entra ID-connected applications?",
+    "choices": {
+      "A": "Sign-ins succeed using cached tokens",
+      "B": "Sign-ins fail because PTA requires on-premises agents to process authentication",
+      "C": "Sign-ins fall back to Password Hash Synchronization automatically",
+      "D": "Sign-ins succeed for admin accounts only"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 158,
+    "category": "identity-governance",
+    "question": "Users are synced from on-premises AD to Microsoft Entra ID via Entra Connect. A user resets their password in the Microsoft 365 portal, but the on-premises AD password remains unchanged. Which feature must be enabled to propagate cloud password resets to on-premises Active Directory?",
+    "choices": {
+      "A": "Seamless Single Sign-On",
+      "B": "Password Hash Synchronization",
+      "C": "Password writeback",
+      "D": "Directory synchronization"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 159,
+    "category": "identity-governance",
+    "question": "A user account is disabled in on-premises Active Directory. Entra Connect is running with its default synchronization settings. What happens to the corresponding account in Microsoft Entra ID after the next sync cycle?",
+    "choices": {
+      "A": "The account is permanently deleted from Entra ID",
+      "B": "The account remains enabled in Entra ID and must be manually disabled",
+      "C": "The account is disabled in Entra ID automatically",
+      "D": "The account is moved to a soft-deleted state in Entra ID"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 160,
+    "category": "networking",
+    "question": "You need to route global web users to the lowest-latency Azure region. The solution must operate at the DNS level and must NOT terminate HTTP connections or inspect HTTP headers. Which service should you use?",
+    "choices": {
+      "A": "Azure Front Door",
+      "B": "Azure Application Gateway",
+      "C": "Azure Traffic Manager with Performance routing",
+      "D": "Azure Load Balancer (Standard)"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 161,
+    "category": "networking",
+    "question": "You need a global HTTP load balancing solution that provides WAF protection, SSL offloading, URL-path-based routing, caching at the edge, and automatic failover between regions. Which service provides all of these capabilities in a single offering?",
+    "choices": {
+      "A": "Azure Traffic Manager + Azure Application Gateway in each region",
+      "B": "Azure Front Door",
+      "C": "Azure CDN + Azure Application Gateway",
+      "D": "Azure Load Balancer (Standard) with health probes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 162,
+    "category": "networking",
+    "question": "Your organization has Application Gateway deployed in East US for regional HTTP routing and WAF. Users in Europe experience high latency. You need to add global routing and edge WAF without replacing the existing Application Gateway. Which service should you add in front of the Application Gateway?",
+    "choices": {
+      "A": "Azure Traffic Manager (Performance routing)",
+      "B": "Azure Front Door",
+      "C": "Azure Load Balancer (Standard)",
+      "D": "Azure Firewall Premium"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 163,
+    "category": "networking",
+    "question": "Azure Traffic Manager uses Performance routing to direct a user to the nearest region. Ten minutes later, the primary region becomes unhealthy. How does Traffic Manager detect this and redirect traffic?",
+    "choices": {
+      "A": "Traffic Manager inspects HTTP response codes from the backend in real time",
+      "B": "Traffic Manager uses health probes (endpoint monitoring) to detect failures and stops resolving DNS to the unhealthy endpoint",
+      "C": "Traffic Manager reroutes active TCP connections to the secondary region",
+      "D": "Traffic Manager triggers an Azure Monitor alert which manually updates DNS"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 164,
+    "category": "networking",
+    "question": "You have spoke VNets in three Azure regions and an on-premises network connected via ExpressRoute. All spokes and on-premises must communicate with each other transitively. You want to minimize the number of gateways and peering connections needed. Which Azure service provides native transitive routing across all connected networks?",
+    "choices": {
+      "A": "VNet peering with Azure Firewall in a hub VNet in each region",
+      "B": "Azure Virtual WAN with Standard hubs",
+      "C": "Azure Route Server with BGP in each spoke",
+      "D": "Azure VPN Gateway with VNet-to-VNet connections"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 165,
+    "category": "networking",
+    "question": "VNet-A, VNet-B, and VNet-C are all connected to the same Azure Virtual WAN hub as spoke VNets. No explicit VNet peering exists between the three VNets. Can a VM in VNet-A communicate with a VM in VNet-C?",
+    "choices": {
+      "A": "No \u2014 Virtual WAN does not support spoke-to-spoke routing; explicit peering is required",
+      "B": "Yes \u2014 Virtual WAN hub provides transitive routing between all connected spoke VNets by default",
+      "C": "Yes \u2014 but only if a UDR is manually added in each spoke pointing to the hub",
+      "D": "No \u2014 VMs in different VNets require an NVA in each spoke"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 166,
+    "category": "networking",
+    "question": "You need to allow inbound RDP connections from the internet to a VM with private IP 10.0.1.5 through Azure Firewall, mapping a specific port on the Firewall's public IP to the VM's private RDP port. Which Azure Firewall rule type should you configure?",
+    "choices": {
+      "A": "Network rule (inbound)",
+      "B": "Application rule (FQDN-based)",
+      "C": "DNAT rule",
+      "D": "NAT Gateway inbound rule"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 167,
+    "category": "networking",
+    "question": "You need Azure Firewall to inspect and decrypt outbound HTTPS traffic from your VMs to detect threats embedded in TLS-encrypted sessions. Which Azure Firewall tier supports TLS inspection?",
+    "choices": {
+      "A": "Azure Firewall Basic",
+      "B": "Azure Firewall Standard",
+      "C": "Azure Firewall Premium",
+      "D": "Azure Firewall Standard with a WAF policy attached"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 168,
+    "category": "networking",
+    "question": "You need Azure Firewall to allow outbound traffic to all Microsoft Windows Update servers without listing individual IP addresses or FQDNs. Which Azure Firewall feature simplifies this configuration?",
+    "choices": {
+      "A": "Service tags in a network rule (e.g., WindowsUpdate)",
+      "B": "FQDN tags in an application rule (e.g., WindowsUpdate)",
+      "C": "Wildcard FQDN in an application rule (e.g., *.microsoft.com)",
+      "D": "IP Group referencing the Windows Update address range"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 169,
+    "category": "networking",
+    "question": "Azure Firewall Standard has both a Network rule and an Application rule that could match the same outbound traffic. In what order are rules evaluated, and what happens when a match is found?",
+    "choices": {
+      "A": "Application rules are evaluated first; a match stops further rule processing",
+      "B": "Network rules are evaluated first; if a rule matches and takes action, application rules are not evaluated for that flow",
+      "C": "Both rule types are evaluated simultaneously; the most specific rule wins",
+      "D": "Rules are evaluated in priority order regardless of type"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 170,
+    "category": "networking",
+    "question": "Your Application Gateway WAF is in Detection mode. The logs show SQL injection attempts being detected but the requests are not being blocked. What must you change to block malicious requests?",
+    "choices": {
+      "A": "Add a Network Security Group deny rule in front of the Application Gateway",
+      "B": "Enable DDoS Protection Standard on the Application Gateway subnet",
+      "C": "Switch the WAF policy from Detection mode to Prevention mode",
+      "D": "Upgrade the Application Gateway to the v2 SKU"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 171,
+    "category": "networking",
+    "question": "An Application Gateway WAF rule is generating false positives and blocking legitimate requests from your mobile app. You need to stop those specific requests from being blocked without disabling WAF protection for other traffic. What should you configure?",
+    "choices": {
+      "A": "Switch WAF to Detection mode globally",
+      "B": "Add a custom exclusion rule to the WAF policy for the affected request attribute",
+      "C": "Remove the OWASP Core Rule Set and replace with only custom rules",
+      "D": "Add a lower-priority NSG allow rule on the Application Gateway subnet"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 172,
+    "category": "identity-governance",
+    "question": "You assign an Azure Policy with the \"Deny\" effect at the Management Group level. Which resources are affected by this policy?",
+    "choices": {
+      "A": "Only resources in the root management group's direct child subscriptions",
+      "B": "All subscriptions, resource groups, and resources within all child management groups and subscriptions",
+      "C": "Only the management group itself; subscriptions must be assigned separately",
+      "D": "Only newly created resources after the policy assignment; existing resources are exempt"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 173,
+    "category": "networking",
+    "question": "A subnet has a route table with a UDR: 0.0.0.0/0 \u2192 Next hop: VirtualAppliance \u2192 10.1.1.4 (Azure Firewall). A VM in the subnet tries to reach a storage account using its public endpoint. What happens to that traffic?",
+    "choices": {
+      "A": "Traffic goes directly to the storage public endpoint, bypassing the firewall, because Azure uses the most specific route",
+      "B": "Traffic is sent to Azure Firewall at 10.1.1.4, which then routes it to the storage public endpoint",
+      "C": "Traffic is dropped because VirtualAppliance next hop does not support storage traffic",
+      "D": "Traffic uses the service endpoint route, which overrides the 0.0.0.0/0 UDR"
+    },
+    "answer": "B"
+  }
+]
